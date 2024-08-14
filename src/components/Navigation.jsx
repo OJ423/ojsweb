@@ -24,7 +24,7 @@ export default function Navigation() {
     <>
       <section className="absolute top-0 left-0 w-full flex gap-4 justify-between p-2 items-center md:hidden text-gray-500">
         <Link
-          className="flex flex-col items-center justify-center gap-2 hover:opacity-50 transition-all duration-500 z-50 absolute top-4 left-4"
+          className="flex flex-col items-center justify-center gap-2 hover:opacity-50 transition-all duration-500 absolute top-4 left-4"
           href="/"
         >
           <Image
@@ -44,9 +44,9 @@ export default function Navigation() {
           <IoClose onClick={handleOpenMenu} size={42} className="z-50 fixed top-4 right-4 p-1 bg-teal-100 rounded-lg"/>        
         }
       </section>
-      <header className={`${!menuOpen ? 'translate-x-[-100%] md:translate-x-0': 'translate-x-0'} transition-all duration-500 bg-white w-full bottom-0 left-0 fixed md:w-1/3 xl:w-1/4 min-h-screen md:sticky md:top-0 flex flex-wrap md:flex-col gap-4 justify-center items-center p-8 shadow-reverse font-bold text-gray-600 z-40`}>
+      <header className={`${!menuOpen ? 'translate-x-[-100%] md:translate-x-0': 'translate-x-0'} transition-all duration-500 bg-white w-full bottom-0 left-0 fixed md:w-1/3 xl:w-1/4 min-h-screen md:sticky md:top-0 flex flex-col gap-4 justify-between md:justify-center items-center p-8 shadow-reverse font-bold text-gray-600 z-40`}>
         <Link
-          className="flex flex-col fixed top-2 left-2 invisible md:visible md:top-auto md:left-auto md:static items-center justify-center gap-2 hover:opacity-50 transition-all duration-500"
+          className="flex flex-col top-auto items-center justify-center gap-2 hover:opacity-50 transition-all duration-500"
           href="/"
         >
           <Image
@@ -54,9 +54,9 @@ export default function Navigation() {
             alt="Cartoon pic of me, Oliver"
             width={100}
             height={100}
-            className="rounded-full w-10 h-10 md:w-12 md:h-12 hidden md:block"
+            className="rounded-full w-10 h-10 md:w-12 md:h-12"
           />
-          <p className="font-bold text-xs text-gray-400 tracking-widest hidden md:block">
+          <p className="font-bold text-xs text-gray-400 tracking-widest">
             OJSWEB
           </p>
         </Link>

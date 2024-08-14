@@ -7,9 +7,9 @@ export default function Home() {
     <>
       <div className="flex min-h-screen items-center">
         <Navigation />
-        <main className="flex min-h-min mt-28 mb-20 flex-col xl:flex-row xl:px-20 xl:mx-auto gap-8 w-full items-center justify-center">
-          <div className="flex flex-col gap-8 mx-auto w-3/4 lg:w-2/4 xl:w-full">
-            <h1 className="text-3xl md:text-5xl font-bold text-gray-800">
+        <main className="flex min-h-min mt-28 mb-20 flex-col xl:flex-row xl:px-40 xl:gap-20 xl:mx-auto gap-8 w-full items-center justify-center">
+          <div className="flex flex-col gap-8 mx-auto w-4/5 lg:w-2/4 xl:w-full">
+            <h1 className="text-3xl xl:text-4xl font-bold text-gray-800">
               <span className="bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
                 Web Design & Marketing Services
               </span>{" "}
@@ -38,7 +38,7 @@ export default function Home() {
             width={800}
             height={400}
             priority
-            className="w-3/4 lg:w-2/4 h-auto rounded-xl"
+            className="w-3/4 lg:w-2/4 xl:w-full h-auto rounded-xl"
           />
         </main>
       </div>
