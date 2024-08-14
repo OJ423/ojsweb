@@ -45,6 +45,7 @@ export default function WebApps() {
                   Share, create, and use data and content with beautiful and
                   intuitive web and mobile apps.
                 </p>
+                <LinkStyled src="/contact" linkText="Arrange a chat" />
               </div>
               <Image
                 src="/flushfinder-mobile-app.jpg"

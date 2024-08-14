@@ -26,6 +26,7 @@ export default function MarketingServices() {
                 <p className="text-lg font-medium">
                   {`Seeking a boost in sales leads, increased visibility, or support for a forthcoming product launch? I’m Oliver, your expert in crafting tailor-made organic marketing solutions designed to propel your business towards its unique goals.`}
                 </p>
+                <LinkStyled src="/contact" linkText="Arrange a chat" />
               </div>
               <Image
                 src="/marketing/freelance-marketing-services.svg"

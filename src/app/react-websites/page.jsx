@@ -47,6 +47,7 @@ export default function ReactWebsites() {
                   Beautiful and highly performant websites and blogs crafted to
                   your spec.
                 </p>
+                <LinkStyled src="/contact" linkText="Arrange a chat" />
               </div>
               <Image
                 src="/portfolio/animated-display-website.webp"

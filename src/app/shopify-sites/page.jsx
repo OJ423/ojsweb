@@ -43,6 +43,7 @@ export default function ShopifySites() {
                 <p className="text-lg font-medium">
                 Beautiful and fully functional Shopify stores designed to elevate your brand.
                 </p>
+                <LinkStyled src="/contact" linkText="Arrange a chat" />
               </div>
               <Image
                 src="/shopify-developer.webp"

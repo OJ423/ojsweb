@@ -45,6 +45,7 @@ export default function ContentMarketing() {
                 <p className="text-lg font-medium">
                   I plan and manage content strategies to raise awareness of your business and generate leads among your target audience.
                 </p>
+                <LinkStyled src="/contact" linkText="Arrange a chat" />
               </div>
               <Image
                 src="/marketing/content-marketing-services.webp"
@@ -161,7 +162,7 @@ export default function ContentMarketing() {
             </section>
           </ColumnsTwoFullH>
           <section className="bg-teal-100 rounded-xl p-8 grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 lg:gap-20 w-11/12 mx-auto md:w-5/6 items-center mb-20">
-            <div>
+            <div className="flex flex-col gap-8">
               <h2 className="text-3xl font-bold w-full text-gray-800">
                 Your Content{" "}
                 <span className="bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">

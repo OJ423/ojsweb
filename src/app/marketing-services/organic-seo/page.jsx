@@ -34,6 +34,7 @@ export default function OrganicSEO() {
                 <p className="text-lg font-medium">
                   My organic SEO services are proven to increase web traffic and lead generation.
                 </p>
+                <LinkStyled src="/contact" linkText="Arrange a chat" />
               </div>
               <Image
                 src="/marketing/organic-seo-services.webp"

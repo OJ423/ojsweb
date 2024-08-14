@@ -22,6 +22,7 @@ export default function DesignServices() {
                 <p className="text-lg font-medium">
                   From pitch decks, brochures to website imagery, I am adept at creating on-brand imagery and collateral to make your business shine.
                 </p>
+                <LinkStyled src="/contact" linkText="Arrange a chat" />
               </div>
               <Image
                 src="/graphic-design/Apple-Kiss.webp"

@@ -29,6 +29,7 @@ export default function WordPressWebsites() {
                 <p className="text-lg font-medium">
                   {`The world's most popular CMS, perfect for those who want to take charge of their web presence.`}
                 </p>
+                <LinkStyled src="/contact" linkText="Arrange a chat" />
               </div>
               <Image
                 src="/portfolio/terminusdb-wordpress-website.webp"
