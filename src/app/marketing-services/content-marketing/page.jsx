@@ -20,19 +20,12 @@ export default function ContentMarketing() {
   const packageTitle = "Monthly Content Service"
   const packageFeatures = ["Keyword Research", "Topic Research", "800 word article / 2 minute video", "5 x Social Cards", "3 x Social Amplification"]
 
-  const [height, setHeight] = useState({height: 900, width: 600});
-
-  useEffect(() => {
-    const handleResize = () => setHeight({height:window.innerHeight, width: window.innerWidth});
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   return (
     <>
       <div className="flex min-h-screen items-center">
         <Navigation />
-        <main className={`${height.height < 823 ? height.width < 500 ? "mt-20" : "mt-0" : "mt-0" } flex min-h-min flex-col w-full items-center justify-center`}>
+        <main className={`mt-20 md:mt-8 lg:mt-0 flex min-h-min flex-col w-full items-center justify-center`}>
           <section className="min-h-screen flex flex-col gap-20 mx-auto w-5/6 justify-center items-center">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 justify-center items-center">
               <div className="flex flex-col gap-8">
