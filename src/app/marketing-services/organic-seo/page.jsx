@@ -29,7 +29,7 @@ export default function OrganicSEO() {
                   Using Organic SEO
                 </h1>
                 <p className="text-lg font-medium">
-                  Thought-leadership, piquing interest and talking to the correct audience are the most effective way to increase brand awareness and long-term customer acquisition.
+                  Thought-leadership, piquing interest and talking to the correct audience are the most effective ways to increase brand awareness and long-term customer acquisition.
                 </p>
                 <p className="text-lg font-medium">
                   My organic SEO services are proven to increase web traffic and lead generation.
