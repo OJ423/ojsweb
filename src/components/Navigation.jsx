@@ -44,7 +44,7 @@ export default function Navigation() {
           <IoClose onClick={handleOpenMenu} size={42} className="z-50 fixed top-4 right-4 p-1 bg-teal-100 rounded-lg"/>        
         }
       </section>
-      <header className={`${!menuOpen ? 'translate-x-[-100%] md:translate-x-0': 'translate-x-0'} transition-all duration-500 bg-white w-full bottom-0 left-0 fixed md:w-1/3 xl:w-1/4 min-h-screen md:sticky md:top-0 flex flex-col gap-4 justify-between md:justify-center items-center p-8 shadow-reverse font-bold text-gray-600 z-40`}>
+      <header className={`${!menuOpen ? 'translate-x-[-100%] md:translate-x-0': 'translate-x-0'} transition-all duration-500 bg-white w-full bottom-0 left-0 fixed md:w-1/3 xl:w-1/4 min-h-screen md:sticky md:top-0 flex flex-col gap-4 justify-between md:justify-center items-center px-8 py-20 md:py-8 shadow-reverse font-bold text-gray-600 z-40`}>
         <Link
           className="flex flex-col top-auto items-center justify-center gap-2 hover:opacity-50 transition-all duration-500"
           href="/"
