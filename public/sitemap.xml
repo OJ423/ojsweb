@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+<url>
+  <loc>https://www.ojsweb.co.uk/</loc>
+  <lastmod>2024-09-30T09:28:59+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.ojsweb.co.uk/react-websites</loc>
+  <lastmod>2024-09-30T09:28:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ojsweb.co.uk/web-apps</loc>
+  <lastmod>2024-09-30T09:28:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ojsweb.co.uk/wordpress-websites</loc>
+  <lastmod>2024-09-30T09:28:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ojsweb.co.uk/shopify-sites</loc>
+  <lastmod>2024-09-30T09:28:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ojsweb.co.uk/marketing-services</loc>
+  <lastmod>2024-09-30T09:28:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ojsweb.co.uk/contact</loc>
+  <lastmod>2024-09-30T09:28:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ojsweb.co.uk/marketing-services/content-marketing</loc>
+  <lastmod>2024-09-30T09:28:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ojsweb.co.uk/marketing-services/organic-seo</loc>
+  <lastmod>2024-09-30T09:28:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ojsweb.co.uk/marketing-services/design-services</loc>
+  <lastmod>2024-09-30T09:28:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
