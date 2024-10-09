@@ -27,7 +27,7 @@ export default function OrganicSEO() {
     <>
       <div className="flex min-h-screen items-center">
         <Navigation />
-        <main className="flex min-h-min mt-24 md:my-0 flex-col w-full items-center justify-center pattern-cross pattern-green-600 pattern-bg-white pattern-size-6 pattern-opacity-20">
+        <main className="flex min-h-min py-20 flex-col w-full items-center justify-center pattern-cross pattern-green-600 pattern-bg-white pattern-size-6 pattern-opacity-20">
           <section className="min-h-screen flex flex-col gap-20 mx-auto w-5/6 lg:w-2/3 xl:w-5/6 justify-center items-center">
             <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 justify-center items-center">
               <div className="flex flex-col gap-8">
@@ -65,14 +65,14 @@ export default function OrganicSEO() {
                 My previous roles resulted in -
               </h2>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
-                <p className="text-teal-500 text-4xl font-bold text-center md:text-left">{`> 1000 % Growth`}</p>
+                <p className="text-teal-500 text-4xl font-bold text-left">{`> 1000 % Growth`}</p>
                 <p className="text-sm text-gray-600 font-medium">
                   {`I grew TerminusDB's organic web traffic from under 200 monthly visitors to over 10,000, generating over 1,200 leads in just 12 months.`}{" "}
                 </p>
               </div>
               <div className="border-t-2 border-teal-500 my-4"></div>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
-                <p className="text-teal-500 text-4xl font-bold text-center md:text-left">{`125 % Growth`}</p>
+                <p className="text-teal-500 text-4xl font-bold text-left">{`125 % Growth`}</p>
                 <p className="text-sm text-gray-600 font-medium">
                   Food manufacturer Aviko saw their web visitors increase from
                   2,000 monthly visitors to 4,500 visitors in under 12 months
