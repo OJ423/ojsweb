@@ -28,7 +28,7 @@ export default function OrganicSEO() {
       <div className="flex min-h-screen items-center">
         <Navigation />
         <main className="flex min-h-min mt-24 md:my-0 flex-col w-full items-center justify-center pattern-cross pattern-green-600 pattern-bg-white pattern-size-6 pattern-opacity-20">
-          <section className="min-h-screen flex flex-col gap-20 mx-auto w-5/6 lg:w-2/3 justify-center items-center">
+          <section className="min-h-screen flex flex-col gap-20 mx-auto w-5/6 lg:w-2/3 xl:w-5/6 justify-center items-center">
             <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 justify-center items-center">
               <div className="flex flex-col gap-8">
                 <h1 className="text-3xl xl:text-5xl font-bold w-full text-gray-800">
