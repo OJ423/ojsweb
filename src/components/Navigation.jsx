@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { FcFlashOn, FcPhoneAndroid, FcBusinessman, FcFile, FcSearch, FcAddImage, FcHome } from "react-icons/fc";
+import { FcFlashOn, FcPhoneAndroid, FcFile, FcSearch, FcAddImage, FcPositiveDynamic } from "react-icons/fc";
 import { BsWordpress } from "react-icons/bs";
 import { TbBrandGithub, TbBrandLinkedin, TbMail } from "react-icons/tb";
 import { FaShopify } from "react-icons/fa";
@@ -22,9 +22,9 @@ export default function Navigation() {
 
   return (
     <>
-      <section className="absolute top-0 left-0 w-full flex gap-4 justify-between p-2 items-center md:hidden text-gray-500">
+      <section className="absolute top-0 left-0 w-full flex gap-4 justify-between p-2 items-center md:hidden text-gray-500 font-bold">
         <Link
-          className="flex flex-col items-center justify-center gap-2 hover:opacity-50 transition-all duration-500 absolute top-4 left-4"
+          className="flex items-center justify-center gap-2 hover:opacity-50 transition-all duration-500 absolute top-4 left-4"
           href="/"
         >
           <Image
@@ -34,7 +34,7 @@ export default function Navigation() {
             height={100}
             className="rounded-full w-10 h-10 md:w-24 md:h-24"
           />
-          <p className="font-bold text-xs text-gray-400 tracking-widest">
+          <p className="bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text text-xs">
             OJSWEB
           </p>
         </Link>
@@ -44,9 +44,9 @@ export default function Navigation() {
           <IoClose onClick={handleOpenMenu} size={42} className="z-50 fixed top-4 right-4 p-1 bg-teal-100 rounded-lg"/>        
         }
       </section>
-      <header className={`${!menuOpen ? 'translate-x-[-100%] md:translate-x-0': 'translate-x-0'} transition-all duration-500 bg-white w-full bottom-0 left-0 fixed md:w-1/3 xl:w-1/4 min-h-screen md:sticky md:top-0 flex flex-col gap-4 justify-between md:justify-center items-center px-8 py-20 md:py-8 shadow-reverse font-bold text-gray-600 z-40`}>
+      <header className={`${!menuOpen ? 'translate-x-[-100%] md:translate-x-0': 'translate-x-0'} transition-all duration-500 bg-white w-full bottom-0 left-0 fixed md:w-2/5 xl:w-1/4 min-h-screen md:sticky md:top-0 flex flex-col gap-4 justify-between md:justify-center items-center px-8 my-auto py-8 shadow-reverse font-bold text-gray-600 z-40`}>
         <Link
-          className="flex flex-col top-auto items-center justify-center gap-2 hover:opacity-50 transition-all duration-500"
+          className="flex flex top-auto items-center justify-center gap-2 hover:opacity-50 transition-all duration-500 me-auto"
           href="/"
         >
           <Image
@@ -56,52 +56,17 @@ export default function Navigation() {
             height={100}
             className="rounded-full w-10 h-10 md:w-12 md:h-12"
           />
-          <p className="font-bold text-xs text-gray-400 tracking-widest">
+          <p className="bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text text-xs">
             OJSWEB
           </p>
         </Link>
-        <nav className="flex flex-col gap-0 items-start">
-          <Link
-            href="/react-websites"
-            className={`${pathname.includes('react-websites') ? 'text-teal-500': 'text-auto' } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
-          >
-            <FcFlashOn size={24} title="React framework websites" />
-            <li className={`list-none py-2.5 text-sm cursor-pointer`}>
-              Fast React Websites
-            </li>
-          </Link>
-          <Link
-            href="/web-apps"
-            className={`${pathname.includes('web-apps') ? 'text-teal-500': 'text-auto' } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
-          >
-            <FcPhoneAndroid size={24} title="Web Apps" />
-            <li className={`list-none py-2.5 text-sm cursor-pointer`}>
-              Web Apps
-            </li>
-          </Link>
-          <Link
-            href="/wordpress-websites"
-            className={`${pathname.includes('wordpress') ? 'text-teal-500': 'text-auto' } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
-          >
-            <BsWordpress size={24} title="Wordpress Development" />
-            <li className={`list-none py-2.5 text-sm cursor-pointer`}>
-              WordPress Development
-            </li>
-          </Link>
-          <Link
-            href="/shopify-sites"
-            className={`${pathname.includes('shopify') ? 'text-teal-500': 'text-auto' } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
-          >
-            <FaShopify size={24} title="Shopify Sites" />
-            <li className={`list-none py-2.5 text-sm cursor-pointer`}>
-              Shopify Sites
-            </li>
-          </Link>
-          <Link
+        <nav className="flex flex-col gap-0 items-start w-full">
+        <p className="text-xs uppercase mt-8 mb-4 bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">Marketing</p>
+        <Link
             href="/marketing-services"
             className={`${pathname.includes('marketing') ? 'text-teal-500': 'text-auto' } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
           >
-            <FcBusinessman size={24} title="Marketing Services" />
+            <FcPositiveDynamic size={24} title="Marketing Services" />
             <li className={`list-none py-2.5 text-sm cursor-pointer`}>
               Marketing Services
             </li>
@@ -138,8 +103,45 @@ export default function Navigation() {
           </>
           : null
           }
+          <p className="text-xs uppercase mt-8 mb-4 bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">Web Development</p>
+          <Link
+            href="/react-websites"
+            className={`${pathname.includes('react-websites') ? 'text-teal-500': 'text-auto' } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
+          >
+            <FcFlashOn size={24} title="React framework websites" />
+            <li className={`list-none py-2.5 text-sm cursor-pointer`}>
+              Fast React Websites
+            </li>
+          </Link>
+          <Link
+            href="/web-apps"
+            className={`${pathname.includes('web-apps') ? 'text-teal-500': 'text-auto' } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
+          >
+            <FcPhoneAndroid size={24} title="Web Apps" />
+            <li className={`list-none py-2.5 text-sm cursor-pointer`}>
+              Web Apps
+            </li>
+          </Link>
+          <Link
+            href="/wordpress-websites"
+            className={`${pathname.includes('wordpress') ? 'text-teal-500': 'text-auto' } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
+          >
+            <BsWordpress size={24} title="Wordpress Development" />
+            <li className={`list-none py-2.5 text-sm cursor-pointer`}>
+              WordPress Development
+            </li>
+          </Link>
+          <Link
+            href="/shopify-sites"
+            className={`${pathname.includes('shopify') ? 'text-teal-500': 'text-auto' } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
+          >
+            <FaShopify size={24} title="Shopify Sites" />
+            <li className={`list-none py-2.5 text-sm cursor-pointer`}>
+              Shopify Sites
+            </li>
+          </Link>
         </nav>
-        <section className="md:border-t md:border-t-2 w-full pt-8 flex flex-wrap gap-4 items-center justify-center">
+        <section className="md:border-t md:border-t-2 w-full pt-8 flex flex-wrap gap-4 items-center justify-between">
           <Link href="/contact">
             <p className="uppercase tracking-widest font-light text-xs hover:text-teal-500 transition-all duration-500">
               Contact Me

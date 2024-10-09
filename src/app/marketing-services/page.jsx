@@ -13,9 +13,9 @@ export default function MarketingServices() {
     <>
       <div className="flex min-h-screen items-center">
         <Navigation />
-        <main className="flex min-h-min mt-28 md:my-0 flex-col w-full items-center justify-center">
-          <section className="min-h-screen flex flex-col gap-20 mx-auto w-5/6 justify-center items-center pb-20 md:pb-0">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 justify-center items-center">
+        <main className="flex min-h-min py-20 md:py-0 flex-col w-full items-center justify-center">
+          <section className="min-h-screen flex flex-col gap-20 mx-auto w-5/6 md:w-1/2 xl:w-5/6 justify-center items-center pb-20 md:pb-0">
+            <div className="flex gap-20 justify-center items-center">
               <div className="flex flex-col gap-8">
                 <h1 className="text-3xl xl:text-5xl font-bold w-full text-gray-800">
                   <span className="bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
@@ -33,14 +33,14 @@ export default function MarketingServices() {
                 alt="Freelance Marketing Services"
                 width={600}
                 height={600}
-                className="w-full h-auto rounded-xl"
+                className="max-w-96 rounded-xl hidden xl:block"
                 priority
                 quality={100}
               />
             </div>
           </section>
-          <section className="flex flex-col gap-20 mx-auto lg:w-5/6 justify-center items-center p-8 mx-2 lg:p-20 mb-20 rounded-xl bg-teal-100">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-10 justify-center">
+          <section className="flex flex-col gap-20 mx-4 lg:w-5/6 justify-center items-center p-8 mx-2 lg:p-20 mb-20 rounded-xl bg-teal-100">
+            <div className="grid grid-cols-1 xl:grid-cols-3 gap-8 lg:gap-10 justify-center">
               <Link
                 href="/marketing-services/content-marketing"
                 className="transition-all duration-500 hover:opacity-50"
@@ -83,7 +83,7 @@ export default function MarketingServices() {
                 </div>
               </Link>
             </div>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-20 justify-center items-center">
+            <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 lg:gap-20 justify-center items-center">
               <div className="flex flex-col gap-4">
                 <h1 className="text-3xl font-bold w-full text-gray-800">
                   Freelance Marketing Services that are{" "}
@@ -100,9 +100,10 @@ export default function MarketingServices() {
                 </p>
                 <p className="text-lg leading-7 font-medium">
                   Hiring a freelance marketer like me brings you a wealth of
-                  experience that you can take advantage of as and when you need.
-                  Less costly and time consuming than employing someone full time, my freelance
-                  marketing services are always crafted with precision and care.
+                  experience that you can take advantage of as and when you
+                  need. Less costly and time consuming than employing someone
+                  full time, my freelance marketing services are always crafted
+                  with precision and care.
                 </p>
                 <LinkStyled src="/contact" linkText="Talk your needs" />
               </div>

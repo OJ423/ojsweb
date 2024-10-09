@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <div className="flex min-h-screen items-center">
         <Navigation />
-        <main className="flex min-h-min mt-28 mb-20 flex-col xl:flex-row xl:px-20 xl:gap-20 xl:mx-auto gap-8 w-full items-center justify-center">
+        <main className="flex min-h-min mt-28 mb-20 flex-col xl:flex-row xl:px-16 xl:gap-20 xl:mx-auto gap-8 w-full items-center justify-center">
           <div className="flex flex-col flex-1 gap-8 mx-auto w-4/5 lg:w-2/4">
             <h1 className="text-3xl xl:text-4xl font-bold text-gray-800">
               <span className="bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
@@ -16,11 +16,11 @@ export default function Home() {
               </span>{" "}
               Tailored to Your Needs and Budget
             </h1>
-            <p className="text-lg font-light">
+            <p className="text-lg font-medium">
               Hi, I&apos;m Oliver and I have over 20 years&apos; experience in
               marketing, web design and development.
             </p>
-            <p className="text-lg font-light">
+            <p className="text-lg font-medium">
               If you need an honest, hardworking and diligent professional to
               handle your web design and development and marketing needs, then get in touch.
             </p>
@@ -33,7 +33,7 @@ export default function Home() {
             width={800}
             height={400}
             priority
-            className="w-3/4 lg:w-2/4 h-auto rounded-xl"
+            className="w-3/4 lg:w-2/4 h-auto rounded-xl hidden xl:block"
           />
         </main>
       </div>

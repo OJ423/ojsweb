@@ -25,9 +25,9 @@ export default function ContentMarketing() {
     <>
       <div className="flex min-h-screen items-center">
         <Navigation />
-        <main className={`mt-20 md:mt-8 lg:mt-0 flex min-h-min flex-col w-full items-center justify-center`}>
-          <section className="min-h-screen flex flex-col gap-20 mx-auto w-5/6 justify-center items-center">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 justify-center items-center">
+        <main className={`flex min-h-min flex-col w-full items-center justify-center`}>
+          <section className="min-h-screen flex flex-col gap-20 mx-auto w-5/6 md:w-1/2 xl:w-5/6 justify-center items-center">
+            <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 justify-center items-center">
               <div className="flex flex-col gap-8">
                 <h1 className="text-3xl xl:text-5xl font-bold w-full text-gray-800">
                   <span className="bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
@@ -45,7 +45,7 @@ export default function ContentMarketing() {
                 alt="A screenshot of an article talking about data mesh"
                 width={600}
                 height={300}
-                className="md:w-5/6 h-auto rounded-xl"
+                className="md:w-5/6 h-auto rounded-xl hidden xl:block"
                 priority
                 quality={100}
               />
@@ -80,7 +80,6 @@ export default function ContentMarketing() {
                 If you are interested, the best port-of-call is to arrange a
                 chat to discuss your needs.
               </p>
-              <LinkStyled src="/contact" linkText="Arrange a chat" />
             </div>
             <section className="flex flex-col gap-8">
               <h2 className="font-bold text-xl">Some of my work...</h2>
