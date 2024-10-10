@@ -8,7 +8,7 @@ import { MdDraw } from "react-icons/md";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Web Design and Marketing Services",
+  title: "Freelance Marketing Services in Cheshire, Manchester & Worldwide",
   description: "Marketing freelancer based in Cheshire and Manchester providing content marking and SEO.",
   openGraph: {
     title: "Freelance Marketing Services",
