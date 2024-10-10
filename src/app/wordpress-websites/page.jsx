@@ -8,6 +8,32 @@ import CallToAction from "@/components/CallToAction";
 import LinkStyled from "@/components/LinkStyled";
 import Costs from "@/components/Costs";
 
+export const metadata = {
+  title: "Freelance WordPress Design Services",
+  description: "Need a WordPress website? I am an experience WordPress developer who can help create or update your website",
+  openGraph: {
+    title: "Full-stack contractor or hire.",
+    description: "Need a WordPress website? I am an experience WordPress developer who can help create or update your website",
+    url: 'https://ojsweb.co.uk/wordpress-websites',
+    siteName: 'Next.js',
+    images: [
+      {
+        url: 'https://ojsweb.co.uk/ojsweb-og-image.png', // Must be an absolute URL
+        width: 800,
+        height: 600,
+      },
+      {
+        url: 'https://ojsweb.co.uk/ojsweb-og-image-lg.png', // Must be an absolute URL
+        width: 1800,
+        height: 1600,
+        alt: 'Freelance WordPress Design Services.',
+      },
+    ],
+    locale: 'en_GB',
+    type: 'website',
+  }
+};
+
 export default function WordPressWebsites() {
   const costDescription =
     "WordPress does a lot of the heavy lifting so developing and deploying a WordPress website can be cost effective. Ideal for small online shops or news/blog sites. A basic website will cost as little as £250.";

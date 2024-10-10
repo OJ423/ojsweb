@@ -1,5 +1,3 @@
-"use client"
-
 import Navigation from "@/components/Navigation";
 import Image from "next/image";
 import PeterWilliams from "@/components/testimonials.js/PeterWilliams";
@@ -11,6 +9,32 @@ import { FiYoutube, FiBox } from "react-icons/fi";
 import { PiGraphDuotone } from "react-icons/pi";
 import { GiNewspaper } from "react-icons/gi";
 import { FaIndustry } from "react-icons/fa";
+
+export const metadata = {
+  title: "Freelance Content Marketing Services",
+  description: "I specialise in content marketing services and offer a reasonable and quality freelance service.",
+  openGraph: {
+    title: "Content Marketing Services",
+    description: "I specialise in content marketing services and offer a reasonable and quality freelance service.",
+    url: 'https://ojsweb.co.uk/marketing-services/content-marketing',
+    siteName: 'Next.js',
+    images: [
+      {
+        url: 'https://ojsweb.co.uk/ojsweb-og-image.png', // Must be an absolute URL
+        width: 800,
+        height: 600,
+      },
+      {
+        url: 'https://ojsweb.co.uk/ojsweb-og-image-lg.png', // Must be an absolute URL
+        width: 1800,
+        height: 1600,
+        alt: 'Content Marketing Services - Cheshire, Manchester, and Worldwide',
+      },
+    ],
+    locale: 'en_GB',
+    type: 'website',
+  }
+};
 
 export default function ContentMarketing() {
 

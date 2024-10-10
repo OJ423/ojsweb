@@ -1,12 +1,34 @@
-"use client";
-
 import Navigation from "@/components/Navigation";
 import Image from "next/image";
 import PeterWilliams from "@/components/testimonials.js/PeterWilliams";
-import ColumnsTwoFullH from "@/components/ColumnsTwoFullH";
 import LinkStyled from "@/components/LinkStyled";
 import Packages from "@/components/Packages";
-import { useEffect, useState } from "react";
+
+export const metadata = {
+  title: "SEO Consultant Cheshire and Manchester",
+  description: "Organic SEO services in Cheshire, Manchester and Worldwide. Hire me as your SEO specialist.",
+  openGraph: {
+    title: "Organic SEO Consultant in Cheshire & Manchester",
+    description: "Organic SEO services in Cheshire, Manchester and Worldwide. Hire me as your SEO specialist.",
+    url: 'https://ojsweb.co.uk/marketing-services/organic-seo',
+    siteName: 'Next.js',
+    images: [
+      {
+        url: 'https://ojsweb.co.uk/ojsweb-og-image.png', // Must be an absolute URL
+        width: 800,
+        height: 600,
+      },
+      {
+        url: 'https://ojsweb.co.uk/ojsweb-og-image-lg.png', // Must be an absolute URL
+        width: 1800,
+        height: 1600,
+        alt: 'SEO Consultant Cheshire and Manchester',
+      },
+    ],
+    locale: 'en_GB',
+    type: 'website',
+  }
+};
 
 export default function OrganicSEO() {
   const packageDescription =

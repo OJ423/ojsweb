@@ -7,10 +7,34 @@ import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import Portfolio from "@/components/Portfolio";
 import CallToAction from "@/components/CallToAction";
 import LinkStyled from "@/components/LinkStyled";
-import TechLogos from "@/components/TechLogos";
 import Costs from "@/components/Costs";
 import { images } from "@/components/constants";
 
+export const metadata = {
+  title: "Shopify Freelancer.",
+  description: "Need help setting up or updating your Shopify site? I can help with my Shopify Freelance services.",
+  openGraph: {
+    title: "Shopify Freelancer.",
+    description: "Need help setting up or updating your Shopify site? I can help with my Shopify Freelance services.",
+    url: 'https://ojsweb.co.uk/shopify-sites',
+    siteName: 'Next.js',
+    images: [
+      {
+        url: 'https://ojsweb.co.uk/ojsweb-og-image.png', // Must be an absolute URL
+        width: 800,
+        height: 600,
+      },
+      {
+        url: 'https://ojsweb.co.uk/ojsweb-og-image-lg.png', // Must be an absolute URL
+        width: 1800,
+        height: 1600,
+        alt: 'Shopify Freelance Services.',
+      },
+    ],
+    locale: 'en_GB',
+    type: 'website',
+  }
+};
 
 export default function ShopifySites() {
   const costDescription =

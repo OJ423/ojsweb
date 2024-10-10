@@ -11,6 +11,32 @@ import TechLogos from "@/components/TechLogos";
 import Costs from "@/components/Costs";
 import { images } from "@/components/constants";
 
+export const metadata = {
+  title: "Freelance React Developer",
+  description: "I am a freelance React developer. If you need a high performance website bespoke to you. Get in touch.",
+  openGraph: {
+    title: "Freelance React Developer",
+    description: "I am a freelance React developer. If you need a high performance website bespoke to you. Get in touch.",
+    url: 'https://ojsweb.co.uk/react-websites',
+    siteName: 'Next.js',
+    images: [
+      {
+        url: 'https://ojsweb.co.uk/ojsweb-og-image.png', // Must be an absolute URL
+        width: 800,
+        height: 600,
+      },
+      {
+        url: 'https://ojsweb.co.uk/ojsweb-og-image-lg.png', // Must be an absolute URL
+        width: 1800,
+        height: 1600,
+        alt: 'Freelance React Developer',
+      },
+    ],
+    locale: 'en_GB',
+    type: 'website',
+  }
+};
+
 
 export default function ReactWebsites() {
   const costDescription =

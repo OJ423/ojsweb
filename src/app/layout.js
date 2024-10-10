@@ -1,7 +1,6 @@
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
 const poppins = Poppins({
   subsets: ['latin'],
   display: 'swap',
@@ -15,16 +14,16 @@ export const metadata = {
   openGraph: {
     title: "Web Design and Marketing Services",
     description: "I'm Oliver and I am a freelance web developer and marketing professional and available for hire.",
-    url: 'https://ojsweb.vercel.app/',
+    url: 'https://ojsweb.co.uk/',
     siteName: 'Next.js',
     images: [
       {
-        url: 'https://ojsweb.vercel.app/ojsweb-og-image.png', // Must be an absolute URL
+        url: 'https://ojsweb.co.uk/ojsweb-og-image.png', // Must be an absolute URL
         width: 800,
         height: 600,
       },
       {
-        url: 'https://ojsweb.vercel.app/ojsweb-og-image-lg.png', // Must be an absolute URL
+        url: 'https://ojsweb..co.uk/ojsweb-og-image-lg.png', // Must be an absolute URL
         width: 1800,
         height: 1600,
         alt: 'OJSWEB web design and marketing services',

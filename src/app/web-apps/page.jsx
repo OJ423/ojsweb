@@ -12,6 +12,32 @@ import Link from "next/link";
 import { HiExternalLink } from "react-icons/hi";
 import { IoLogoGithub } from "react-icons/io5";
 
+export const metadata = {
+  title: "Full-stack contractor or hire.",
+  description: "Got an idea and need an app? I'm a cost effective developer who can help you.",
+  openGraph: {
+    title: "Full-stack contractor or hire.",
+    description: "Got an idea and need an app? I'm a cost effective developer who can help you.",
+    url: 'https://ojsweb.co.uk/web-apps',
+    siteName: 'Next.js',
+    images: [
+      {
+        url: 'https://ojsweb.co.uk/ojsweb-og-image.png', // Must be an absolute URL
+        width: 800,
+        height: 600,
+      },
+      {
+        url: 'https://ojsweb.co.uk/ojsweb-og-image-lg.png', // Must be an absolute URL
+        width: 1800,
+        height: 1600,
+        alt: 'Full-stack contractor or hire.',
+      },
+    ],
+    locale: 'en_GB',
+    type: 'website',
+  }
+};
+
 export default function WebApps() {
   const codeString = `exports.fetchPostById = (post_id) => {
   return db.query('

@@ -7,6 +7,32 @@ import { FaGoogle } from "react-icons/fa";
 import { MdDraw } from "react-icons/md";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Web Design and Marketing Services",
+  description: "Marketing freelancer based in Cheshire and Manchester providing content marking and SEO.",
+  openGraph: {
+    title: "Freelance Marketing Services",
+    description: "Marketing freelancer based in Cheshire and Manchester providing content marking and SEO.",
+    url: 'https://ojsweb.co.uk/marketing-services',
+    siteName: 'Next.js',
+    images: [
+      {
+        url: 'https://ojsweb.co.uk/ojsweb-og-image.png', // Must be an absolute URL
+        width: 800,
+        height: 600,
+      },
+      {
+        url: 'https://ojsweb.co.uk/ojsweb-og-image-lg.png', // Must be an absolute URL
+        width: 1800,
+        height: 1600,
+        alt: 'Freelance Marketing Services - Cheshire, Manchester, and Worldwide',
+      },
+    ],
+    locale: 'en_GB',
+    type: 'website',
+  }
+};
+
 export default function MarketingServices() {
   return (
     <>

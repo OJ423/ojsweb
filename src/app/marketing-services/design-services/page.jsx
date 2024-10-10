@@ -3,6 +3,32 @@ import Image from "next/image";
 import PeterWilliams from "@/components/testimonials.js/PeterWilliams";
 import LinkStyled from "@/components/LinkStyled";
 
+export const metadata = {
+  title: "Graphic Design & Sales Collateral Freelance Service",
+  description: "Freelance design services for eye catching and impactful sales and marketing collateral.",
+  openGraph: {
+    title: "Graphic Design & Sales Collateral Freelance Service",
+    description: "Freelance design services for eye catching and impactful sales and marketing collateral.",
+    url: 'https://ojsweb.co.uk/marketing-services/design-services',
+    siteName: 'Next.js',
+    images: [
+      {
+        url: 'https://ojsweb.co.uk/ojsweb-og-image.png', // Must be an absolute URL
+        width: 800,
+        height: 600,
+      },
+      {
+        url: 'https://ojsweb.co.uk/ojsweb-og-image-lg.png', // Must be an absolute URL
+        width: 1800,
+        height: 1600,
+        alt: 'Graphic Design & Sales Collateral Freelance Service',
+      },
+    ],
+    locale: 'en_GB',
+    type: 'website',
+  }
+};
+
 export default function DesignServices() {
 
   return (
