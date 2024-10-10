@@ -8,8 +8,8 @@ export default function Home() {
     <>
       <div className="flex min-h-screen items-center">
         <Navigation />
-        <main className="flex min-h-min mt-28 mb-20 flex-col xl:flex-row xl:px-16 xl:gap-20 xl:mx-auto gap-8 w-full items-center justify-center">
-          <div className="flex flex-col flex-1 gap-8 mx-auto w-4/5 lg:w-2/4">
+        <main className={`flex min-h-screen py-20 flex-col xl:flex-row xl:px-16 xl:gap-20 xl:mx-auto gap-8 w-full items-center justify-center bg-[url("/full-bloom.webp")]`}>
+          <div className="flex flex-col gap-8 m-auto w-4/5 lg:w-2/4 item">
             <h1 className="text-3xl xl:text-4xl font-bold text-gray-800">
               <span className="bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
                 Web Design & Marketing Services

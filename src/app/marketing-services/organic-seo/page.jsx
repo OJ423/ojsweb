@@ -28,7 +28,7 @@ export default function OrganicSEO() {
       <div className="flex min-h-screen items-center">
         <Navigation />
         <main className="flex min-h-min flex-col w-full items-center justify-center pattern-cross pattern-green-600 pattern-bg-white pattern-size-6 pattern-opacity-20">
-          <section className="min-h-screen flex flex-col gap-20 mx-auto w-5/6 lg:w-2/3 xl:w-5/6 justify-center items-center py-20">
+          <section className={`min-h-screen flex flex-col gap-20 mx-auto px-[8%] md:px-[20%] xl:px-[8%] justify-center items-center py-20 bg-[url("/full-bloom.webp")]`}>
             <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 justify-center items-center">
               <div className="flex flex-col gap-8">
                 <h1 className="text-3xl xl:text-5xl font-bold w-full text-gray-800">
@@ -148,7 +148,7 @@ export default function OrganicSEO() {
             cost="£1,800"
           />
           <PeterWilliams />
-          <section className="mb-40">
+          <section className="my-20">
             <h2 className="text-2xl sm:text-4xl font-bold pb-6 mb-6 border-b-2 w-fit bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
               Get in touch to begin...
             </h2>

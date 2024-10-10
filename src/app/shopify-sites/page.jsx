@@ -30,8 +30,8 @@ export default function ShopifySites() {
     <>
       <div className="flex min-h-screen items-center">
         <Navigation />
-        <main className="flex min-h-min my-0 flex-col w-full items-center justify-center pattern-cross pattern-green-600 pattern-bg-white pattern-size-6 pattern-opacity-20">
-          <section className="min-h-screen flex flex-col gap-20 mx-auto w-5/6 justify-center items-center">
+        <main className="flex min-h-min flex-col w-full items-center justify-center">
+          <section className={`min-h-screen flex flex-col gap-20 px-[8%] sm:px-[15%] md:px-[20%] lg:px-[8%] justify-center items-center bg-[url("/full-bloom.webp")]`}>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 justify-center items-center">
               <div className="flex flex-col gap-8">
                 <h1 className="text-3xl xl:text-5xl font-bold w-full text-gray-800">
@@ -50,7 +50,7 @@ export default function ShopifySites() {
                 alt="Shopify Web Design"
                 width={600}
                 height={300}
-                className="w-2/3 mx-auto md:w-full h-auto rounded-xl"
+                className="hidden lg:block mx-auto md:w-full h-auto rounded-xl"
                 priority
                 quality={100}
               />

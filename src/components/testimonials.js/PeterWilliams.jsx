@@ -31,7 +31,7 @@ export default function PeterWilliams() {
   };
   
   return (
-    <section className="w-full py-20 bg-teal-500 static lg:relative mb-20">
+    <section className="w-full py-20 bg-teal-500 static lg:relative">
       <div className="lg:relative overflow-hidden">
         <div className="w-11/12 md:w-3/5 mx-auto min-h-96 flex flex-col justify-center">
             <div key={currentSlide.name}>

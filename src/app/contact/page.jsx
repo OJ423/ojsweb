@@ -6,7 +6,7 @@ import Navigation from "@/components/Navigation";
 export default function Contact() {
   return (
     <>
-      <div className="flex min-h-screen items-center">
+      <div className={`flex min-h-screen items-center bg-[url("/full-bloom.webp")]`}>
         <Navigation />
         <main className="flex min-h-min flex-col mx-auto mt-28 mb-20 md:my-20 gap-8 w-full items-center justify-center max-w-[500px] px-4">
           <div className="flex flex-col gap-8 mx-auto w-4/5 lg:w-2/4 xl:w-full">

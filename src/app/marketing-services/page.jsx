@@ -1,7 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Image from "next/image";
 import PeterWilliams from "@/components/testimonials.js/PeterWilliams";
-import CallToAction from "@/components/CallToAction";
 import LinkStyled from "@/components/LinkStyled";
 import { TfiWrite } from "react-icons/tfi";
 import { FaGoogle } from "react-icons/fa";
@@ -13,8 +12,8 @@ export default function MarketingServices() {
     <>
       <div className="flex min-h-screen items-center">
         <Navigation />
-        <main className="flex min-h-min py-20 md:py-0 flex-col w-full items-center justify-center">
-          <section className="min-h-screen flex flex-col gap-20 mx-auto w-5/6 md:w-1/2 xl:w-5/6 justify-center items-center pb-20 md:pb-0">
+        <main className="flex min-h-min flex-col w-full items-center justify-center">
+          <section className={`min-h-screen flex flex-col gap-20 px-auto px-[8%] md:px-[20%] xl:px-[8%] justify-center items-center py-20 bg-[url("/full-bloom.webp")]`}>
             <div className="flex gap-20 justify-center items-center">
               <div className="flex flex-col gap-8">
                 <h1 className="text-3xl xl:text-5xl font-bold w-full text-gray-800">
@@ -39,7 +38,7 @@ export default function MarketingServices() {
               />
             </div>
           </section>
-          <section className="flex flex-col gap-20 mx-4 lg:w-5/6 justify-center items-center p-8 mx-2 lg:p-20 mb-20 rounded-xl bg-teal-100">
+          <section className="flex flex-col gap-20 mx-4 lg:w-5/6 justify-center items-center p-8 mx-2 lg:p-20 my-20 rounded-xl bg-teal-100">
             <div className="grid grid-cols-1 xl:grid-cols-3 gap-8 lg:gap-10 justify-center">
               <Link
                 href="/marketing-services/content-marketing"
@@ -120,7 +119,7 @@ export default function MarketingServices() {
           </section>
           <PeterWilliams />
 
-          <div className="mb-20">
+          <div className="my-20">
             <h2 className="text-2xl sm:text-4xl font-bold pb-6 mb-6 border-b-2 w-fit bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
               Get in touch to begin...
             </h2>

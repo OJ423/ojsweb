@@ -9,8 +9,8 @@ export default function DesignServices() {
     <>
       <div className="flex min-h-screen items-center">
         <Navigation />
-        <main className="flex min-h-min mt-28 md:my-0 flex-col w-full items-center justify-center pattern-cross pattern-green-600 pattern-bg-white pattern-size-6 pattern-opacity-20">
-          <section className="md:min-h-screen flex flex-col gap-20 mx-auto w-5/6 justify-center items-center pb-20 md:pb-0">
+        <main className="flex min-h-min flex-col w-full items-center justify-center">
+          <section className={`min-h-screen flex flex-col gap-20 mx-auto px-[8%] justify-center items-center py-20 bg-[url("/full-bloom.webp")]`}>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 justify-center items-center">
               <div className="flex flex-col gap-8">
                 <h1 className="text-3xl xl:text-5xl font-bold w-full text-gray-800">
@@ -56,7 +56,7 @@ export default function DesignServices() {
               <LinkStyled src="/contact" linkText="Arrange a chat" />
             </div>
           </section>
-          <section className="flex flex-col gap-8 my-20 p-4 md:p-8 lg:p-20">
+          <section className="flex flex-col gap-8 p-4 md:p-8 lg:p-20">
             <h2 className="text-3xl font-bold w-full text-gray-800">
               Here is a sample of my {" "}
               <span className="bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
@@ -148,7 +148,7 @@ export default function DesignServices() {
 
           </section>
           <PeterWilliams />
-          <section className="mb-40">
+          <section className="my-20">
             <h2 className="text-2xl sm:text-4xl font-bold pb-6 mb-6 border-b-2 w-fit bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
               Get in touch to begin...
             </h2>
