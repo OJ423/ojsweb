@@ -62,6 +62,7 @@ export default function Navigation() {
         </Link>
         <nav className="flex flex-col gap-0 items-start w-full">
         <p className="text-xs uppercase mt-8 mb-4 bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">Marketing</p>
+        <ul>
         <Link
             href="/marketing-services"
             className={`${pathname.includes('marketing') ? 'text-teal-500': 'text-auto' } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
@@ -140,6 +141,7 @@ export default function Navigation() {
               Shopify Sites
             </li>
           </Link>
+          </ul>
         </nav>
         <section className="md:border-t md:border-t-2 w-full pt-8 flex flex-wrap gap-4 items-center justify-between">
           <Link href="/contact">
@@ -153,20 +155,20 @@ export default function Navigation() {
               target="_blank"
               className="hover:text-teal-500 transition-all duration-500"
             >
-              <TbBrandGithub size={24} />
+              <TbBrandGithub aria-label="A link to Oliver's GitHub Profile" size={24} />
             </Link>
             <Link
               href="https://www.linkedin.com/in/oliver-smith-software/"
               target="_blank"
               className="hover:text-teal-500 transition-all duration-500"
             >
-              <TbBrandLinkedin size={24} />
+              <TbBrandLinkedin aria-label="A link to Oliver's LinkedIn Profile" size={24} />
             </Link>
             <Link
               href="/contact"
               className="hover:text-teal-500 transition-all duration-500"
             >
-              <TbMail size={24} />
+              <TbMail aria-label="A link to a contact form to get in touch with Oliver" size={24} />
             </Link>
           </div>
         </section>
