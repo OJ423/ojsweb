@@ -4,38 +4,58 @@ import Image from "next/image";
 import { IoLogoGithub } from "react-icons/io5";
 import { HiExternalLink } from "react-icons/hi";
 import { FaArrowLeft, FaArrowRight, FaRegDotCircle } from "react-icons/fa";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
+import { useSwipeable } from "react-swipeable";
+
 
 export default function Portfolio( {images} ) {
   const [slideIndex, setSlideIndex] = useState(0);
+  const [fadeClass, setFadeClass] = useState("fade-enter-active")
   const currentSlide = images[slideIndex];
   
   const handleForwardSlide = () => {
-    if (slideIndex === images.length - 1) {
-      setSlideIndex(0);
-    } else {
-      setSlideIndex((current) => current + 1);
-    }
+    setFadeClass("fade-enter"); 
+    setTimeout(() => {
+      setSlideIndex((current) => (current === images.length - 1 ? 0 : current + 1));
+      setFadeClass("fade-enter-active"); 
+    }, 500);
   };
 
   const handleBackwardSlide = () => {
-    if (slideIndex === 0) {
-      setSlideIndex(images.length - 1);
-    } else {
-      setSlideIndex((current) => current - 1);
-    }
+    setFadeClass("fade-enter");
+    setTimeout(() => {
+      setSlideIndex((current) => (current === 0 ? images.length - 1 : current - 1));
+      setFadeClass("fade-enter-active");
+    }, 500);
   };
 
   const handleChooseSlide = (index) => {
-    setSlideIndex(index);
+    setFadeClass("fade-enter");
+    setTimeout(() => {
+      setSlideIndex(index);
+      setFadeClass("fade-enter-active");
+    }, 500);
   };
 
+  const handlers = useSwipeable({
+    onSwipedLeft: handleForwardSlide,
+    onSwipedRight: handleBackwardSlide,
+    preventDefaultTouchmoveEvent: true,
+    trackMouse: true,
+  });
+
+  useEffect(() => {
+    const interval = setInterval(handleForwardSlide, 5000); 
+    return () => clearInterval(interval); 
+  }, [slideIndex]);
+
   return (
-    <section className="sm:w-11/12 md:w-5/6 lg:w-4/5 xl:w-2/3 mx-auto rounded-xl bg-gray-100">
+    <section className="sm:w-11/12 md:w-5/6 lg:w-4/5 xl:w-2/3 mx-auto rounded-xl bg-gray-100 relative" {...handlers}>
       <div className="overflow-hidden">
         <div
           className="flex transition-transform duration-500 ease-in-out"
+          {...handlers}
           style={{ transform: `translateX(-${slideIndex * 100}%)` }}
         >
           {images.map((image, index) => (
@@ -51,7 +71,7 @@ export default function Portfolio( {images} ) {
             </div>
           ))}
         </div>
-        <div className="flex items-center justify-between p-4 w-full">
+        <div className="flex items-center justify-between p-4 w-full absolute bottom-0">
           <div
             onClick={handleBackwardSlide}
             className="p-2 rounded-full bg-white"
@@ -61,7 +81,7 @@ export default function Portfolio( {images} ) {
               className="cursor-pointer hover:opacity-50 transition-all duration-500"
             />
           </div>
-          <div className="flex gap-2 items-center justify-center p-4 bg-white rounded-xl invisible lg:visible">
+          <div className="flex gap-2 items-center justify-center p-4 bg-white rounded-xl">
             {images.map((_, index) => (
               <FaRegDotCircle
                 key={index}
@@ -83,7 +103,7 @@ export default function Portfolio( {images} ) {
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-4 p-8">
+      <div className={`flex flex-col gap-4 px-8 pt-8 pb-20 ${fadeClass}`}>
         <h2 className="text-xl font-semibold">{currentSlide.title}</h2>
         <p>{currentSlide.desc}</p>
         <div className="flex gap-4 items-center">
