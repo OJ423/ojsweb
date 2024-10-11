@@ -1,44 +1,63 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import { BsChatQuote } from "react-icons/bs";
 import { testimonials } from "../constants";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaArrowLeft, FaArrowRight, FaRegDotCircle } from "react-icons/fa";
+import { useSwipeable } from "react-swipeable";
 
 export default function PeterWilliams() {
   const [slideIndex, setSlideIndex] = useState(0);
+  const [fadeClass, setFadeClass] = useState("fade-enter-active")
   const currentSlide = testimonials[slideIndex];
-  
+
   const handleForwardSlide = () => {
-    if (slideIndex === testimonials.length - 1) {
-      setSlideIndex(0);
-    } else {
-      setSlideIndex((current) => current + 1);
-    }
+    setFadeClass("fade-enter"); 
+    setTimeout(() => {
+      setSlideIndex((current) => (current === testimonials.length - 1 ? 0 : current + 1));
+      setFadeClass("fade-enter-active"); 
+    }, 500);
   };
 
   const handleBackwardSlide = () => {
-    if (slideIndex === 0) {
-      setSlideIndex(testimonials.length - 1);
-    } else {
-      setSlideIndex((current) => current - 1);
-    }
+    setFadeClass("fade-enter");
+    setTimeout(() => {
+      setSlideIndex((current) => (current === 0 ? testimonials.length - 1 : current - 1));
+      setFadeClass("fade-enter-active");
+    }, 500);
   };
 
   const handleChooseSlide = (index) => {
-    setSlideIndex(index);
+    setFadeClass("fade-enter");
+    setTimeout(() => {
+      setSlideIndex(index);
+      setFadeClass("fade-enter-active");
+    }, 500);
   };
-  
+
+  const handlers = useSwipeable({
+    onSwipedLeft: handleForwardSlide,
+    onSwipedRight: handleBackwardSlide,
+    preventDefaultTouchmoveEvent: true,
+    trackMouse: true,
+  });
+
+  useEffect(() => {
+    const interval = setInterval(handleForwardSlide, 5000); 
+    return () => clearInterval(interval); 
+  }, [slideIndex]);
+
+
   return (
-    <section className="w-full py-20 bg-teal-500 static lg:relative">
-      <div className="lg:relative overflow-hidden">
-        <div className="w-11/12 md:w-3/5 mx-auto min-h-96 flex flex-col justify-center">
-            <div key={currentSlide.name}>
-              <p className="md:text-xl font-bold text-white">
-                {currentSlide.quote}
-              </p>
-              <div className="flex items-center gap-4 mt-8">
+    <section className="w-full py-20 bg-teal-500 static relative" {...handlers}>
+      <div className="relative overflow-hidden">
+        <div className={`w-11/12 md:w-4/5 mx-auto min-h-96 flex flex-col justify-center ${fadeClass}`}>
+          <div key={currentSlide.name}>
+            <p className="md:text-xl font-bold text-white">
+              {currentSlide.quote}
+            </p>
+            <div className="flex items-center gap-4 mt-8">
               <Image
                 src={currentSlide.img}
                 alt={`Head shot of ${currentSlide.name}, ${currentSlide.title}`}
@@ -58,43 +77,40 @@ export default function PeterWilliams() {
           </div>
         </div>
       </div>
-      <div className="absolute top-10 left-10 text-[120px] hidden lg:block">
-        <BsChatQuote size={128} className="text-white opacity-20" />
+      <div className="absolute top-6 left-6 text-[120px]">
+        <BsChatQuote className="text-white opacity-20 text-5xl sm:text-7xl md:text-9xl" />
       </div>
-      <div className="absolute bottom-10 right-10 text-[120px] hidden lg:block">
-        <BsChatQuote size={128} className="text-white opacity-20" />
+      <div className="absolute bottom-6 right-6 text-[120px]">
+        <BsChatQuote className="text-white opacity-20 text-5xl sm:text-7xl md:text-9xl" />
       </div>
-      <div className="flex items-center justify-between p-4 w-full">
-          <div
-            onClick={handleBackwardSlide}
-            className="p-2 rounded-full bg-white"
-          >
-            <FaArrowLeft
-              size={18}
-              className="cursor-pointer hover:opacity-50 transition-all duration-500"
-            />
-          </div>
-          <div className="flex gap-2 items-center justify-center p-4 bg-white rounded-xl invisible lg:visible">
-            {testimonials.map((_, index) => (
-              <FaRegDotCircle
-                key={index}
-                onClick={() => handleChooseSlide(index)}
-                className={`${
-                  slideIndex === index ? "text-teal-500" : "text-gray-400"
-                } cursor-pointer transition-colors duration-300`}
-              />
-            ))}
-          </div>
-          <div
-            onClick={handleForwardSlide}
-            className="p-2 rounded-full bg-white"
-          >
-            <FaArrowRight
-              size={18}
-              className="cursor-pointer hover:opacity-50 transition-all duration-500"
-            />
-          </div>
+      <div className="flex items-center justify-between w-full absolute bottom-0 bg-white bg-opacity-20">
+        <div
+          onClick={handleBackwardSlide}
+          className="p-2"
+        >
+          <FaArrowLeft
+            size={18}
+            className="cursor-pointer hover:opacity-50 transition-all duration-500"
+          />
         </div>
+        <div className="flex gap-2 items-center justify-center p-4">
+          {testimonials.map((_, index) => (
+            <FaRegDotCircle
+              key={index}
+              onClick={() => handleChooseSlide(index)}
+              className={`${
+                slideIndex === index ? "text-teal-700" : "text-white"
+              } cursor-pointer transition-all duration-500`}
+            />
+          ))}
+        </div>
+        <div onClick={handleForwardSlide} className="p-2">
+          <FaArrowRight
+            size={18}
+            className="cursor-pointer hover:opacity-50 transition-all duration-500"
+          />
+        </div>
+      </div>
     </section>
   );
 }

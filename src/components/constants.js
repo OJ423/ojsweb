@@ -115,17 +115,17 @@ export const wordpressImgs = [
 export const testimonials = [
   {
     id:1,
-    quote: "Oliver's exceptional contributions to the CAMS project, spanning marketing services, web design and development, and content marketing, have been instrumental in raising awareness and support for this crucial initiative. His commitment to disaster resilience, combined with his technical expertise, has significantly advanced the CAMS project's mission to help communities become more resilient in the face of disasters. Oliver's dedication and multifaceted skill set make him an invaluable asset to any project focused on disaster risk reduction.",
-    name: "Dr. Peter Williams",
-    title: "Network Leader; Chair (ARISE USA)",
-    img: "/testimonials/peterwilliams.webp"
-  },
-  {
-    id:2,
     quote: "Oliver proved an invaluable asset. He is diligent, hard-working and multi-talented, capable of learning technical subjects and distilling it into both engaging prose and beautiful presentation, be it web, graphic or slides. He was very effective in producing organic content over complex subjects that help drive users to TerminusDB. I would not hesitate a moment to work with Oliver again given the opportunity.",
     name: "Dr Gavin Mendel-Gleason",
     title: "CTO & Co-Founder TerminusDB",
     img: "/testimonials/gavin.webp"
+  },
+  {
+    id:2,
+    quote: "Oliver's exceptional contributions to the CAMS project, spanning marketing services, web design and development, and content marketing, have been instrumental in raising awareness and support for this crucial initiative.",
+    name: "Dr. Peter Williams",
+    title: "Network Leader; Chair (ARISE USA)",
+    img: "/testimonials/peterwilliams.webp"
   },
   {
     id:3,
@@ -142,14 +142,21 @@ export const testimonials = [
     img: "/testimonials/ben-nicholson.webp"
   },
   {
-    id:5,
+    id: 5,
+    quote: "Oliver's commitment to disaster resilience, combined with his technical expertise, has significantly advanced the CAMS project's mission to help communities become more resilient in the face of disasters. His dedication and multifaceted skill set make him an invaluable asset to any project focused on disaster risk reduction.",
+    name: "Dr. Peter Williams",
+    title: "Network Leader; Chair (ARISE USA)",
+    img: "/testimonials/peterwilliams.webp"
+  },
+  {
+    id:6,
     quote: "Message for Oliver…I’m afraid I’m a difficult client & not easily impressed… But I’m freakin’ delighted with your design!",
     name: "Amanda Holmes",
     title: "Salon Owner at Philosophy Hair & Beauty",
     img: "/testimonials/user.webp"
   },
   {
-    id:6,
+    id:7,
     quote: "Oliver provided me with a host of potential marketing strategies and suggestions and I found them to be innovative, attentive and creative in their approach. I found the service provided to be excellent value for money.",
     name: "Mark Westwood",
     title: "Group Service Director at Securus Group",

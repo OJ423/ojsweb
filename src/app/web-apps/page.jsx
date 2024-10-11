@@ -113,7 +113,7 @@ export default function WebApps() {
                 language="javascript"
                 style={atomDark}
                 wrapLongLines={true}
-                className="rounded-xl w-max"
+                className="rounded-xl"
               >
                 {codeString}
               </SyntaxHighlighter>
