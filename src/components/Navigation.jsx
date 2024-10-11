@@ -96,94 +96,98 @@ export default function Navigation() {
             </li>
             {pathname.includes("marketing") ? (
               <>
-                  <li className={`list-none py-2.5 text-sm cursor-pointer`}>
-                <Link
-                  href="/marketing-services/content-marketing"
-                  className={`${
-                    pathname.includes("content") ? "text-teal-500" : "text-auto"
-                  } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50 ps-8`}
-                >
-                  <FcFile size={24} title="Content Marketing" />
-                    Content Marketing
-                </Link>
-                  </li>
-                  <li className={`list-none py-2.5 text-sm cursor-pointer`}>
-                <Link
-                  href="/marketing-services/organic-seo"
-                  className={`${
-                    pathname.includes("organic-seo")
-                      ? "text-teal-500"
-                      : "text-auto"
-                  } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50 ps-8`}
-                >
-                  <FcSearch size={24} title="Organic SEO" />
-                    Organic SEO
-                </Link>
-                  </li>
                 <li className={`list-none py-2.5 text-sm cursor-pointer`}>
-                <Link
-                  href="/marketing-services/design-services"
-                  className={`${
-                    pathname.includes("design-services")
-                      ? "text-teal-500"
-                      : "text-auto"
-                  } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50 ps-8`}
-                >
-                  <FcAddImage size={24} title="Design Services" />
+                  <Link
+                    href="/marketing-services/content-marketing"
+                    className={`${
+                      pathname.includes("content")
+                        ? "text-teal-500"
+                        : "text-auto"
+                    } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50 ps-8`}
+                  >
+                    <FcFile size={24} title="Content Marketing" />
+                    Content Marketing
+                  </Link>
+                </li>
+                <li className={`list-none py-2.5 text-sm cursor-pointer`}>
+                  <Link
+                    href="/marketing-services/organic-seo"
+                    className={`${
+                      pathname.includes("organic-seo")
+                        ? "text-teal-500"
+                        : "text-auto"
+                    } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50 ps-8`}
+                  >
+                    <FcSearch size={24} title="Organic SEO" />
+                    Organic SEO
+                  </Link>
+                </li>
+                <li className={`list-none py-2.5 text-sm cursor-pointer`}>
+                  <Link
+                    href="/marketing-services/design-services"
+                    className={`${
+                      pathname.includes("design-services")
+                        ? "text-teal-500"
+                        : "text-auto"
+                    } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50 ps-8`}
+                  >
+                    <FcAddImage size={24} title="Design Services" />
                     Design Services
-                </Link>
-                  </li>
+                  </Link>
+                </li>
               </>
             ) : null}
-            <p className="text-xs uppercase mt-8 mb-4 bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
-              Web Development
-            </p>
+          </ul>
+          <p className="text-xs uppercase mt-8 mb-4 bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
+            Web Development
+          </p>
+          <ul>
             <li className={`list-none py-2.5 text-sm cursor-pointer`}>
-            <Link
-              href="/react-websites"
-              className={`${
-                pathname.includes("react-websites")
-                  ? "text-teal-500"
-                  : "text-auto"
-              } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
-            >
-              <FcFlashOn size={24} title="React framework websites" />
+              <Link
+                href="/react-websites"
+                className={`${
+                  pathname.includes("react-websites")
+                    ? "text-teal-500"
+                    : "text-auto"
+                } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
+              >
+                <FcFlashOn size={24} title="React framework websites" />
                 Fast React Websites
-            </Link>
-              </li>
-              <li className={`list-none py-2.5 text-sm cursor-pointer`}>
-            <Link
-              href="/web-apps"
-              className={`${
-                pathname.includes("web-apps") ? "text-teal-500" : "text-auto"
-              } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
-            >
-              <FcPhoneAndroid size={24} title="Web Apps" />
+              </Link>
+            </li>
+            <li className={`list-none py-2.5 text-sm cursor-pointer`}>
+              <Link
+                href="/web-apps"
+                className={`${
+                  pathname.includes("web-apps") ? "text-teal-500" : "text-auto"
+                } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
+              >
+                <FcPhoneAndroid size={24} title="Web Apps" />
                 Web Apps
-            </Link>
-              </li>
-              <li className={`list-none py-2.5 text-sm cursor-pointer`}>
-            <Link
-              href="/wordpress-websites"
-              className={`${
-                pathname.includes("wordpress") ? "text-teal-500" : "text-auto"
-              } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
-            >
-              <BsWordpress size={24} title="Wordpress Development" />
+              </Link>
+            </li>
+            <li className={`list-none py-2.5 text-sm cursor-pointer`}>
+              <Link
+                href="/wordpress-websites"
+                className={`${
+                  pathname.includes("wordpress") ? "text-teal-500" : "text-auto"
+                } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
+              >
+                <BsWordpress size={24} title="Wordpress Development" />
                 WordPress Development
-            </Link>
-              </li>
-              <li className={`list-none py-2.5 text-sm cursor-pointer`}>
-            <Link
-              href="/shopify-sites"
-              className={`${
-                pathname.includes("shopify") ? "text-teal-500" : "text-auto"
-              } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
-            >
-              <FaShopify size={24} title="Shopify Sites" />
+              </Link>
+            </li>
+            <li className={`list-none py-2.5 text-sm cursor-pointer`}>
+              <Link
+                href="/shopify-sites"
+                className={`${
+                  pathname.includes("shopify") ? "text-teal-500" : "text-auto"
+                } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
+              >
+                <FaShopify size={24} title="Shopify Sites" />
                 Shopify Sites
-            </Link>
-              </li>
+              </Link>
+            </li>
           </ul>
         </nav>
         <section className="md:border-t md:border-t-2 w-full pt-8 flex flex-wrap gap-4 items-center justify-between">
