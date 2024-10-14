@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="styles.css">
+        <!-- Global Font Links -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Unkempt:wght@700&display=swap" rel="stylesheet">
+        <!-- FontAwesome Link-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>The Tiniest of Trolls</title>
+        <meta name="description" content="The Tiniest of Trolls is a children's book about following your own mind when you know you're right. Fun, colourful and a little bit mischievous, kids love it.">
+        <link rel="icon" type="image/x-icon" href="img/favicon.png">
+        <meta property="og:type" content="website">
+		<meta property="og:title" content="The Tiniest of Trolls - Illustrated Children's Book">
+		<meta property="og:url" content="https://ukmarketingfreelancer.co.uk/the-tiniest-of-trolls/">
+		<meta property="og:image" content="https://ukmarketingfreelancer.co.uk/the-tiniest-of-trolls/img/the-tinest-of-trolls-og.png">
+		<meta property="og:description" content="The Tiniest of Trolls is a children's book about following your own mind when you know you're right. Fun, colourful and a little bit mischievous, kids love it">
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:title" content="The Tiniest of Trolls - Illustrated Children's Book">
+		<meta name="twitter:site" content="@OLJS1">
+		<meta name="twitter:description" content="The Tiniest of Trolls is a children's book about following your own mind when you know you're right. Fun, colourful and a little bit mischievous, kids love it">
+		<meta name="twitter:image" content="https://ukmarketingfreelancer.co.uk/images/og/web-development-oliver-smith-og.png">
+		<meta name="twitter:image:alt" content="A couple of pages from the Tiniest of Trolls. Trolls sitting around a camp fire.">
+    </head>
+    <body>
+        <div id="hero">
+            <div class="container">
+                <div class="bookTitle">The<br>
+                    Tiniest<br>
+                    of Trolls
+                </div>
+                <div class="author">A book by Oliver Smith</div>
+            </div>
+            <div class="container">
+                <button id="preview">Have a read</button>
+                <button id="aboutme">About</button>
+                <button id="publish">Publishers, get in touch</button>
+            </div>
+        </div>
+        <div id="modal-container-preview">
+            <div id="modal-preview">
+                <iframe allowfullscreen="allowfullscreen" scrolling="no" class="fp-iframe" src="https://heyzine.com/flip-book/31161f483d.html" style="border: 1px solid lightgray;"></iframe>
+                <p class="sc-only">The book preview looks better on a laptop :)</p>
+                <div id="close-btn-preview">&times;</div>
+            </div>
+        </div>
+        <div id="modal-container-aboutme">
+            <div id="modal-aboutme">
+                <p>My name is Oliver and I wrote and illustrated The Tiniest of Trolls for my two boys, James and Finn.</p>
+                <p>The book highlights the importance of looking after the environment as well as using your own mind. Two important points.</p>
+                <p>With guidance from my sons, the book is full of colour and humour to keep children entertained.</p>
+                <div id="close-btn-aboutme">&times;</div>
+            </div>
+        </div>
+        <div id="modal-container-publish">
+            <div id="modal-publish">
+                <img style="width: 30%; height: auto; border-radius: 5px;" src="img/oliver-smith-marketing-outsourcing.jpg">
+                <p>I'm looking for a publisher to take The Tinest of Trolls on. If you're interested, please get in touch by <a href="mailto:enquiries@ukmarketingfreelancer.co.uk">emailing me</a>.</p>
+                <div id="close-btn-publish">&times;</div>
+            </div>
+        </div>
+        <img class="teddyTomkins" src="img/Timothy-Troll.webp">
+        <div class="goat">
+            <img src="img/Goat-Cartoon.png">
+        </div>
+        <script src="troll.js"></script>
+    </body>
+    </html>
