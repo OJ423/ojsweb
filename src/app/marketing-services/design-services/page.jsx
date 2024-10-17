@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import Image from "next/image";
 import PeterWilliams from "@/components/testimonials.js/PeterWilliams";
 import LinkStyled from "@/components/LinkStyled";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Graphic Design & Sales Collateral Freelance Service",
@@ -181,6 +182,7 @@ export default function DesignServices() {
             <p className="mb-16">Send me a message to arrange a chat.</p>
             <LinkStyled src="/contact" linkText="Arrange a chat" />
           </section>
+          <Footer />
         </main>
       </div>
     </>

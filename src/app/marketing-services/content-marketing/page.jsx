@@ -9,6 +9,7 @@ import { FiYoutube, FiBox } from "react-icons/fi";
 import { PiGraphDuotone } from "react-icons/pi";
 import { GiNewspaper } from "react-icons/gi";
 import { FaIndustry } from "react-icons/fa";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Freelance Content Marketing Services",
@@ -214,6 +215,7 @@ export default function ContentMarketing() {
             <p className="mb-16">Send me a message to arrange a chat.</p>
             <LinkStyled src="/contact" linkText="Arrange a chat" />
           </section>
+          <Footer />
         </main>
       </div>
     </>

@@ -10,6 +10,7 @@ import LinkStyled from "@/components/LinkStyled";
 import TechLogos from "@/components/TechLogos";
 import Costs from "@/components/Costs";
 import { images } from "@/components/constants";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Freelance React Developer",
@@ -126,6 +127,7 @@ export default function ReactWebsites() {
           </section>
           <Costs description={costDescription} cost="£1,000" />
           <CallToAction />
+          <Footer />
         </main>
       </div>
     </>

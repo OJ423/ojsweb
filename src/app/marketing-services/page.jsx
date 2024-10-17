@@ -6,6 +6,7 @@ import { TfiWrite } from "react-icons/tfi";
 import { FaGoogle } from "react-icons/fa";
 import { MdDraw } from "react-icons/md";
 import Link from "next/link";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Freelance Marketing Services in Cheshire, Manchester & Worldwide",
@@ -152,6 +153,7 @@ export default function MarketingServices() {
             <p className="mb-16">Send me a message to arrange a chat.</p>
             <LinkStyled src="/contact" linkText="Arrange a chat" />
           </div>
+          <Footer />
         </main>
       </div>
     </>

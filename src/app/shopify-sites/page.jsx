@@ -9,6 +9,7 @@ import CallToAction from "@/components/CallToAction";
 import LinkStyled from "@/components/LinkStyled";
 import Costs from "@/components/Costs";
 import { images } from "@/components/constants";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Shopify Freelancer.",
@@ -114,6 +115,7 @@ export default function ShopifySites() {
           </section>
           <Costs description={costDescription} cost="£1,200" />
           <CallToAction />
+          <Footer />
         </main>
       </div>
     </>

@@ -11,6 +11,7 @@ import Costs from "@/components/Costs";
 import Link from "next/link";
 import { HiExternalLink } from "react-icons/hi";
 import { IoLogoGithub } from "react-icons/io5";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Full-stack contractor or hire.",
@@ -217,6 +218,7 @@ export default function WebApps() {
               </div>
             </div>
           </section>
+          <Footer />
         </main>
       </div>
     </>

@@ -7,6 +7,7 @@ import { wordpressImgs } from "@/components/constants";
 import CallToAction from "@/components/CallToAction";
 import LinkStyled from "@/components/LinkStyled";
 import Costs from "@/components/Costs";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Freelance WordPress Design Services",
@@ -103,6 +104,7 @@ export default function WordPressWebsites() {
           </section>
           <Costs description={costDescription} cost="£250" />
           <CallToAction />
+          <Footer />
         </main>
       </div>
     </>
