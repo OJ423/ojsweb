@@ -3,6 +3,33 @@
 import ContactForm from "@/components/ContactForm";
 import Navigation from "@/components/Navigation";
 
+export const metadata = {
+  title: "Find a Marketing Freelancer",
+  description: "Contact me to talk about your freelance marketing or web design needs.",
+  openGraph: {
+    title: "Find a Marketing Freelancer",
+    description: "Contact me to talk about your freelance marketing or web design needs.",
+    url: 'https://ojsweb.co.uk/contact/',
+    siteName: 'Next.js',
+    images: [
+      {
+        url: 'https://ojsweb.co.uk/ojsweb-og-image.png', // Must be an absolute URL
+        width: 800,
+        height: 600,
+      },
+      {
+        url: 'https://ojsweb..co.uk/ojsweb-og-image-lg.png', // Must be an absolute URL
+        width: 1800,
+        height: 1600,
+        alt: 'OJSWEB web design and marketing services',
+      },
+    ],
+    locale: 'en_GB',
+    type: 'website',
+  },
+  canonical: 'https://ojsweb.co.uk/contact/'
+};
+
 export default function Contact() {
   return (
     <>

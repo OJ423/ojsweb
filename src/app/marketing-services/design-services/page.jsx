@@ -27,7 +27,8 @@ export const metadata = {
     ],
     locale: 'en_GB',
     type: 'website',
-  }
+  },
+  canonical: 'https://ojsweb.co.uk/marketing-services/design-services/'
 };
 
 export default function DesignServices() {

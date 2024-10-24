@@ -32,7 +32,8 @@ export const metadata = {
     ],
     locale: 'en_GB',
     type: 'website',
-  }
+  },
+  canonical: 'https://ojsweb.co.uk/wordpress-websites/'
 };
 
 export default function WordPressWebsites() {

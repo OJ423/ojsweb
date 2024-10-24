@@ -2,6 +2,33 @@ import Navigation from "@/components/Navigation";
 import Image from "next/image";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Marketing and Web Design Services in Cheshire and Manchester",
+  description: "I'm Oliver and I am a freelance web developer and marketing professional based in Cheshire and Manchester and am available for hire.",
+  openGraph: {
+    title: "Marketing and Web Design Services in Cheshire and Manchester",
+    description: "I'm Oliver and I am a freelance web developer and marketing professional based in Cheshire and Manchester and am available for hire.",
+    url: 'https://ojsweb.co.uk/about/',
+    siteName: 'Next.js',
+    images: [
+      {
+        url: 'https://ojsweb.co.uk/ojsweb-og-image.png', // Must be an absolute URL
+        width: 800,
+        height: 600,
+      },
+      {
+        url: 'https://ojsweb..co.uk/ojsweb-og-image-lg.png', // Must be an absolute URL
+        width: 1800,
+        height: 1600,
+        alt: 'OJSWEB web design and marketing services',
+      },
+    ],
+    locale: 'en_GB',
+    type: 'website',
+  },
+  canonical: 'https://ojsweb.co.uk/about/'
+};
+
 export default function About() {
   return (
     <>

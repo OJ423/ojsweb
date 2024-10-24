@@ -34,7 +34,8 @@ export const metadata = {
     ],
     locale: 'en_GB',
     type: 'website',
-  }
+  },
+  canonical: 'https://ojsweb.co.uk/marketing-services/content-marketing'
 };
 
 export default function ContentMarketing() {
