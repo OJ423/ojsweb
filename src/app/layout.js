@@ -34,7 +34,10 @@ export const metadata = {
     locale: 'en_GB',
     type: 'website',
   },
-  canonical: 'https://ojsweb.co.uk'
+  metadataBase: new URL('https://ojsweb.co.uk'),
+  alternates: {
+    canonical:'/'
+  }
 };
 
 export default function RootLayout({ children }) {

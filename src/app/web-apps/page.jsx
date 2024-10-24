@@ -37,7 +37,10 @@ export const metadata = {
     locale: 'en_GB',
     type: 'website',
   },
-  canonical: 'https://ojsweb.co.uk/web-apps/'
+  metadataBase: new URL('https://ojsweb.co.uk'),
+  alternates: {
+    canonical: '/web-apps/'
+  }
 };
 
 export default function WebApps() {

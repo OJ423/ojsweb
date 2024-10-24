@@ -35,7 +35,10 @@ export const metadata = {
     locale: 'en_GB',
     type: 'website',
   },
-  canonical: 'https://ojsweb.co.uk/shopify-sites/'
+  metadataBase: new URL('https://ojsweb.co.uk'),
+  alternates: {
+    canonical: '/shopify-sites/'
+  }
 };
 
 export default function ShopifySites() {

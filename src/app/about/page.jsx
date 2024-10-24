@@ -26,7 +26,10 @@ export const metadata = {
     locale: 'en_GB',
     type: 'website',
   },
-  canonical: 'https://ojsweb.co.uk/about/'
+  metadataBase: new URL('https://ojsweb.co.uk'),
+  alternates: {
+    canonical: '/about/'
+  }
 };
 
 export default function About() {
