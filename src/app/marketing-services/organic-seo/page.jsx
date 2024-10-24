@@ -12,7 +12,7 @@ export const metadata = {
     title: "Organic SEO Consultant in Cheshire & Manchester",
     description: "Organic SEO services in Cheshire, Manchester and Worldwide. Hire me as your SEO specialist.",
     url: 'https://ojsweb.co.uk/marketing-services/organic-seo',
-    siteName: 'Next.js',
+    siteName: 'ojsweb - Marketing and Web Design Excellence',
     images: [
       {
         url: 'https://ojsweb.co.uk/ojsweb-og-image.png', // Must be an absolute URL

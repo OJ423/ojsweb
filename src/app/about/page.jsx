@@ -9,7 +9,7 @@ export const metadata = {
     title: "Marketing and Web Design Services in Cheshire and Manchester",
     description: "I'm Oliver and I am a freelance web developer and marketing professional based in Cheshire and Manchester and am available for hire.",
     url: 'https://ojsweb.co.uk/about/',
-    siteName: 'Next.js',
+    siteName: 'ojsweb - Marketing and Web Design Excellence',
     images: [
       {
         url: 'https://ojsweb.co.uk/ojsweb-og-image.png', // Must be an absolute URL

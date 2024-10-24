@@ -11,7 +11,7 @@ export const metadata = {
     title: "Graphic Design & Sales Collateral Freelance Service",
     description: "Freelance design services for eye catching and impactful sales and marketing collateral.",
     url: 'https://ojsweb.co.uk/marketing-services/design-services',
-    siteName: 'Next.js',
+    siteName: 'ojsweb - Marketing and Web Design Excellence',
     images: [
       {
         url: 'https://ojsweb.co.uk/ojsweb-og-image.png', // Must be an absolute URL

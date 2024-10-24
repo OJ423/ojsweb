@@ -19,7 +19,7 @@ export const metadata = {
     title: "Freelance React Developer",
     description: "I am a freelance React developer. If you need a high performance website bespoke to you. Get in touch.",
     url: 'https://ojsweb.co.uk/react-websites',
-    siteName: 'Next.js',
+    siteName: 'ojsweb - Marketing and Web Design Excellence',
     images: [
       {
         url: 'https://ojsweb.co.uk/ojsweb-og-image.png', // Must be an absolute URL

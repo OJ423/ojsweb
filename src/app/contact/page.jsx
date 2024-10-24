@@ -8,7 +8,7 @@ export const metadata = {
     title: "Find a Marketing Freelancer",
     description: "Contact me to talk about your freelance marketing or web design needs.",
     url: 'https://ojsweb.co.uk/contact/',
-    siteName: 'Next.js',
+    siteName: 'ojsweb - Marketing and Web Design Excellence',
     images: [
       {
         url: 'https://ojsweb.co.uk/ojsweb-og-image.png', // Must be an absolute URL

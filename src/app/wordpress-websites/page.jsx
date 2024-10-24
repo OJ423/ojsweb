@@ -16,7 +16,7 @@ export const metadata = {
     title: "Full-stack contractor or hire.",
     description: "Need a WordPress website? I am an experience WordPress developer who can help create or update your website",
     url: 'https://ojsweb.co.uk/wordpress-websites',
-    siteName: 'Next.js',
+    siteName: 'ojsweb - Marketing and Web Design Excellence',
     images: [
       {
         url: 'https://ojsweb.co.uk/ojsweb-og-image.png', // Must be an absolute URL

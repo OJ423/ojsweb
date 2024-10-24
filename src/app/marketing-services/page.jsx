@@ -15,7 +15,7 @@ export const metadata = {
     title: "Freelance Marketing Services",
     description: "Marketing freelancer based in Cheshire and Manchester providing content marking and SEO.",
     url: 'https://ojsweb.co.uk/marketing-services',
-    siteName: 'Next.js',
+    siteName: 'ojsweb - Marketing and Web Design Excellence',
     images: [
       {
         url: 'https://ojsweb.co.uk/ojsweb-og-image.png', // Must be an absolute URL

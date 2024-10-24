@@ -18,7 +18,7 @@ export const metadata = {
     title: "Shopify Freelancer.",
     description: "Need help setting up or updating your Shopify site? I can help with my Shopify Freelance services.",
     url: 'https://ojsweb.co.uk/shopify-sites',
-    siteName: 'Next.js',
+    siteName: 'ojsweb - Marketing and Web Design Excellence',
     images: [
       {
         url: 'https://ojsweb.co.uk/ojsweb-og-image.png', // Must be an absolute URL

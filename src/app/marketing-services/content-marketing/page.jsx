@@ -18,7 +18,7 @@ export const metadata = {
     title: "Content Marketing Services",
     description: "I specialise in content marketing services and offer a reasonable and quality freelance service.",
     url: 'https://ojsweb.co.uk/marketing-services/content-marketing',
-    siteName: 'Next.js',
+    siteName: 'ojsweb - Marketing and Web Design Excellence',
     images: [
       {
         url: 'https://ojsweb.co.uk/ojsweb-og-image.png', // Must be an absolute URL

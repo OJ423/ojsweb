@@ -17,7 +17,7 @@ export const metadata = {
     title: "Web Design and Marketing Services",
     description: "I'm Oliver and I am a freelance web developer and marketing professional and available for hire.",
     url: 'https://ojsweb.co.uk/',
-    siteName: 'Next.js',
+    siteName: 'ojsweb - Marketing and Web Design Excellence',
     images: [
       {
         url: 'https://ojsweb.co.uk/ojsweb-og-image.png', // Must be an absolute URL
