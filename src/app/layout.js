@@ -25,7 +25,7 @@ export const metadata = {
         height: 600,
       },
       {
-        url: 'https://ojsweb..co.uk/ojsweb-og-image-lg.png', // Must be an absolute URL
+        url: 'https://ojsweb.co.uk/ojsweb-og-image-lg.png', // Must be an absolute URL
         width: 1800,
         height: 1600,
         alt: 'OJSWEB web design and marketing services',
