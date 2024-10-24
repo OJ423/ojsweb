@@ -1,6 +1,33 @@
 export const images = [
   {
     id: 1,
+    src: "/portfolio/vectorlink-entity-resolution-services.jpg",
+    alt_text: "Website Development for AI Consultancy VectorLink.",
+    title: "Website Copy & Design for AI Consultancy VectorLink",
+    desc: "WordPress launch with copy, images and SEO optimisation.",
+    repo: "",
+    example: "https://vectorlink.ai/entity-resolution/"
+  },
+  {
+    id: 2,
+    src: "/portfolio/vectorlink-blog.jpg",
+    alt_text: "Blog with Markdown support.",
+    title: "Blog with Markdown support",
+    desc: "A beautiful blog with Markdown support to let the AI consultants work with a language they are comfortable with.",
+    repo: "",
+    example: "https://vectorlink.ai/blog/"
+  },
+  {
+    id: 3,
+    src: "/portfolio/vectorlink-entity-call-to-action.jpg",
+    alt_text: "VectorLink call to action.",
+    title: "Elegant & Clean Design",
+    desc: "An example of the call to action which is eye catching and easy on the eye.",
+    repo: "",
+    example: "https://vectorlink.ai/"
+  },
+  {
+    id: 4,
     src: "/portfolio/portfolio-website.webp",
     alt_text: "Portfolio website example.",
     title: "Create stunning websites",
@@ -9,7 +36,7 @@ export const images = [
     example: "https://ukmarketingfreelancer.co.uk"
   },
   {
-    id: 2,
+    id: 5,
     src: "/portfolio/react-page-nextjs.webp",
     alt_text: "Screen shot of the API JSON response of the example project.",
     title: "Interactive Pages",
@@ -18,7 +45,7 @@ export const images = [
     example: ""
   },
   {
-    id: 3,
+    id: 6,
     src: "/portfolio/react-blog-example.webp",
     alt_text: "A front end news website screenshot build with React.",
     title: "News/Blog Web App",
@@ -27,7 +54,7 @@ export const images = [
     example: "https://os-news.netlify.app"
   },
   {
-    id: 4,
+    id: 7,
     src: "/portfolio/react-game.webp",
     alt_text: "A screenshot of a mobile phone showing the game sliders.",
     title: "Sliders Game",
@@ -36,7 +63,7 @@ export const images = [
     example: "http://slidersgame.com/"
   },
   {
-    id: 5,
+    id: 8,
     src: "/portfolio/data-presentation-with-react_optimized.png",
     alt_text: "a laptop with a screenshot of my meteorite web app.",
     title: "Nasa Meteorite App",
@@ -45,7 +72,7 @@ export const images = [
     example: "https://nasa-meteorite-app.onrender.com/"
   },
   {
-    id: 6,
+    id: 9,
     src: "/portfolio/interactive-developer-website.webp",
     alt_text: "A screenshot of CSS Cheater a website with copyable web templtes.",
     title: "Unique functionality",
@@ -54,7 +81,7 @@ export const images = [
     example: "https://css-cheater.onrender.com"
   },
   {
-    id: 7,
+    id: 10,
     src: "/portfolio/animated-display-website.webp",
     alt_text: "Screenshot of a laptop with a beautiful website showing the tiniest of trolls.",
     title: "Animated Display Website",
@@ -63,7 +90,7 @@ export const images = [
     example: "https://ukmarketingfreelancer.co.uk/the-tiniest-of-trolls/"
   },
   {
-    id: 8,
+    id: 11,
     src: "/portfolio/next-js-app.webp",
     alt_text: "Example Next.js app.",
     title: "Next.js Website",
@@ -76,6 +103,33 @@ export const images = [
 export const wordpressImgs = [
   {
     id: 1,
+    src: "/portfolio/vectorlink-entity-resolution-services.jpg",
+    alt_text: "Website Development for AI Consultancy VectorLink.",
+    title: "Website Copy & Design for AI Consultancy VectorLink",
+    desc: "WordPress launch with copy, images and SEO optimisation.",
+    repo: "",
+    example: "https://vectorlink.ai/entity-resolution/"
+  },
+  {
+    id: 2,
+    src: "/portfolio/vectorlink-blog.jpg",
+    alt_text: "Blog with Markdown support.",
+    title: "Blog with Markdown support",
+    desc: "A beautiful blog with Markdown support to let the AI consultants work with a language they are comfortable with.",
+    repo: "",
+    example: "https://vectorlink.ai/blog/"
+  },
+  {
+    id: 3,
+    src: "/portfolio/vectorlink-entity-call-to-action.jpg",
+    alt_text: "VectorLink call to action.",
+    title: "Elegant & Clean Design",
+    desc: "An example of the call to action which is eye catching and easy on the eye.",
+    repo: "",
+    example: "https://vectorlink.ai/"
+  },
+  {
+    id: 4,
     src: "/portfolio/climateresilient.world.webp",
     alt_text: "CAMS project wordpress site screenshot.",
     title: "Helping Island Nations Become Climate Resilient",
@@ -84,7 +138,7 @@ export const wordpressImgs = [
     example: "https://climateresilient.world"
   },
   {
-    id: 2,
+    id: 5,
     src: "/portfolio/terminusdb-wordpress-website.webp",
     alt_text: "Screen shot of TerminusDB's website built with WordPress.",
     title: "Tech Start-Up Web Presence and Blog",
@@ -93,7 +147,7 @@ export const wordpressImgs = [
     example: "https://terminusdb.com"
   },
   {
-    id: 3,
+    id: 6,
     src: "/portfolio/climateresilient.world-user-guide.webp",
     alt_text: "Screenshot of multilingual user guide.",
     title: "Multilingual User Guide",
@@ -102,7 +156,7 @@ export const wordpressImgs = [
     example: "https://climateresilient.world/docs/"
   },
   {
-    id: 4,
+    id: 7,
     src: "/portfolio/avimedia.co.uk_design-studio.webp",
     alt_text: "Screenshot of design studio.",
     title: "Design Studio to Create Images",

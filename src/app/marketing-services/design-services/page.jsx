@@ -101,9 +101,25 @@ export default function DesignServices() {
                 className="w-full h-auto rounded text-center"
               />
               <Image 
+                src="/graphic-design/VL-Variations-Letters.png"
+                alt="VectorLink Logo Creation"
+                title="VectorLink Logo Creation Colour Variations"
+                width={500}
+                height={500}
+                className="w-full h-auto rounded text-center md:col-span-2"
+              />
+              <Image 
                 src="/graphic-design/Apple-Kiss.webp"
                 alt="A vector graphic of an apple with the bite mark and shadow representing a man and woman about to kiss"
                 title="Graphic design for fun"
+                width={500}
+                height={500}
+                className="w-full h-auto rounded"
+              />
+              <Image 
+                src="/graphic-design/ai-consultants-vector-solutions.png"
+                alt="Graphic design of a brain leading to the VectorLink logo"
+                title="Graphic design of a brain leading to the VectorLink logo"
                 width={500}
                 height={500}
                 className="w-full h-auto rounded"
@@ -137,18 +153,19 @@ export default function DesignServices() {
                 className="w-full h-auto rounded"
               />
               <Image 
+                src="/graphic-design/vectorlink-diagram.png"
+                alt="A diagram for a website showing how VectorLink works"
+                title="A diagram for a website showing how VectorLink works"
+                width={500}
+                height={500}
+                className="w-full h-auto rounded"
+              />
+              <Image 
                 src="/graphic-design/childrens-book-illustration.webp"
                 alt="Children's book illustration showing 4 trolls sat in a cave around a camp fire"
                 width={500}
                 height={500}
                 className="w-full h-auto rounded md:col-span-2"
-              />
-              <Image 
-                src="/graphic-design/Motor-Girl.webp"
-                alt="Graphic design of woman in motorcycle leathers"
-                width={500}
-                height={500}
-                className="w-full h-auto rounded"
               />
               <Image 
                 src="/graphic-design/VersionXL-Presentation-1.jpg"
@@ -171,7 +188,13 @@ export default function DesignServices() {
                 height={500}
                 className="w-full h-auto rounded"
               />
-              
+                            <Image 
+                src="/graphic-design/Motor-Girl.webp"
+                alt="Graphic design of woman in motorcycle leathers"
+                width={500}
+                height={500}
+                className="w-full h-auto rounded"
+              />
             </div>
 
           </section>

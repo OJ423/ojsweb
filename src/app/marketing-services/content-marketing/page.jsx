@@ -5,7 +5,7 @@ import ColumnsTwoFullH from "@/components/ColumnsTwoFullH";
 import LinkStyled from "@/components/LinkStyled";
 import Packages from "@/components/Packages";
 import Link from "next/link";
-import { FiYoutube, FiBox } from "react-icons/fi";
+import { FiYoutube, FiBox, FiLayout } from "react-icons/fi";
 import { PiGraphDuotone } from "react-icons/pi";
 import { GiNewspaper } from "react-icons/gi";
 import { FaIndustry } from "react-icons/fa";
@@ -109,6 +109,16 @@ export default function ContentMarketing() {
             <section className="flex flex-col gap-8">
               <h2 className="font-bold text-xl">Some of my work...</h2>
               <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
+              <Link
+                  href="https://vectorlink.ai"
+                  target="_blank"
+                  className="transition-all duration-500 hover:opacity-50"
+                >
+                  <div className="flex flex-col gap-4 items-center">
+                    <FiLayout size={96} className="text-teal-500" />
+                    <p className="font-bold uppercase text-xs">Optimized Web Copy</p>
+                  </div>
+                </Link>
                 <Link
                   href="https://youtu.be/KtPClqwOtoM?si=1MATI0ePJraVhHT2"
                   target="_blank"
