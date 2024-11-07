@@ -33,7 +33,7 @@ export const images = [
     title: "Create stunning websites",
     desc: "Build with vanilla HTML, SCSS and JavaScript.",
     repo: "",
-    example: "https://ukmarketingfreelancer.co.uk"
+    example: "https://static-html-js-site.onrender.com/"
   },
   {
     id: 5,
@@ -87,7 +87,7 @@ export const images = [
     title: "Animated Display Website",
     desc: "Animated effects to bring the subject to life",
     repo: "",
-    example: "https://ukmarketingfreelancer.co.uk/the-tiniest-of-trolls/"
+    example: "https://the-tiniest-of-trolls.onrender.com/"
   },
   {
     id: 11,
