@@ -50,29 +50,6 @@ export const jsonLd = {
   url: "https://ojsweb.co.uk",
   logo: "https://ojsweb.co.uk/_next/image?url=%2Fojsweb-avatar.jpeg&w=128&q=75",
   areaServed: ["Cheshire", "Manchester", "UK"],
-  service: [
-    {
-      "@type": "Service",
-      name: "Web Design",
-      description:
-        "Custom web design services tailored to your brand and optimized for performance.",
-      url: "https://ojsweb.co.uk/wordpress-websites",
-    },
-    {
-      "@type": "Service",
-      name: "SEO",
-      description:
-        "Comprehensive search engine optimization services to boost your online presence and organic traffic.",
-      url: "https://ojsweb.co.uk/marketing-services/organic-seo",
-    },
-    {
-      "@type": "Service",
-      name: "Content Marketing",
-      description:
-        "Engaging content marketing strategies to connect with your target audience and drive conversions.",
-      url: "https://ojsweb.co.uk/marketing-services/content-marketing",
-    },
-  ],
   address: {
     "@type": "PostalAddress",
     addressLocality: "Knutsford",
