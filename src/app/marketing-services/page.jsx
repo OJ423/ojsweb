@@ -44,7 +44,7 @@ export default function MarketingServices() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: "SEO Services",
+    name: "Marketing Services",
     description:
       "Professional marketing services to to increase organic traffic and raise awareness about your business.",
     provider: {
