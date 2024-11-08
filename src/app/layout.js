@@ -1,43 +1,44 @@
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import { Analytics } from "@vercel/analytics/react"
-
+import { Analytics } from "@vercel/analytics/react";
 
 const poppins = Poppins({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-poppins',
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900']
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-poppins",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
 export const metadata = {
   title: "Web Design and Marketing Services",
-  description: "I'm Oliver and I am a freelance web developer and marketing professional and available for hire.",
+  description:
+    "I'm Oliver and I am a freelance web developer and marketing professional and available for hire.",
   openGraph: {
     title: "Web Design and Marketing Services",
-    description: "I'm Oliver and I am a freelance web developer and marketing professional and available for hire.",
-    url: 'https://ojsweb.co.uk/',
-    siteName: 'OJSWEB | Marketing and Web Design Freelance Services',
+    description:
+      "I'm Oliver and I am a freelance web developer and marketing professional and available for hire.",
+    url: "https://ojsweb.co.uk/",
+    siteName: "OJSWEB | Marketing and Web Design Freelance Services",
     images: [
       {
-        url: 'https://ojsweb.co.uk/ojsweb-og-image.png', // Must be an absolute URL
+        url: "https://ojsweb.co.uk/ojsweb-og-image.png", // Must be an absolute URL
         width: 800,
         height: 600,
       },
       {
-        url: 'https://ojsweb.co.uk/ojsweb-og-image-lg.png', // Must be an absolute URL
+        url: "https://ojsweb.co.uk/ojsweb-og-image-lg.png", // Must be an absolute URL
         width: 1800,
         height: 1600,
-        alt: 'OJSWEB web design and marketing services',
+        alt: "OJSWEB web design and marketing services",
       },
     ],
-    locale: 'en_GB',
-    type: 'website',
+    locale: "en_GB",
+    type: "website",
   },
-  metadataBase: new URL('https://ojsweb.co.uk'),
+  metadataBase: new URL("https://ojsweb.co.uk"),
   alternates: {
-    canonical:''
-  }
+    canonical: "",
+  },
 };
 
 export const jsonLd = {
@@ -49,7 +50,29 @@ export const jsonLd = {
   url: "https://ojsweb.co.uk",
   logo: "https://ojsweb.co.uk/_next/image?url=%2Fojsweb-avatar.jpeg&w=128&q=75",
   areaServed: ["Cheshire", "Manchester", "UK"],
-  serviceType: ["Web Design", "SEO", "Content Marketing", "App Development", "Graphic Design", "WordPress Website Design"],
+  service: [
+    {
+      "@type": "Service",
+      name: "Web Design",
+      description:
+        "Custom web design services tailored to your brand and optimized for performance.",
+      url: "https://ojsweb.co.uk/wordpress-websites",
+    },
+    {
+      "@type": "Service",
+      name: "SEO",
+      description:
+        "Comprehensive search engine optimization services to boost your online presence and organic traffic.",
+      url: "https://ojsweb.co.uk/marketing-services/organic-seo",
+    },
+    {
+      "@type": "Service",
+      name: "Content Marketing",
+      description:
+        "Engaging content marketing strategies to connect with your target audience and drive conversions.",
+      url: "https://ojsweb.co.uk/marketing-services/content-marketing",
+    },
+  ],
   address: {
     "@type": "PostalAddress",
     addressLocality: "Knutsford",
