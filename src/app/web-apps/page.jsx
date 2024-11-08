@@ -39,7 +39,7 @@ export const metadata = {
   },
   metadataBase: new URL('https://ojsweb.co.uk'),
   alternates: {
-    canonical: '/web-apps/'
+    canonical: '/web-apps'
   }
 };
 
@@ -58,8 +58,28 @@ export default function WebApps() {
   
   For a simple back and front-end application, you are looking in the region of £5,000`;
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Freelance Developer",
+    description:
+      "Full-stack web development. Got an idea and need an app? I'm a cost effective developer who can help you.",
+    provider: {
+      "@type": "ProfessionalService",
+      name: "OJSWEB - Oliver Smith Freelance Marketing and Web Design",
+      url: "https://ojsweb.co.uk",
+    },
+    areaServed: ["Cheshire", "Manchester", "UK"],
+    serviceType: "Freelance Web Developer",
+    url: "https://ojsweb.co.uk/web-apps",
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="flex min-h-screen items-center">
         <Navigation />
         <main className="flex min-h-min flex-col w-full items-center justify-center">

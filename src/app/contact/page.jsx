@@ -27,7 +27,7 @@ export const metadata = {
   },
   metadataBase: new URL('https://ojsweb.co.uk'),
   alternates: {
-    canonical: '/contact/'
+    canonical: '/contact'
   }
 };
 

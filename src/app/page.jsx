@@ -8,6 +8,7 @@ import { MdDraw, MdOutlineWeb } from "react-icons/md";
 import { TfiWrite } from "react-icons/tfi";
 
 export default function Home() {
+
   return (
     <>
       <div className="flex min-h-screen items-center">
@@ -19,18 +20,23 @@ export default function Home() {
             <div className="flex flex-col gap-8 m-auto w-4/5 lg:w-2/4 item">
               <h1 className="text-3xl xl:text-4xl font-bold text-gray-800">
                 <span className="bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
-                  Web Design & Marketing Services
+                  Web Design & Marketing Freelance Services
                 </span>{" "}
-                Tailored to Your Needs and Budget
+                in Cheshire, Manchester and Beyond
               </h1>
               <p className="text-lg font-medium">
-                Hi, I&apos;m Oliver and I have over 20 years&apos; experience in
+                Hi, I&apos;m Oliver and I am a web design and marketing
+                freelancer in Cheshire. I have over 20 years&apos; experience in
                 marketing, web design and development.
               </p>
               <p className="text-lg font-medium">
-                If you need an honest, hardworking and diligent professional to
-                handle your web design and development and marketing needs, then
-                get in touch.
+                I am honest, hardworking and diligent.
+              </p>
+              <p className="text-lg font-medium">
+                My focus is to help businesses get the foundations of their
+                digital channels and marketing right. I believe in using
+                high-quality content to build organic interest in my
+                client&apos;s businesses. I&apos;m here for your long-term.
               </p>
               <LinkStyled src="/contact" linkText="Arrange a chat" />
             </div>
@@ -51,11 +57,13 @@ export default function Home() {
                 Based in Cheshire & Manchester, but servicing the world
               </h2>
               <p>
-                If you need me to be at your location, my marketing and web
-                design services are restricted to Manchester and Cheshire, but I
-                am well versed in the world of remote work and have experience
-                working with businesses in the US, Europe and across the UK.
+                If you need me to be at your location, my freelance marketing
+                and web design services are restricted to Manchester and
+                Cheshire, but I am well versed in the world of remote work and
+                have experience working with businesses in the US, Europe and
+                across the UK.
               </p>
+              <p>My freelance services include...</p>
             </div>
 
             <section className="flex flex-col gap-8 p-8 lg:p-10 rounded-xl bg-teal-100">
@@ -117,7 +125,8 @@ export default function Home() {
                     <FaReact size={42} className="text-teal-500" />
                     <h3 className="font-bold text-xl">React Websites</h3>
                     <p>
-                      Lightning fast and unique websites build with React frameworks like Next.js and Gatsby
+                      Lightning fast and unique websites build with React
+                      frameworks like Next.js and Gatsby
                     </p>
                     <button className="text-sm font-bold p-4 bg-gray-200 hover:bg-teal-200 w-fit border-b-4 border-gray-500 hover:border-teal-500 transition-all duration-500 rounded-xl">
                       React Development
@@ -129,7 +138,8 @@ export default function Home() {
                     <FaShopify size={42} className="text-teal-500" />
                     <h3 className="font-bold text-xl">Shopify Stores</h3>
                     <p>
-                    Beautiful and fully functional Shopify stores designed to elevate your brand.
+                      Beautiful and fully functional Shopify stores designed to
+                      elevate your brand.
                     </p>
                     <button className="text-sm font-bold p-4 bg-gray-200 hover:bg-teal-200 w-fit border-b-4 border-gray-500 hover:border-teal-500 transition-all duration-500 rounded-xl">
                       Shopify Stores
@@ -141,7 +151,8 @@ export default function Home() {
                     <MdOutlineWeb size={42} className="text-teal-500" />
                     <h3 className="font-bold text-xl">Web Apps</h3>
                     <p>
-                    Share, create, and use data and content with beautiful and intuitive web and mobile apps.
+                      Share, create, and use data and content with beautiful and
+                      intuitive web and mobile apps.
                     </p>
                     <button className="text-sm font-bold p-4 bg-gray-200 hover:bg-teal-200 w-fit border-b-4 border-gray-500 hover:border-teal-500 transition-all duration-500 rounded-xl">
                       Web Apps
@@ -153,7 +164,8 @@ export default function Home() {
                     <FaWordpress size={42} className="text-teal-500" />
                     <h3 className="font-bold text-xl">WordPress Design</h3>
                     <p>
-                    WordPress web design using the most popular CMS in the world. Get you site built in days.
+                      WordPress web design using the most popular CMS in the
+                      world. Get you site built in days.
                     </p>
                     <button className="text-sm font-bold p-4 bg-gray-200 hover:bg-teal-200 w-fit border-b-4 border-gray-500 hover:border-teal-500 transition-all duration-500 rounded-xl">
                       WordPress Websites

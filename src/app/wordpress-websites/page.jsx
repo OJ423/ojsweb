@@ -35,7 +35,7 @@ export const metadata = {
   },
   metadataBase: new URL('https://ojsweb.co.uk'),
   alternates: {
-    canonical: '/wordpress-websites/'
+    canonical: '/wordpress-websites'
   }
 };
 
@@ -43,8 +43,28 @@ export default function WordPressWebsites() {
   const costDescription =
     "WordPress does a lot of the heavy lifting so developing and deploying a WordPress website can be cost effective. Ideal for small online shops or news/blog sites. A basic website will cost as little as £250.";
   
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Freelance WordPress Web Designer",
+    description:
+      "WordPress web design and maintenance, blog, shop, or a web presence, I can design and built it.",
+    provider: {
+      "@type": "ProfessionalService",
+      name: "OJSWEB - Oliver Smith Freelance Marketing and Web Design",
+      url: "https://ojsweb.co.uk",
+    },
+    areaServed: ["Cheshire", "Manchester", "UK"],
+    serviceType: "WordPress Web Design",
+    url: "https://ojsweb.co.uk/wordpress-websites",
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="flex min-h-screen items-center">
         <Navigation />
         <main className="flex min-h-min flex-col w-full items-center justify-center">

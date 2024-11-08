@@ -10,41 +10,64 @@ import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Freelance Marketing Services in Cheshire, Manchester & Worldwide",
-  description: "Marketing freelancer based in Cheshire and Manchester providing content marking and SEO.",
+  description:
+    "Marketing freelancer based in Cheshire and Manchester providing content marking and SEO.",
   openGraph: {
     title: "Freelance Marketing Services",
-    description: "Marketing freelancer based in Cheshire and Manchester providing content marking and SEO.",
-    url: 'https://ojsweb.co.uk/marketing-services',
-    siteName: 'ojsweb - Marketing and Web Design Excellence',
+    description:
+      "Marketing freelancer based in Cheshire and Manchester providing content marking and SEO.",
+    url: "https://ojsweb.co.uk/marketing-services",
+    siteName: "ojsweb - Marketing and Web Design Excellence",
     images: [
       {
-        url: 'https://ojsweb.co.uk/ojsweb-og-image.png', // Must be an absolute URL
+        url: "https://ojsweb.co.uk/ojsweb-og-image.png", // Must be an absolute URL
         width: 800,
         height: 600,
       },
       {
-        url: 'https://ojsweb.co.uk/ojsweb-og-image-lg.png', // Must be an absolute URL
+        url: "https://ojsweb.co.uk/ojsweb-og-image-lg.png", // Must be an absolute URL
         width: 1800,
         height: 1600,
-        alt: 'Freelance Marketing Services - Cheshire, Manchester, and Worldwide',
+        alt: "Freelance Marketing Services - Cheshire, Manchester, and Worldwide",
       },
     ],
-    locale: 'en_GB',
-    type: 'website',
+    locale: "en_GB",
+    type: "website",
   },
-  metadataBase: new URL('https://ojsweb.co.uk'),
+  metadataBase: new URL("https://ojsweb.co.uk"),
   alternates: {
-    canonical: '/marketing-services/'
-  }
+    canonical: "/marketing-services",
+  },
 };
 
 export default function MarketingServices() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "SEO Services",
+    description:
+      "Professional marketing services to to increase organic traffic and raise awareness about your business.",
+    provider: {
+      "@type": "ProfessionalService",
+      name: "OJSWEB - Oliver Smith Freelance Marketing and Web Design",
+      url: "https://ojsweb.co.uk",
+    },
+    areaServed: ["Cheshire", "Manchester", "UK"],
+    serviceType: "Freelance Marketing",
+    url: "https://ojsweb.co.uk/marketing-services",
+  };
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="flex min-h-screen items-center">
         <Navigation />
         <main className="flex min-h-min flex-col w-full items-center justify-center">
-          <section className={`min-h-screen flex flex-col gap-20 px-auto px-[8%] md:px-[20%] xl:px-[8%] justify-center items-center py-20 bg-[url("/full-bloom.webp")]`}>
+          <section
+            className={`min-h-screen flex flex-col gap-20 px-auto px-[8%] md:px-[20%] xl:px-[8%] justify-center items-center py-20 bg-[url("/full-bloom.webp")]`}
+          >
             <div className="flex gap-20 justify-center items-center">
               <div className="flex flex-col gap-8">
                 <h1 className="text-3xl xl:text-5xl font-bold w-full text-gray-800">

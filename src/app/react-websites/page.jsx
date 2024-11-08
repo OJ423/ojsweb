@@ -38,7 +38,7 @@ export const metadata = {
   },
   metadataBase: new URL('https://ojsweb.co.uk'),
   alternates: {
-    canonical: '/react-websites/'
+    canonical: '/react-websites'
   }
 };
 
@@ -60,8 +60,29 @@ export default function ReactWebsites() {
       fetchData()
     }
   },[user, selectedCommunity, filter])`;
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "React Web Development",
+    description:
+      "React front-end development to create bespoke websites and apps.",
+    provider: {
+      "@type": "ProfessionalService",
+      name: "OJSWEB - Oliver Smith Freelance Marketing and Web Design",
+      url: "https://ojsweb.co.uk",
+    },
+    areaServed: ["Cheshire", "Manchester", "UK"],
+    serviceType: "React Frontend Developer",
+    url: "https://ojsweb.co.uk/react-websites",
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="flex min-h-screen items-center">
         <Navigation />
         <main className="flex min-h-min flex-col w-full items-center justify-center pattern-cross pattern-green-600 pattern-bg-white pattern-size-6 pattern-opacity-20">

@@ -31,7 +31,7 @@ export const metadata = {
   },
   metadataBase: new URL('https://ojsweb.co.uk'),
   alternates: {
-    canonical: '/marketing-services/organic-seo/'
+    canonical: '/marketing-services/organic-seo'
   }
 };
 
@@ -50,8 +50,28 @@ export default function OrganicSEO() {
     "SEO Optimised Content Generation",
   ];
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Freelance SEO Services",
+    description:
+      "Organic SEO services to help companies improve search engine visibility.",
+    provider: {
+      "@type": "ProfessionalService",
+      name: "OJSWEB - Oliver Smith Freelance Marketing and Web Design",
+      url: "https://ojsweb.co.uk",
+    },
+    areaServed: ["Cheshire", "Manchester", "UK"],
+    serviceType: "Freelance SEO Services",
+    url: "https://ojsweb.co.uk/marketing-services/organic-seo",
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="flex min-h-screen items-center">
         <Navigation />
         <main className="flex min-h-min flex-col w-full items-center justify-center pattern-cross pattern-green-600 pattern-bg-white pattern-size-6 pattern-opacity-20">

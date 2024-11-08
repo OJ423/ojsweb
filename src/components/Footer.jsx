@@ -21,16 +21,17 @@ export default function Footer() {
         <h2 className="font-bold text-3xl">Hey, I&apos;m Oliver.</h2>
         <p className="text-sm">
           {" "}
-          I specialise in marketing and web design. So if you need help with{" "}
+          I am a web design and marketing freelancer based in Cheshire. I specialise in marketing and web design. So if you need help with{" "}
           <Link href="/marketing-services/organic-seo">SEO</Link>,{" "}
           <Link href="/marketing-services/content-marketing">
-            content Marketing
+            content marketing
           </Link>
           ,{" "}
           <Link href="/marketing-services/design-services">graphic design</Link>
           , <Link href="/react-websites">React-based websites</Link>,{" "}
           <Link href="/wordpress-websites">wordpress development</Link> or{" "}
           <Link href="/web-apps">web apps</Link>, then please do get in touch.
+          I am a web design and marketing freelancer in Cheshire meaning I can work at your location in and around Cheshire and Manchester, but I am comfortable working for anyone remotely.
         </p>
         <div className="flex flex-wrap items-center gap-4 mt-4">
           <Link
