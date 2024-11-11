@@ -41,13 +41,13 @@ export default function Home() {
               <LinkStyled src="/contact" linkText="Arrange a chat" />
             </div>
             <Image
-              src="/comm-you-nity-screenshot.webp"
-              alt="Screenshot of a community social media app I built"
+              src="/marketing-freelancer-cheshire.webp"
+              alt="Manchester and Cheshire Marketing freelancer and web designer"
               quality={100}
               width={800}
               height={400}
               priority
-              className="w-3/4 lg:w-2/4 h-auto rounded-xl hidden xl:block"
+              className="w-1/3 h-auto rounded-xl hidden xl:block"
             />
           </section>
 

@@ -12,7 +12,7 @@ import {
 } from "react-icons/fc";
 import { BsWordpress } from "react-icons/bs";
 import { TbBrandGithub, TbBrandLinkedin, TbMail } from "react-icons/tb";
-import { FaShopify } from "react-icons/fa";
+import { FaMedium, FaShopify } from "react-icons/fa";
 import { FiAlignRight } from "react-icons/fi";
 import { usePathname } from "next/navigation";
 import { IoClose } from "react-icons/io5";
@@ -197,6 +197,16 @@ export default function Navigation() {
             </p>
           </Link>
           <div className="flex gap-4 items-center">
+            <Link
+              href="https://medium.com/@oliver_58410"
+              target="_blank"
+              className="hover:text-teal-500 transition-all duration-500"
+            >
+              <FaMedium
+                aria-label="A link to Oliver's Blog on Medium"
+                size={24}
+              />
+            </Link>
             <Link
               href="https://github.com/OJ423"
               target="_blank"
