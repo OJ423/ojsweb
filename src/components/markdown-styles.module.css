@@ -1,0 +1,42 @@
+.markdown {
+  @apply text-lg leading-relaxed;
+}
+
+.markdown p,
+.markdown ul,
+.markdown li,
+.markdown ol,
+.markdown blockquote {
+  @apply my-6;
+}
+
+.markdown p {
+  @apply text-lg
+}
+
+.markdown li {
+  @apply list-disc ms-4;
+}
+
+.markdown h1 {
+  @apply text-4xl my-8 leading-snug font-bold;
+}
+.markdown h2 {
+  @apply text-3xl mt-12 mb-4 leading-snug font-bold;
+}
+
+.markdown h3 {
+  @apply text-2xl mt-8 mb-4 leading-snug font-bold;
+}
+
+.markdown h4 {
+  @apply text-xl mt-8 mb-4 leading-snug font-bold;
+}
+
+.markdown a {
+  @apply transition-all duration-500 text-indigo-500 font-medium;
+}
+
+.markdown a:hover {
+  @apply transition-all duration-500 text-teal-500 font-medium;
+}
