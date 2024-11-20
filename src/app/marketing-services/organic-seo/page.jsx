@@ -4,35 +4,38 @@ import PeterWilliams from "@/components/testimonials.js/PeterWilliams";
 import LinkStyled from "@/components/LinkStyled";
 import Packages from "@/components/Packages";
 import Footer from "@/components/Footer";
+import Link from "next/link";
 
 export const metadata = {
   title: "SEO Consultant Cheshire and Manchester",
-  description: "Organic SEO services in Cheshire, Manchester and Worldwide. Hire me as your SEO specialist.",
+  description:
+    "Organic SEO services in Cheshire, Manchester and Worldwide. Hire me as your SEO specialist.",
   openGraph: {
     title: "Organic SEO Consultant in Cheshire & Manchester",
-    description: "Organic SEO services in Cheshire, Manchester and Worldwide. Hire me as your SEO specialist.",
-    url: 'https://ojsweb.co.uk/marketing-services/organic-seo',
-    siteName: 'ojsweb - Marketing and Web Design Excellence',
+    description:
+      "Organic SEO services in Cheshire, Manchester and Worldwide. Hire me as your SEO specialist.",
+    url: "https://ojsweb.co.uk/marketing-services/organic-seo",
+    siteName: "ojsweb - Marketing and Web Design Excellence",
     images: [
       {
-        url: 'https://ojsweb.co.uk/ojsweb-og-image.png', // Must be an absolute URL
+        url: "https://ojsweb.co.uk/ojsweb-og-image.png", // Must be an absolute URL
         width: 800,
         height: 600,
       },
       {
-        url: 'https://ojsweb.co.uk/ojsweb-og-image-lg.png', // Must be an absolute URL
+        url: "https://ojsweb.co.uk/ojsweb-og-image-lg.png", // Must be an absolute URL
         width: 1800,
         height: 1600,
-        alt: 'SEO Consultant Cheshire and Manchester',
+        alt: "SEO Consultant Cheshire and Manchester",
       },
     ],
-    locale: 'en_GB',
-    type: 'website',
+    locale: "en_GB",
+    type: "website",
   },
-  metadataBase: new URL('https://ojsweb.co.uk'),
+  metadataBase: new URL("https://ojsweb.co.uk"),
   alternates: {
-    canonical: '/marketing-services/organic-seo'
-  }
+    canonical: "/marketing-services/organic-seo",
+  },
 };
 
 export default function OrganicSEO() {
@@ -75,7 +78,9 @@ export default function OrganicSEO() {
       <div className="flex min-h-screen items-center">
         <Navigation />
         <main className="flex min-h-min flex-col w-full items-center justify-center pattern-cross pattern-green-600 pattern-bg-white pattern-size-6 pattern-opacity-20">
-          <section className={`min-h-screen flex flex-col gap-20 mx-auto px-[8%] md:px-[20%] xl:px-[8%] justify-center items-center py-20 bg-[url("/full-bloom.webp")]`}>
+          <section
+            className={`min-h-screen flex flex-col gap-20 mx-auto px-[8%] md:px-[20%] xl:px-[8%] justify-center items-center py-20 bg-[url("/full-bloom.webp")]`}
+          >
             <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 justify-center items-center">
               <div className="flex flex-col gap-8">
                 <h1 className="text-3xl xl:text-5xl font-bold w-full text-gray-800">
@@ -112,7 +117,7 @@ export default function OrganicSEO() {
                 My previous roles resulted in -
               </h2>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
-                <p className="text-teal-500 text-4xl font-bold text-left">{`> 1000 % Growth`}</p>
+                <p className="text-teal-500 text-4xl font-bold text-left">{`4900 % Growth`}</p>
                 <p className="text-sm text-gray-600 font-medium">
                   {`I grew TerminusDB's organic web traffic from under 200 monthly visitors to over 10,000, generating over 1,200 leads in just 12 months.`}{" "}
                 </p>
@@ -194,6 +199,41 @@ export default function OrganicSEO() {
             features={packageFeatures}
             cost="£1,800"
           />
+          <section className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-4 mx-auto w-full md:w-4/5 mb-20">
+            <div className="flex flex-col gap-4">
+              <h2 className="text-3xl font-bold w-full text-gray-800">
+                Want to do it{" "}
+                <span className="bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
+                  yourself?
+                </span>
+              </h2>
+              <p className="text-lg font-medium">
+                If you have not got the budget or have a few hours a week to
+                spend increasing your search engine performance, I have written
+                a blog that will help. Read{" "}
+                <Link
+                  className="transition-all duration-500 text-teal-500 hover:text-indigo-500"
+                  href="/blog/seo-tips-for-small-businesses"
+                >
+                  SEO tips for small businesses
+                </Link>{" "}
+                for some free advice.
+              </p>
+              <LinkStyled
+                src="/blog/seo-tips-for-small-businesses"
+                linkText="SEO Tips for Businesses"
+              />
+            </div>
+            <Link href="/blog/seo-tips-for-small-businesses">
+              <Image
+                alt="SEO Tips for Businesses - mock up of google search results"
+                src="/blog/seo-tips-for-small-businesses-title.png"
+                width={500}
+                height={500}
+                className="rounded"
+              />
+            </Link>
+          </section>
           <PeterWilliams />
           <section className="my-20">
             <h2 className="text-2xl sm:text-4xl font-bold pb-6 mb-6 border-b-2 w-fit bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">

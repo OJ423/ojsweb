@@ -12,7 +12,7 @@ import {
 } from "react-icons/fc";
 import { BsWordpress } from "react-icons/bs";
 import { TbBrandGithub, TbBrandLinkedin, TbMail } from "react-icons/tb";
-import { FaMedium, FaShopify } from "react-icons/fa";
+import { FaBlog, FaShopify } from "react-icons/fa";
 import { FiAlignRight } from "react-icons/fi";
 import { usePathname } from "next/navigation";
 import { IoClose } from "react-icons/io5";
@@ -28,7 +28,7 @@ export default function Navigation() {
 
   return (
     <>
-      <section className="absolute top-0 left-0 w-full flex gap-4 justify-between p-2 items-center md:hidden text-gray-500 font-bold">
+      <section className="absolute top-0 left-0 w-full flex gap-4 justify-between p-2 items-center md:hidden text-gray-500 font-bold h-20 bg-white shadow-xl">
         <Link
           className="flex items-center justify-center gap-2 hover:opacity-50 transition-all duration-500 absolute top-4 left-4"
           href="/"
@@ -48,13 +48,13 @@ export default function Navigation() {
           <FiAlignRight
             onClick={handleOpenMenu}
             size={42}
-            className="z-50 fixed top-4 right-4 p-1 bg-teal-100 rounded-lg"
+            className="z-50 fixed top-4 right-4 p-1 bg-teal-100 rounded-lg shadow-xl"
           />
         ) : (
           <IoClose
             onClick={handleOpenMenu}
             size={42}
-            className="z-50 fixed top-4 right-4 p-1 bg-teal-100 rounded-lg"
+            className="z-50 fixed top-4 right-4 p-1 bg-teal-100 rounded-lg shadow-xl"
           />
         )}
       </section>
@@ -191,19 +191,28 @@ export default function Navigation() {
           </ul>
         </nav>
         <section className="md:border-t md:border-t-2 w-full pt-8 flex flex-wrap gap-4 items-center justify-between">
+          <div className="flex flex-col gap-4">
           <Link href="/contact">
             <p className="uppercase tracking-widest font-light text-xs hover:text-teal-500 transition-all duration-500">
               Contact Me
             </p>
           </Link>
+          <Link href="/blog">
+            <p className="uppercase tracking-widest font-light text-xs hover:text-teal-500 transition-all duration-500">
+              Read my blog
+            </p>
+          </Link>
+
+          </div>
           <div className="flex gap-4 items-center">
             <Link
-              href="https://medium.com/@oliver_58410"
+              href="/blog"
+              replace
               target="_blank"
               className="hover:text-teal-500 transition-all duration-500"
             >
-              <FaMedium
-                aria-label="A link to Oliver's Blog on Medium"
+              <FaBlog
+                aria-label="A link to Oliver's Blog"
                 size={24}
               />
             </Link>
