@@ -3,6 +3,7 @@ title: "SEO Tips for Small Businesses"
 slug: "seo-tips-for-small-businesses"
 excerpt: "If you cannot afford to outsource your SEO, these search engine optimisation tips will help you improve your sites search ranking performance."
 coverImage: "/blog/seo-tips-for-small-businesses-title.png"
+category: "SEO"
 date: "2024-11-19T05:35:07.322Z"
 author:
   name: Oliver Smith
@@ -10,8 +11,6 @@ author:
 ogImage:
   url: "/blog/seo-tips-for-small-businesses-title.png"
 ---
-
-# SEO Tips For Small Businesses
 
 SEO stands for search engine optimisation and is a way of structuring your website’s content for search engines such as Google and Bing to understand your site’s context so it can deliver the correct answers to user queries.
 

@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { BsWordpress } from "react-icons/bs";
-import { FaShopify } from "react-icons/fa";
+import { FaBlog, FaShopify } from "react-icons/fa";
 import {
   FcAddImage,
   FcFile,
@@ -13,7 +13,7 @@ import {
 } from "react-icons/fc";
 
 export default function Footer() {
-  const pathname = usePathname()
+  const pathname = usePathname();
 
   return (
     <section className="bg-gradient-to-br from-teal-500 to-indigo-600 gap-16 py-20 text-white px-8 md:px-20 grid md:grid-cols-2 xl:grid-cols-3 justify-start">
@@ -21,7 +21,8 @@ export default function Footer() {
         <h2 className="font-bold text-3xl">Hey, I&apos;m Oliver.</h2>
         <p className="text-sm">
           {" "}
-          I am a web design and marketing freelancer based in Cheshire. I specialise in marketing and web design. So if you need help with{" "}
+          I am a web design and marketing freelancer based in Cheshire. I
+          specialise in marketing and web design. So if you need help with{" "}
           <Link href="/marketing-services/organic-seo">SEO</Link>,{" "}
           <Link href="/marketing-services/content-marketing">
             content marketing
@@ -30,8 +31,10 @@ export default function Footer() {
           <Link href="/marketing-services/design-services">graphic design</Link>
           , <Link href="/react-websites">React-based websites</Link>,{" "}
           <Link href="/wordpress-websites">wordpress development</Link> or{" "}
-          <Link href="/web-apps">web apps</Link>, then please do get in touch.
-          I am a web design and marketing freelancer in Cheshire meaning I can work at your location in and around Cheshire and Manchester, but I am comfortable working for anyone remotely.
+          <Link href="/web-apps">web apps</Link>, then please do get in touch. I
+          am a web design and marketing freelancer in Cheshire meaning I can
+          work at your location in and around Cheshire and Manchester, but I am
+          comfortable working for anyone remotely.
         </p>
         <div className="flex flex-wrap items-center gap-4 mt-4">
           <Link
@@ -46,13 +49,10 @@ export default function Footer() {
           >
             Contact Me
           </Link>
-
         </div>
       </div>
       <div>
-        <p className="text-xs uppercase mb-4">
-          Marketing Services
-        </p>
+        <p className="text-xs uppercase mb-4">Marketing Services</p>
         <ul>
           <li className={`list-none py-2.5 text-sm cursor-pointer`}>
             <Link
@@ -80,9 +80,7 @@ export default function Footer() {
             <Link
               href="/marketing-services/design-services"
               className={`${
-                pathname.includes("design-services")
-                  ? "font-bold"
-                  : "text-auto"
+                pathname.includes("design-services") ? "font-bold" : "text-auto"
               } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
             >
               <FcAddImage size={24} title="Design Services" />
@@ -90,59 +88,69 @@ export default function Footer() {
             </Link>
           </li>
         </ul>
+        <p className="text-xs uppercase mb-4 mt-8">Advice & Opinion</p>
+        <ul>
+          <li className={`list-none py-2.5 text-sm cursor-pointer`}>
+            <Link
+              href="/marketing-services/content-marketing"
+              className={`${
+                pathname.includes("content") ? "font-bold" : "text-auto"
+              } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
+            >
+              <FaBlog size={24} title="Content Marketing" />
+              Read my blog
+            </Link>
+          </li>
+        </ul>
       </div>
       <div>
-      <p className="text-xs uppercase mb-4">
-            Web Development
-          </p>
-          <ul>
-            <li className={`list-none py-2.5 text-sm cursor-pointer`}>
-              <Link
-                href="/react-websites"
-                className={`${
-                  pathname.includes("react-websites")
-                    ? "font-bold"
-                    : "text-auto"
-                } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
-              >
-                <FcFlashOn size={24} title="React framework websites" />
-                Fast React Websites
-              </Link>
-            </li>
-            <li className={`list-none py-2.5 text-sm cursor-pointer`}>
-              <Link
-                href="/web-apps"
-                className={`${
-                  pathname.includes("web-apps") ? "font-bold" : "text-auto"
-                } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
-              >
-                <FcPhoneAndroid size={24} title="Web Apps" />
-                Web Apps
-              </Link>
-            </li>
-            <li className={`list-none py-2.5 text-sm cursor-pointer`}>
-              <Link
-                href="/wordpress-websites"
-                className={`${
-                  pathname.includes("wordpress") ? "font-bold" : "text-auto"
-                } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
-              >
-                <BsWordpress size={24} title="Wordpress Development" />
-                WordPress Development
-              </Link>
-            </li>
-            <li className={`list-none py-2.5 text-sm cursor-pointer`}>
-              <Link
-                href="/shopify-sites"
-                className={`${
-                  pathname.includes("shopify") ? "font-bold" : "text-auto"
-                } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
-              >
-                <FaShopify size={24} title="Shopify Sites" />
-                Shopify Sites
-              </Link>
-            </li>
-          </ul>
+        <p className="text-xs uppercase mb-4">Web Development</p>
+        <ul>
+          <li className={`list-none py-2.5 text-sm cursor-pointer`}>
+            <Link
+              href="/react-websites"
+              className={`${
+                pathname.includes("react-websites") ? "font-bold" : "text-auto"
+              } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
+            >
+              <FcFlashOn size={24} title="React framework websites" />
+              Fast React Websites
+            </Link>
+          </li>
+          <li className={`list-none py-2.5 text-sm cursor-pointer`}>
+            <Link
+              href="/web-apps"
+              className={`${
+                pathname.includes("web-apps") ? "font-bold" : "text-auto"
+              } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
+            >
+              <FcPhoneAndroid size={24} title="Web Apps" />
+              Web Apps
+            </Link>
+          </li>
+          <li className={`list-none py-2.5 text-sm cursor-pointer`}>
+            <Link
+              href="/wordpress-websites"
+              className={`${
+                pathname.includes("wordpress") ? "font-bold" : "text-auto"
+              } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
+            >
+              <BsWordpress size={24} title="Wordpress Development" />
+              WordPress Development
+            </Link>
+          </li>
+          <li className={`list-none py-2.5 text-sm cursor-pointer`}>
+            <Link
+              href="/shopify-sites"
+              className={`${
+                pathname.includes("shopify") ? "font-bold" : "text-auto"
+              } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
+            >
+              <FaShopify size={24} title="Shopify Sites" />
+              Shopify Sites
+            </Link>
+          </li>
+        </ul>
       </div>
     </section>
   );
