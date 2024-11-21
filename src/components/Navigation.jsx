@@ -28,55 +28,49 @@ export default function Navigation() {
 
   return (
     <>
-      <section className="absolute top-0 left-0 w-full flex gap-4 justify-between p-2 items-center md:hidden text-gray-500 font-bold h-20 bg-white shadow-xl">
+      <section className="absolute top-0 left-0 w-full flex gap-4 justify-between p-2 items-center md:hidden text-gray-500 font-bold">
         <Link
-          className="flex items-center justify-center gap-2 hover:opacity-50 transition-all duration-500 absolute top-4 left-4"
+          className="flex items-center justify-center gap-2 hover:opacity-50 transition-all duration-500 absolute top-4 left-4 z-40"
           href="/"
         >
           <Image
-            src="/ojsweb-avatar.jpeg"
+            src="/ojsweb-logo.svg"
             alt="Cartoon pic of me, Oliver"
             width={100}
             height={100}
-            className="rounded-full w-10 h-10 md:w-24 md:h-24"
+            className="rounded-full w-16 h-16"
           />
-          <p className="bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text text-xs">
-            OJSWEB
-          </p>
         </Link>
         {!menuOpen ? (
           <FiAlignRight
             onClick={handleOpenMenu}
             size={42}
-            className="z-50 fixed top-4 right-4 p-1 bg-teal-100 rounded-lg shadow-xl"
+            className="z-50 fixed top-6 right-4 p-1 bg-teal-100 rounded-lg shadow-xl"
           />
         ) : (
           <IoClose
             onClick={handleOpenMenu}
             size={42}
-            className="z-50 fixed top-4 right-4 p-1 bg-teal-100 rounded-lg shadow-xl"
+            className="z-50 fixed top-6 right-4 p-1 bg-teal-100 rounded-lg shadow-xl"
           />
         )}
       </section>
       <header
         className={`${
           !menuOpen ? "translate-x-[-100%] md:translate-x-0" : "translate-x-0"
-        } transition-all duration-500 bg-white w-full bottom-0 left-0 fixed md:w-2/5 xl:w-1/4 min-h-screen md:sticky md:top-0 flex flex-col gap-4 justify-center items-center px-8 my-auto py-8 shadow-reverse font-bold text-gray-600 z-40`}
+        } transition-all duration-500 bg-white w-full bottom-0 left-0 fixed md:hidden min-h-screen md:sticky md:top-0 flex flex-col gap-4 justify-center items-center px-8 my-auto py-8 shadow-reverse font-bold text-gray-600 z-40`}
       >
         <Link
           className="flex flex top-auto items-center justify-center gap-2 hover:opacity-50 transition-all duration-500 me-auto"
           href="/"
         >
           <Image
-            src="/ojsweb-avatar.jpeg"
+            src="/ojsweb-logo.svg"
             alt="Cartoon pic of me, Oliver"
             width={100}
             height={100}
-            className="rounded-full w-10 h-10 md:w-12 md:h-12"
+            className="rounded-full w-16 h-16"
           />
-          <p className="bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text text-xs">
-            OJSWEB
-          </p>
         </Link>
         <nav className="flex flex-col gap-0 items-start w-full">
           <p className="text-xs uppercase mt-8 mb-4 bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
@@ -191,7 +185,7 @@ export default function Navigation() {
           </ul>
         </nav>
         <section className="md:border-t md:border-t-2 w-full pt-8 flex flex-wrap gap-4 items-center justify-between">
-          <div className="flex flex-col gap-4">
+          <div className="flex gap-8">
           <Link href="/contact">
             <p className="uppercase tracking-widest font-light text-xs hover:text-teal-500 transition-all duration-500">
               Contact Me
@@ -199,7 +193,7 @@ export default function Navigation() {
           </Link>
           <Link href="/blog">
             <p className="uppercase tracking-widest font-light text-xs hover:text-teal-500 transition-all duration-500">
-              Read my blog
+              Free Advice | Blog
             </p>
           </Link>
 

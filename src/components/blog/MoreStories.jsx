@@ -2,7 +2,7 @@ import { PostPreview } from "./PostPreview";
 
 export function MoreStories({ posts }) {
   return (
-    <section className="px-4 md:px-8">
+    <section className="px-8 xl:px-0 max-w-screen-xl mx-auto">
       <h2 className="mb-8 text-3xl md:text-5xl font-bold tracking-tighter leading-tight">
         More Stories
       </h2>

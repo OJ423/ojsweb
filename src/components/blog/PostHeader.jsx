@@ -5,20 +5,20 @@ import Link from "next/link";
 export function PostHeader({ title, excerpt, slug, coverImage, author, date }) {
   return (
     <section className="w-full">
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 max-w-screen-md mx-auto">
         <Image
           src={coverImage}
           alt={title}
           width={600}
           height={600}
-          className="w-full md:w-2/3 lg:w-1/2 h-auto mx-auto px-0 pb-8 md:px-0"
+          className="max-w-screen-md h-auto mx-auto w-full rounded-xl px-0 md:px-0"
         />
-        <div className="px-4 md:px-0 flex flex-col gap-4 mx-auto w-full md:w-2/3 lg:w-1/2">
+        <div className="px-4 xl:px-0 flex flex-col gap-4 max-w-screen-md mt-4">
           <div>
             <h1 className="mb-4 text-4xl lg:text-5xl leading-tight font-bold">
               {title}
             </h1>
-            <div className="mb-4 md:mb-0 text-lg font-medium">
+            <div className="mb-4 md:mb-0 text-lg font-medium text-indigo-500">
               <DateFormatter dateString={date} />
             </div>
           </div>

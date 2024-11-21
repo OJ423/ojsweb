@@ -8,8 +8,8 @@ import LinkStyled from "./LinkStyled";
 
 export default function CallToAction() {
   return (
-    <section className="md:min-h-screen flex flex-col gap-20 mx-auto w-full justify-center items-center py-20 px-4 ">
-      <div className="px-[8%] xl:px-[12%] mx-auto flex flex-col gap-20">
+    <section className="md:min-h-screen flex flex-col gap-20 mx-auto w-full justify-center items-center py-20 px-8 lg:px-4 max-w-screen-lg">
+      <div className="mx-auto flex flex-col gap-20">
         <div>
           <h2 className="text-2xl sm:text-4xl font-bold pb-6 mb-6 border-b-2 w-fit">
             My working process...
@@ -18,7 +18,7 @@ export default function CallToAction() {
             {`I'm a methodical person. I typically work in the following way. The best thing to do is to get in touch with an overview of what you want. This will give me chance to do a bit of research before we speak.`}
           </p>
         </div>
-        <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 xl:grid-cols-4">
+        <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
           <div className="flex flex-col items-start">
             <FcVoicePresentation size={100} className="mb-8" />
             <h2 className="text-xl font-bold mb-2 ">

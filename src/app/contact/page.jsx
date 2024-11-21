@@ -1,4 +1,6 @@
 import ContactForm from "@/components/ContactForm";
+import DesktopNav from "@/components/DeskTopNav";
+import Footer from "@/components/Footer";
 import Navigation from "@/components/Navigation";
 
 export const metadata = {
@@ -34,23 +36,26 @@ export const metadata = {
 export default function Contact() {
   return (
     <>
-      <div className={`flex min-h-screen items-center bg-[url("/full-bloom.webp")]`}>
+        <DesktopNav />
         <Navigation />
-        <main className="flex min-h-min flex-col mx-auto mt-28 mb-20 md:my-20 gap-8 w-full items-center justify-center max-w-[500px] px-4">
-          <div className="flex flex-col gap-8 mx-auto w-4/5 lg:w-2/4 xl:w-full">
-            <h1 className="text-3xl md:text-5xl font-bold text-gray-800">
-              <span className="bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
-                Contact me
-              </span>{" "}
-              to arrange a chat
-            </h1>
-            <p className="text-lg">
-              {`Fill out the form if you've got questions or would like to have a chat about your web or marketing needs.`}
-            </p>
-          </div>
+        <main className={`flex flex-col mx-auto w-full items-center justify-center px-8 bg-[url("/full-bloom.webp")]`}>
+          
+          <div className="flex flex-col md:flex-row gap-8 md:gap-20 mx-auto py-40 max-w-screen-lg">
+            <div className="flex flex-col gap-8">
+              <h1 className="text-3xl md:text-5xl font-bold text-gray-800">
+                <span className="bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
+                  Get in touch
+                </span>{" "}
+                to let me help you
+              </h1>
+              <p className="text-lg">
+                {`Fill out the form if you've got questions or would like to have a chat about your web or marketing needs.`}
+              </p>
+            </div>
           <ContactForm />
+          </div>
         </main>
-      </div>
+        <Footer />
     </>
   );
 }

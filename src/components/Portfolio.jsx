@@ -51,7 +51,7 @@ export default function Portfolio( {images} ) {
   }, [slideIndex]);
 
   return (
-    <section className="sm:w-11/12 md:w-5/6 lg:w-4/5 xl:w-2/3 mx-auto rounded-xl bg-gray-100 relative" {...handlers}>
+    <section className="sm:w-11/12 max-w-screen-md mx-auto rounded-xl bg-gray-100 relative" {...handlers}>
       <div className="overflow-hidden">
         <div
           className="flex transition-transform duration-500 ease-in-out"

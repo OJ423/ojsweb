@@ -4,7 +4,7 @@ import DateFormatter from "./DateFormatter";
 
 export function HeroBlog({ title, excerpt, slug, coverImage, category, author, date }) {
   return (
-    <section>
+    <section className="max-w-screen-xl mx-auto">
       <div className="mb-8 md:mb-16 grid grid-cols-1 md:grid-cols-2 gap-8 justify-center items-center bg-white">
         <div className="relative transition-all duration-500 hover:scale-105">
           <Link

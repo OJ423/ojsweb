@@ -1,4 +1,3 @@
-import { BlogIntro } from "@/components/blog/BlogIntro";
 import Navigation from "@/components/Navigation";
 import { getAllPosts, getPostBySlug } from "@/lib/api";
 import { notFound } from "next/navigation";
@@ -7,6 +6,7 @@ import Link from "next/link";
 import PostBody from "@/components/blog/PostBody";
 import { PostHeader } from "@/components/blog/PostHeader";
 import Footer from "@/components/Footer";
+import DesktopNav from "@/components/DeskTopNav";
 
 export default async function Post(props) {
   const params = await props.params;
@@ -19,11 +19,11 @@ export default async function Post(props) {
   const content = await markdownToHtml(post.content || "");
 
   return (
-    <div className="flex min-h-screen items-start">
+    <>
       <Navigation />
+      <DesktopNav />
       <main className="flex min-h-min flex-col w-full items-start justify-start">
-        <BlogIntro />
-        <div className="w-full px-4 md:mx-8 py-4">
+        <div className="px-4 py-4 z-50 me-auto">
           <Link
             href="/blog"
             className="text-sm font-bold transition-all duration-500 text-teal-500 hover:text-indigo-500"
@@ -39,12 +39,12 @@ export default async function Post(props) {
           slug={post.slug}
           excerpt={post.excerpt}
         />
-        <section className="flex flex-col gap-4 w-full px-4 py-8 mx-auto md:w-2/3 md:px-0 lg:w-1/2">
+        <section className="flex flex-col gap-4 w-full px-4 xl:px-0 py-8 mx-auto max-w-screen-md">
           <PostBody content={content} />
         </section>
-      <Footer />
       </main>
-    </div>
+      <Footer />
+    </>
   );
 }
 

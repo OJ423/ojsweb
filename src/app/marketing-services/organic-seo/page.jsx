@@ -1,10 +1,11 @@
 import Navigation from "@/components/Navigation";
 import Image from "next/image";
-import PeterWilliams from "@/components/testimonials.js/PeterWilliams";
+import Testimonials from "@/components/testimonials.js/Testimonials";
 import LinkStyled from "@/components/LinkStyled";
 import Packages from "@/components/Packages";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import DesktopNav from "@/components/DeskTopNav";
 
 export const metadata = {
   title: "SEO Consultant Cheshire and Manchester",
@@ -75,13 +76,13 @@ export default function OrganicSEO() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <div className="flex min-h-screen items-center">
         <Navigation />
+        <DesktopNav />
         <main className="flex min-h-min flex-col w-full items-center justify-center pattern-cross pattern-green-600 pattern-bg-white pattern-size-6 pattern-opacity-20">
           <section
-            className={`min-h-screen flex flex-col gap-20 mx-auto px-[8%] md:px-[20%] xl:px-[8%] justify-center items-center py-20 bg-[url("/full-bloom.webp")]`}
+            className={`flex flex-col gap-8 mx-auto justify-center items-center py-40 bg-[url("/full-bloom.webp")] w-full`}
           >
-            <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 justify-center items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center items-center max-w-screen-lg px-8 xl:px-0 sm:w-4/5 md:w-full">
               <div className="flex flex-col gap-8">
                 <h1 className="text-3xl xl:text-5xl font-bold w-full text-gray-800">
                   <span className="bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
@@ -101,38 +102,38 @@ export default function OrganicSEO() {
                 <LinkStyled src="/contact" linkText="Arrange a chat" />
               </div>
               <Image
-                src="/marketing/organic-seo-services.webp"
-                alt="A screenshot of an article talking about data mesh"
+                src="/freelance-seo-consultant.svg"
+                alt="A graphic design of a laptop with a blog and a person moving elements around. Designed to represent a freelance seo consultant"
                 width={600}
                 height={300}
-                className="lg:w-5/6 h-auto rounded-xl hidden xl:block"
+                className="rounded-xl mx-auto"
                 priority
                 quality={100}
               />
             </div>
           </section>
-          <section className="flex flex-col w-5/6 lg:w-3/5 gap-20 my-20">
+          <section className="flex flex-col max-w-screen-lg w-full px-8 xl:px-0 gap-20 my-20">
             <section className="flex flex-col gap-8 p-8 bg-teal-100 rounded-xl">
-              <h2 className="font-bold text-xl">
-                My previous roles resulted in -
+              <h2 className="font-bold text-3xl text-gray-600">
+                My previous roles resulted in...
               </h2>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
+              <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-start md:items-center justify-center">
                 <p className="text-teal-500 text-4xl font-bold text-left">{`4900 % Growth`}</p>
-                <p className="text-sm text-gray-600 font-medium">
-                  {`I grew TerminusDB's organic web traffic from under 200 monthly visitors to over 10,000, generating over 1,200 leads in just 12 months.`}{" "}
+                <p className="text-gray-600 font-medium">
+                  I grew TerminusDB`&apos;s organic web traffic from under 200 monthly visitors to over 10,000, generating over 1,200 leads in just 12 months.You can read about how <Link className="text-indigo-500 hover:text-teal-500 transition-all duration-500" href="/blog/how-i-achieved-seo-growth">I achieved 4900% growth using SEO here</Link>.
                 </p>
               </div>
               <div className="border-t-2 border-teal-500 my-4"></div>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
+              <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-start md:items-center justify-center">
                 <p className="text-teal-500 text-4xl font-bold text-left">{`125 % Growth`}</p>
-                <p className="text-sm text-gray-600 font-medium">
+                <p className="text-gray-600 font-medium">
                   Food manufacturer Aviko saw their web visitors increase from
                   2,000 monthly visitors to 4,500 visitors in under 12 months
                   and exponentially improved lead generation.{" "}
                 </p>
               </div>
             </section>
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 max-w-screen-md mx-auto">
               <h2 className="text-3xl font-bold w-full text-gray-800">
                 Talk for your{" "}
                 <span className="bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
@@ -161,7 +162,7 @@ export default function OrganicSEO() {
               <LinkStyled src="/contact" linkText="Arrange a chat" />
             </div>
           </section>
-          <section className="bg-teal-100 rounded-xl p-8 grid grid-cols-1 xl:grid-cols-2 gap-4 md:gap-8 lg:gap-20 w-11/12 mx-auto md:w-5/6 items-center mb-20">
+          <section className="bg-teal-100 rounded-xl mx-8 p-8 grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 lg:gap-20 max-w-screen-xl mx-auto items-center mb-20">
             <div className="flex flex-col gap-4">
               <h2 className="text-3xl font-bold w-full text-gray-800">
                 The Key Is{" "}
@@ -199,12 +200,12 @@ export default function OrganicSEO() {
             features={packageFeatures}
             cost="£1,800"
           />
-          <section className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-4 mx-auto w-full md:w-4/5 mb-20">
+          <section className="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center px-8 xl:px-0 mx-auto w-full max-w-screen-lg mb-20">
             <div className="flex flex-col gap-4">
               <h2 className="text-3xl font-bold w-full text-gray-800">
-                Want to do it{" "}
+                Want to manage{" "}
                 <span className="bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
-                  yourself?
+                  SEO yourself?
                 </span>
               </h2>
               <p className="text-lg font-medium">
@@ -230,11 +231,11 @@ export default function OrganicSEO() {
                 src="/blog/seo-tips-for-small-businesses-title.png"
                 width={500}
                 height={500}
-                className="rounded"
+                className="rounded mx-auto"
               />
             </Link>
           </section>
-          <PeterWilliams />
+          <Testimonials />
           <section className="my-20">
             <h2 className="text-2xl sm:text-4xl font-bold pb-6 mb-6 border-b-2 w-fit bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
               Get in touch to begin...
@@ -242,9 +243,8 @@ export default function OrganicSEO() {
             <p className="mb-16">Send me a message to arrange a chat.</p>
             <LinkStyled src="/contact" linkText="Arrange a chat" />
           </section>
-          <Footer />
         </main>
-      </div>
+        <Footer />
     </>
   );
 }

@@ -50,8 +50,8 @@ Here’s some pictures of my work:
 ![WordPress developer in Cheshire - a picture of a VectorLink service page](/portfolio/vectorlink-entity-resolution-services.jpg)
 
 
-![Logo design, an example of the logo I created for VectorLink](/graphic-design/VL-Variations-Letter.png)
+![Logo design, an example of the logo I created for VectorLink](/graphic-design/VL-Variations-Letters.png)
 
 ![An example of one of the web images I did for VectorLink](/graphic-design/vectorlink-diagram.png)
-x`
+
 PS — there is an explanation about the formula I displayed at the top of this post in VectorLink’s [Leveraging LLMs and Machine Learning for Record Matching](https://vectorlink.ai/blog/leveraging-llms-and-machine-learning-for-record-matching/) blog
