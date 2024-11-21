@@ -15,17 +15,8 @@ export default function Home() {
       <Navigation />
       <main className="flex min-h-min flex-col w-full items-center justify-center">
         <section
-          className={`min-h-screen py-20 mx-auto w-full px-4 xl:px-0 bg-[url("/full-bloom.webp")]`}
+          className={`min-h-screen py-40 mx-auto w-full px-8 xl:px-0 bg-[url("/full-bloom.webp")]`}
         >
-          <Image
-            src="/comm-you-nity-screenshot.webp"
-            alt="Manchester and Cheshire Marketing freelancer and web designer"
-            quality={100}
-            width={800}
-            height={400}
-            priority
-            className="w-4/5 mx-auto h-auto rounded py-16 sm:hidden"
-          />
           <div className="max-w-screen-lg w-full flex sm:py-20 md:py-0 items-center justify-between mx-auto gap-8">
             <div className="flex flex-col gap-8 m-auto item">
               <h1 className="text-3xl xl:text-4xl font-bold text-gray-800">
@@ -48,7 +39,7 @@ export default function Home() {
                 high-quality content to build organic interest in my
                 client&apos;s businesses. I&apos;m here for your long-term.
               </p>
-              <LinkStyled src="/contact" linkText="Arrange a chat" />
+              <LinkStyled src="/contact" linkText="Let's chat" />
             </div>
             <Image
               src="/marketing-freelancer-cheshire.webp"
@@ -60,12 +51,21 @@ export default function Home() {
               className="w-1/3 ms-auto h-auto rounded-xl hidden sm:block"
             />
           </div>
+          <Image
+            src="/comm-you-nity-screenshot.webp"
+            alt="Manchester and Cheshire Marketing freelancer and web designer"
+            quality={100}
+            width={800}
+            height={400}
+            priority
+            className="w-4/5 mx-auto h-auto rounded py-16 sm:hidden"
+          />
         </section>
 
         <section
           className={`py-40 lg:py-40 px-4 xl:px-0 flex flex-col gap-8 bg-gradient-to-br from-teal-500 to-indigo-600 w-full relative`}
         >
-          <div className="flex flex-col gap-8 w-full mb-8 text-white max-w-screen-md mx-auto z-40">
+          <div className="flex flex-col gap-8 w-full mb-8 text-white max-w-screen-md mx-auto z-30">
             <h2 className="font-bold text-2xl lg:text-4xl">
               Based in Cheshire & Manchester, but servicing the world
             </h2>
@@ -80,7 +80,7 @@ export default function Home() {
             </p>
           </div>
 
-          <section className="flex flex-col gap-8 p-8 lg:p-10 rounded-xl bg-gradient-to-br from-teal-100 to-indigo-200 max-w-screen-lg w-full mx-auto z-40">
+          <section className="flex flex-col gap-8 p-8 lg:p-10 rounded-xl bg-gradient-to-br from-teal-100 to-indigo-200 max-w-screen-lg w-full mx-auto z-30">
             <h2 className="font-bold text-2xl bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
               Marketing Services
             </h2>
@@ -129,7 +129,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="flex flex-col gap-8 p-8 lg:p-10 rounded-xl bg-gradient-to-br from-indigo-200 to-teal-100 max-w-screen-lg w-full mx-auto z-40">
+          <section className="flex flex-col gap-8 p-8 lg:p-10 rounded-xl bg-gradient-to-br from-indigo-200 to-teal-100 max-w-screen-lg w-full mx-auto z-30">
             <h2 className="font-bold text-2xl bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
               Web Services
             </h2>
