@@ -179,7 +179,7 @@ export default function Home() {
                   <h3 className="font-bold text-xl">WordPress Design</h3>
                   <p>
                     WordPress web design using the most popular CMS in the
-                    world. Get you site built in days.
+                    world. Get your site built in days.
                   </p>
                   <button className="text-sm font-bold p-4 bg-gray-200 hover:bg-indigo-200 w-fit border-b-4 border-gray-500 hover:border-indigo-500 transition-all duration-500 rounded-xl">
                     WordPress Websites

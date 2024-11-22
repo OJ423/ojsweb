@@ -46,8 +46,8 @@ export const metadata = {
 
 export default function ContentMarketing() {
   const packageDescription =
-    "One shoe does not fit all. The monthly content service details a typical service. Ideal for a regular flow of content to generate awareness and leads. Discounts available for retainers.";
-  const packageTitle = "Monthly Content Service";
+    "One shoe does not fit all. A typical monthly freelance content marketing contract is detailed below. It is ideal for a regular flow of content to generate awareness and leads. Discounts are available for retainers.";
+  const packageTitle = "Monthly Content Marketing Service";
   const packageFeatures = [
     "Keyword Research",
     "Topic Research",
@@ -61,7 +61,7 @@ export default function ContentMarketing() {
     "@type": "Service",
     name: "Content Marketing Services",
     description:
-      "Generate awareness and product interest through effective content marketing strategies",
+      "Content marketing services to generate awareness and product interest through effective content marketing strategies",
     provider: {
       "@type": "ProfessionalService",
       name: "OJSWEB - Oliver Smith Freelance Marketing and Web Design",
@@ -84,21 +84,24 @@ export default function ContentMarketing() {
         className={`flex min-h-min flex-col w-full items-center justify-center`}
       >
         <section
-          className={`flex flex-col gap-20 mx-auto justify-center items-center bg-[url("/full-bloom.webp")] py-40 px-8 xl:px-0 w-full`}
+          className={`flex flex-col mx-auto justify-center items-center bg-[url("/full-bloom.webp")] py-28 px-8 xl:px-0 w-full`}
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center items-center max-w-screen-lg py-8 lg:py-0 sm:w-4/5 md:w-full">
             <div className="flex flex-col gap-8">
               <h1 className="text-3xl xl:text-5xl font-bold w-full text-gray-800">
                 <span className="bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
-                  Interesting and Engaging Content
+                  Content marketing services
                 </span>{" "}
-                To Get In Front of Buyers
+                to engage, educate and entice
               </h1>
               <p className="text-lg font-medium">
-                I plan and manage content strategies to raise awareness of your
-                business and generate leads among your target audience.
+                I provide content marketing services to raise awareness of your
+                business and generate leads.
               </p>
-              <LinkStyled src="/contact" linkText="Arrange a chat" />
+              <p className="text-lg font-medium">
+                As a content marketing freelancer, I can help build and manage your content strategy, or join your team as an extra pair of hands.
+              </p>
+              <LinkStyled src="/contact" linkText="Discuss your needs" />
             </div>
             <Image
               src="/marketing/content-marketing-services.webp"
@@ -115,22 +118,19 @@ export default function ContentMarketing() {
           <ColumnsTwoFullH>
             <div className="flex flex-col gap-4">
               <h2 className="text-3xl font-bold w-full text-gray-800">
-                Content is{" "}
+                Being a Content Marketing Freelancer is{" "}
                 <span className="bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
-                  King/Queen
+                  the dream job
                 </span>
               </h2>
               <p className="text-lg leading-7">
-                I enjoy writing and have even published my own Zombie novel. I
-                was on the editorial board for Modern Claims Magazine and have
+                Being a content marketing freelancer is perfect for me as I enjoy writing. I have even published my own Zombie novel and illustrated children&apos;s book. I was on the editorial board for Modern Claims Magazine and have
                 written across varied topics for multinationals and tech
                 start-ups.
               </p>
               <p className="text-lg leading-7 font-medium">
                 I pride myself in creating engaging content, be it written,
-                pictorial or video. I have experience across many sectors and am
-                as adept at writing about the fast-food industry as I am
-                technical topics such as knowledge graphs.
+                pictorial or video. I have lots of experience and am as adept at writing about the fast-food industry as I am technical topics such as knowledge graphs.
               </p>
               <p className="text-lg leading-7 font-medium">
                 My content marketing services are targeted, researched and
@@ -242,9 +242,7 @@ export default function ContentMarketing() {
                 business.
               </p>
               <p className="text-lg leading-7 font-medium">
-                I always research keywords and optimise content for SEO, I will
-                also find relevant groups and communities to amplify your
-                business to potential customers.
+                My content marketing services involve keyword research and SEO optimised content, I will also find relevant groups and communities to amplify your business to potential customers.
               </p>
             </div>
             <div>
@@ -263,15 +261,15 @@ export default function ContentMarketing() {
           description={packageDescription}
           title={packageTitle}
           features={packageFeatures}
-          cost="£800"
+          cost="£750"
         />
         <Testimonials />
-        <section className="my-20">
+        <section className="my-20 max-w-screen-md mx-auto px-8 lg:px-0">
           <h2 className="text-2xl sm:text-4xl font-bold pb-6 mb-6 border-b-2 w-fit bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
-            Get in touch to begin...
+            Start using content to boost your business
           </h2>
-          <p className="mb-16">Send me a message to arrange a chat.</p>
-          <LinkStyled src="/contact" linkText="Arrange a chat" />
+          <p className="mb-16 text-lg">Send me a message to arrange a chat to discuss your needs and begin the journey to helping your audience with quality content.</p>
+          <LinkStyled src="/contact" linkText="Start today" />
         </section>
       </main>
       <Footer />
