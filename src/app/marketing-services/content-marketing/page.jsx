@@ -124,7 +124,7 @@ export default function ContentMarketing() {
                 </span>
               </h2>
               <p className="text-lg leading-7">
-                Being a content marketing freelancer is perfect for me as I enjoy writing. I have even published my own Zombie novel and illustrated children&apos;s book. I was on the editorial board for Modern Claims Magazine and have
+                Being a content marketing freelancer is perfect for me as I enjoy writing. I have even published my own Zombie novel and an illustrated children&apos;s book. I was on the editorial board for Modern Claims Magazine and have
                 written across varied topics for multinationals and tech
                 start-ups.
               </p>
