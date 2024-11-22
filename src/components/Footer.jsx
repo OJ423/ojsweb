@@ -93,12 +93,12 @@ export default function Footer() {
           <ul>
             <li className={`list-none py-2.5 text-sm cursor-pointer`}>
               <Link
-                href="/marketing-services/content-marketing"
+                href="/blog"
                 className={`${
                   pathname.includes("content") ? "font-bold" : "text-auto"
                 } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
               >
-                <FaBlog size={24} title="Content Marketing" />
+                <FaBlog size={24} title="Link to my marketing and web design blog" />
                 Read my blog
               </Link>
             </li>

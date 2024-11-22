@@ -15,7 +15,7 @@ export default function Home() {
       <Navigation />
       <main className="flex min-h-min flex-col w-full items-center justify-center">
         <section
-          className={`min-h-screen py-40 mx-auto w-full px-8 xl:px-0 bg-[url("/full-bloom.webp")]`}
+          className={`min-h-screen py-40 md:py-20 mx-auto w-full px-8 xl:px-0 bg-[url("/full-bloom.webp")]`}
         >
           <div className="max-w-screen-lg w-full flex sm:py-20 md:py-0 items-center justify-between mx-auto gap-8">
             <div className="flex flex-col gap-8 m-auto item">
@@ -58,7 +58,7 @@ export default function Home() {
             width={800}
             height={400}
             priority
-            className="w-4/5 mx-auto h-auto rounded py-16 sm:hidden"
+            className="w-full mx-auto h-auto rounded-xl my-8 sm:hidden"
           />
         </section>
 

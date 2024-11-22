@@ -23,10 +23,10 @@ export default async function Post(props) {
       <Navigation />
       <DesktopNav />
       <main className="flex min-h-min flex-col w-full items-start justify-start">
-        <div className="px-4 py-4 z-50 me-auto">
+        <div className="px-4 py-4 md:z-50 me-auto mt-20 md:mt-0">
           <Link
             href="/blog"
-            className="text-sm font-bold transition-all duration-500 text-teal-500 hover:text-indigo-500"
+            className="text-sm font-bold transition-all duration-500 text-teal-500 hover:text-indigo-500 "
           >
             {`<< Back to Blog`}
           </Link>

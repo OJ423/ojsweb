@@ -11,7 +11,7 @@ export function PostHeader({ title, excerpt, slug, coverImage, author, date }) {
           alt={title}
           width={600}
           height={600}
-          className="max-w-screen-md h-auto mx-auto w-full rounded-xl px-0 md:px-0"
+          className="max-w-screen-md h-auto mx-auto w-full rounded-xl px-4 md:px-0"
         />
         <div className="px-4 xl:px-0 flex flex-col gap-4 max-w-screen-md mt-4">
           <div>
