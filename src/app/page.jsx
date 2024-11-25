@@ -80,15 +80,15 @@ export default function Home() {
             </p>
           </div>
 
-          <section className="flex flex-col gap-8 p-8 lg:p-10 rounded-xl bg-gradient-to-br from-teal-100 to-indigo-200 max-w-screen-lg w-full mx-auto z-30">
-            <h2 className="font-bold text-2xl bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
+          <div className="flex flex-col gap-8 p-8 lg:p-10 rounded-xl bg-gradient-to-br from-teal-100 to-indigo-200 max-w-screen-lg w-full mx-auto z-30">
+            <h3 className="font-bold text-2xl bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
               Marketing Services
-            </h2>
+            </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 justify-center">
               <Link href="/marketing-services/content-marketing">
                 <div className="flex flex-col gap-4 p-4 border-2 border-teal-200 rounded-xl h-full justify-between transition-all duration-500 hover:bg-teal-200">
                   <TfiWrite size={42} className="text-teal-500" />
-                  <h3 className="font-bold text-xl">Content Marketing</h3>
+                  <h4 className="font-bold text-xl">Content Marketing</h4>
                   <p>
                     Unlock the power of content marketing - Engaging,
                     informative, and audience-centric content strategies.
@@ -101,7 +101,7 @@ export default function Home() {
               <Link href="/marketing-services/organic-seo">
                 <div className="flex flex-col gap-4 p-4 border-2 border-teal-200 rounded-xl h-full justify-between transition-all duration-500 hover:bg-teal-200">
                   <FaGoogle size={42} className="text-teal-500" />
-                  <h3 className="font-bold text-xl">Organic SEO</h3>
+                  <h4 className="font-bold text-xl">Organic SEO</h4>
                   <p>
                     Elevate your online presence with customised strategies that
                     enhance visibility, attract targeted traffic, and drive
@@ -115,7 +115,7 @@ export default function Home() {
               <Link href="/marketing-services/design-services">
                 <div className="flex flex-col gap-4 p-4 border-2 border-teal-200 rounded-xl h-full justify-between transition-all duration-500 hover:bg-teal-200">
                   <MdDraw size={42} className="text-teal-500" />
-                  <h3 className="font-bold text-xl">Design Services</h3>
+                  <h4 className="font-bold text-xl">Design Services</h4>
                   <p>
                     Whether its sales brochures, imagery, product videos or any
                     other type of graphic design, I can create on-brand,
@@ -127,17 +127,17 @@ export default function Home() {
                 </div>
               </Link>
             </div>
-          </section>
+          </div>
 
-          <section className="flex flex-col gap-8 p-8 lg:p-10 rounded-xl bg-gradient-to-br from-indigo-200 to-teal-100 max-w-screen-lg w-full mx-auto z-30">
-            <h2 className="font-bold text-2xl bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
+          <div className="flex flex-col gap-8 p-8 lg:p-10 rounded-xl bg-gradient-to-br from-indigo-200 to-teal-100 max-w-screen-lg w-full mx-auto z-30">
+            <h3 className="font-bold text-2xl bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
               Web Services
-            </h2>
+            </h3>
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 gap-8 lg:gap-10 justify-center">
               <Link href="/react-websites">
                 <div className="flex flex-col gap-4 p-4 border-2 border-teal-200 rounded-xl h-full justify-between transition-all duration-500 hover:bg-teal-200">
                   <FaReact size={42} className="text-teal-500" />
-                  <h3 className="font-bold text-xl">React Websites</h3>
+                  <h4 className="font-bold text-xl">React Websites</h4>
                   <p>
                     Lightning fast and unique websites build with React
                     frameworks like Next.js and Gatsby
@@ -150,7 +150,7 @@ export default function Home() {
               <Link href="/shopify-sites">
                 <div className="flex flex-col gap-4 p-4 border-2 border-teal-200 rounded-xl h-full justify-between transition-all duration-500 hover:bg-teal-200">
                   <FaShopify size={42} className="text-teal-500" />
-                  <h3 className="font-bold text-xl">Shopify Stores</h3>
+                  <h4 className="font-bold text-xl">Shopify Stores</h4>
                   <p>
                     Beautiful and fully functional Shopify stores designed to
                     elevate your brand.
@@ -163,7 +163,7 @@ export default function Home() {
               <Link href="/web-apps">
                 <div className="flex flex-col gap-4 p-4 border-2 border-teal-200 rounded-xl h-full justify-between transition-all duration-500 hover:bg-teal-200">
                   <MdOutlineWeb size={42} className="text-teal-500" />
-                  <h3 className="font-bold text-xl">Web Apps</h3>
+                  <h4 className="font-bold text-xl">Web Apps</h4>
                   <p>
                     Share, create, and use data and content with beautiful and
                     intuitive web and mobile apps.
@@ -176,7 +176,7 @@ export default function Home() {
               <Link href="/wordpress-websites">
                 <div className="flex flex-col gap-4 p-4 border-2 border-teal-200 rounded-xl h-full justify-between transition-all duration-500 hover:bg-teal-200">
                   <FaWordpress size={42} className="text-teal-500" />
-                  <h3 className="font-bold text-xl">WordPress Design</h3>
+                  <h4 className="font-bold text-xl">WordPress Design</h4>
                   <p>
                     WordPress web design using the most popular CMS in the
                     world. Get your site built in days.
@@ -187,7 +187,7 @@ export default function Home() {
                 </div>
               </Link>
             </div>
-          </section>
+          </div>
 
           <Image
             src="/web-design-and-marketing-freelancer.svg"

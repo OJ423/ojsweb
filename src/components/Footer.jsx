@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { BsWordpress } from "react-icons/bs";
@@ -29,13 +30,15 @@ export default function Footer() {
               content marketing
             </Link>
             ,{" "}
-            <Link href="/marketing-services/design-services">graphic design</Link>
+            <Link href="/marketing-services/design-services">
+              graphic design
+            </Link>
             , <Link href="/react-websites">React-based websites</Link>,{" "}
             <Link href="/wordpress-websites">wordpress development</Link> or{" "}
-            <Link href="/web-apps">web apps</Link>, then please do get in touch. I
-            am a web design and marketing freelancer in Cheshire meaning I can
-            work at your location in and around Cheshire and Manchester, but I am
-            comfortable working for anyone remotely.
+            <Link href="/web-apps">web apps</Link>, then please do get in touch.
+            I am a web design and marketing freelancer in Cheshire meaning I can
+            work at your location in and around Cheshire and Manchester, but I
+            am comfortable working for anyone remotely.
           </p>
           <div className="flex flex-wrap items-center gap-4 mt-4">
             <Link
@@ -81,7 +84,9 @@ export default function Footer() {
               <Link
                 href="/marketing-services/design-services"
                 className={`${
-                  pathname.includes("design-services") ? "font-bold" : "text-auto"
+                  pathname.includes("design-services")
+                    ? "font-bold"
+                    : "text-auto"
                 } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
               >
                 <FcAddImage size={24} title="Design Services" />
@@ -98,7 +103,10 @@ export default function Footer() {
                   pathname.includes("content") ? "font-bold" : "text-auto"
                 } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
               >
-                <FaBlog size={24} title="Link to my marketing and web design blog" />
+                <FaBlog
+                  size={24}
+                  title="Link to my marketing and web design blog"
+                />
                 Read my blog
               </Link>
             </li>
@@ -111,7 +119,9 @@ export default function Footer() {
               <Link
                 href="/react-websites"
                 className={`${
-                  pathname.includes("react-websites") ? "font-bold" : "text-auto"
+                  pathname.includes("react-websites")
+                    ? "font-bold"
+                    : "text-auto"
                 } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
               >
                 <FcFlashOn size={24} title="React framework websites" />
@@ -152,6 +162,35 @@ export default function Footer() {
               </Link>
             </li>
           </ul>
+        </div>
+        <div className="sm:col-span-2 lg:col-span-4 flex flex-col gap-4 pt-8 border-t-2">
+          <Link href="/">
+            <Image
+              src="/ojsweb-logo-white.svg"
+              alt="Cartoon pic of me, Oliver"
+              width={100}
+              height={100}
+              className="rounded-full w-16 h-16"
+            />
+          </Link>
+          <p>
+            Email me at{" "}
+            <Link
+              className="text-white underline hover:text-teal-200 transition-all duration-500"
+              href="mailto:oliver@ukmarketingfreelancer.co.uk"
+            >
+              oliver@ukmarketingfreelancer.co.uk
+            </Link>
+          </p>
+          <p>
+            Freelance marketing services available on premise in <strong>Manchester, 
+            Knutsford, Wilmslow, Alderley Edge, Macclesfield, Northwich</strong> and
+            surrounding areas.
+          </p>
+          <p>
+            I work remotely as a marketing contractor for UK, US, Irish and
+            Australian markets.
+          </p>
         </div>
       </footer>
     </div>

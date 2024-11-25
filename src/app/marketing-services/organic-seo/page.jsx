@@ -8,13 +8,13 @@ import Link from "next/link";
 import DesktopNav from "@/components/DeskTopNav";
 
 export const metadata = {
-  title: "SEO Consultant Cheshire and Manchester",
+  title: "Freelance SEO Consultant Cheshire and Manchester",
   description:
-    "Organic SEO services in Cheshire, Manchester and Worldwide. Hire me as your SEO specialist.",
+    "I am a Freelance SEO SEO Consultant working with clients in Cheshire, Manchester and Worldwide. Hire me as your SEO specialist.",
   openGraph: {
-    title: "Organic SEO Consultant in Cheshire & Manchester",
+    title: "Freelance SEO Consultant in Cheshire & Manchester",
     description:
-      "Organic SEO services in Cheshire, Manchester and Worldwide. Hire me as your SEO specialist.",
+      "Freelance SEO services in Cheshire, Manchester and Worldwide. Hire me as your SEO specialist.",
     url: "https://ojsweb.co.uk/marketing-services/organic-seo",
     siteName: "ojsweb - Marketing and Web Design Excellence",
     images: [
@@ -42,7 +42,7 @@ export const metadata = {
 export default function OrganicSEO() {
   const packageDescription =
     "A three month package would enable provide you with 48 hours of my time. This includes SEO tools such as Ahrefs saving you further money on software packages.";
-  const packageTitle = "3 Month Starter Package";
+  const packageTitle = "3 Month SEO Starter Package";
   const packageFeatures = [
     "16 hours per month x 3",
     "Site Audit",
