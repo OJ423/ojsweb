@@ -80,23 +80,21 @@ export default function OrganicSEO() {
         <DesktopNav />
         <main className="flex min-h-min flex-col w-full items-center justify-center pattern-cross pattern-green-600 pattern-bg-white pattern-size-6 pattern-opacity-20">
           <section
-            className={`flex flex-col gap-8 mx-auto justify-center items-center py-40 bg-[url("/full-bloom.webp")] w-full`}
+            className={`flex flex-col gap-8 mx-auto justify-center items-center py-28 md:py-40 bg-[url("/full-bloom.webp")] w-full`}
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center items-center max-w-screen-lg px-8 xl:px-0 sm:w-4/5 md:w-full">
               <div className="flex flex-col gap-8">
                 <h1 className="text-3xl xl:text-5xl font-bold w-full text-gray-800">
                   <span className="bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
-                    Connect With YOUR Audience
+                    Freelance SEO Consultant
                   </span>{" "}
-                  Using Organic SEO
+                  in Manchester and Cheshire
                 </h1>
                 <p className="text-lg font-medium">
-                  Thought-leadership, piquing interest and talking to the
-                  correct audience are the most effective ways to increase brand
-                  awareness and long-term customer acquisition.
+                  Do you need a freelance SEO consultant to boost your online presence? I am a freelance SEO consultant based in Manchester and Cheshire and specialise in helping businesses improve their search rankings.
                 </p>
                 <p className="text-lg font-medium">
-                  My organic SEO services are proven to increase web traffic and
+                  My SEO services are proven to increase web traffic and
                   lead generation.
                 </p>
                 <LinkStyled src="/contact" linkText="Arrange a chat" />
@@ -113,9 +111,9 @@ export default function OrganicSEO() {
             </div>
           </section>
           <section className="flex flex-col max-w-screen-lg w-full px-8 xl:px-0 gap-20 my-20">
-            <section className="flex flex-col gap-8 p-8 bg-teal-100 rounded-xl">
+            <section className="flex flex-col gap-8 p-8 bg-gradient-to-br from-teal-100 to-indigo-200 rounded-xl">
               <h2 className="font-bold text-3xl text-gray-600">
-                My previous roles resulted in...
+                Freelance SEO results...
               </h2>
               <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-start md:items-center justify-center">
                 <p className="text-teal-500 text-4xl font-bold text-left">{`4900 % Growth`}</p>
@@ -135,26 +133,35 @@ export default function OrganicSEO() {
             </section>
             <div className="flex flex-col gap-4 max-w-screen-md mx-auto">
               <h2 className="text-3xl font-bold w-full text-gray-800">
-                Talk for your{" "}
+                How I can help you as a{" "}
                 <span className="bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
-                  Clients
+                  Freelance SEO Consultant
                 </span>
               </h2>
               <p className="text-lg leading-7">
-                I believe that by educating, inspiring, amusing or helping
-                people with content is the most effective way to build
-                awareness, trust and custom. This is the fundamental building
-                block for my organic search engine optimisation services.
+              Do you want to improve your online presence and connect with your audience? My freelance SEO services are designed to help businesses succeed in organic search. From technical SEO to content creation, I provide a comprehensive approach tailored to your needs and budget.
               </p>
-              <p className="text-lg leading-7 font-medium">
-                The service encompasses technical SEO to optimise your current
-                site. Keyword research and competitor analysis determine
-                opportunities and low hanging fruit to form a plan of attack.
+              <p className="text-lg leading-7">
+              I believe the best way to build awareness, trust, and customer loyalty is through content that educates, entertains, and helps your audience. This is the foundation of my organic SEO services: creating a meaningful connection between you and your customers.
               </p>
-              <p className="text-lg leading-7 font-medium">
-                From there I will concentrate on SEO optimised content, link
-                building and continual improvement of your owned channels.
-              </p>
+              </div>
+              <div className="flex flex-col md:flex-row items-center gap-4 max-w-screen-xl mx-auto">
+                <div className="flex flex-col gap-4 p-4 flex-1">
+                  <h3 className="text-xl font-semibold">Technical Optimisation</h3>
+                  <p>I will refine your existing site to improve performance and visibility</p>
+                </div>
+                <p className="text-5xl font-bold text-gray-600 rotate-90 md:rotate-0">{`>`}</p>
+                <div className="flex flex-col gap-4 p-4 flex-1">
+                  <h3 className="text-xl font-semibold">Research & Strategy</h3>
+                  <p>Keyword research and competitor analysis identify quick wins and strategic opportunities</p>
+                </div>
+                <p className="text-5xl font-bold text-gray-600 rotate-90 md:rotate-0">{`>`}</p>
+                <div className="flex flex-col gap-4 p-4 flex-1">
+                  <h3 className="text-xl font-semibold">Content & Growth</h3>
+                  <p>I will focus on creating valuable content, building links, and optimizing your owned channels for continuous improvement</p>
+                </div>
+              </div>
+              <div className="flex flex-col gap-4 max-w-screen-md mx-auto">
               <p className="text-lg leading-7 font-medium">
                 If you are interested, the best port-of-call is to arrange a
                 chat to discuss your needs.
@@ -162,7 +169,7 @@ export default function OrganicSEO() {
               <LinkStyled src="/contact" linkText="Arrange a chat" />
             </div>
           </section>
-          <section className="bg-teal-100 rounded-xl mx-8 p-8 grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 lg:gap-20 max-w-screen-xl mx-auto items-center mb-20">
+          <section className="bg-gradient-to-br from-teal-100 to-indigo-200 rounded-xl mx-8 p-8 grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 lg:gap-20 max-w-screen-xl mx-auto items-center mb-20">
             <div className="flex flex-col gap-4">
               <h2 className="text-3xl font-bold w-full text-gray-800">
                 The Key Is{" "}
@@ -236,12 +243,12 @@ export default function OrganicSEO() {
             </Link>
           </section>
           <Testimonials />
-          <section className="my-20">
+          <section className="my-20 px-8 max-w-screen-sm mx-auto">
             <h2 className="text-2xl sm:text-4xl font-bold pb-6 mb-6 border-b-2 w-fit bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
-              Get in touch to begin...
+              Start boosting your search performance today
             </h2>
-            <p className="mb-16">Send me a message to arrange a chat.</p>
-            <LinkStyled src="/contact" linkText="Arrange a chat" />
+            <p className="mb-16">{`Let’s talk about how I can help you achieve your goals. Arrange a chat to explore your needs and take the first step toward SEO success.`}</p>
+            <LinkStyled src="/contact" linkText="Let's talk" />
           </section>
         </main>
         <Footer />
