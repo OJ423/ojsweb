@@ -46,7 +46,7 @@ export default function Home() {
               alt="Manchester and Cheshire Marketing freelancer and web designer"
               quality={100}
               width={800}
-              height={400}
+              height={500}
               priority
               className="w-1/3 ms-auto h-auto rounded-xl hidden sm:block"
             />
