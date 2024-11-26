@@ -81,7 +81,7 @@ export default function ContentMarketing() {
       <Navigation />
       <DesktopNav />
       <main
-        className={`flex min-h-min flex-col w-full items-center justify-center`}
+        className={`flex flex-col w-full items-center justify-center`}
       >
         <section
           className={`flex flex-col mx-auto justify-center items-center bg-[url("/full-bloom.webp")] py-28 px-8 xl:px-0 w-full`}
@@ -227,7 +227,7 @@ export default function ContentMarketing() {
               </div>
             </section>
           </ColumnsTwoFullH>
-          <section className="bg-teal-100 rounded-xl p-8 grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 lg:gap-20 mx-auto items-center mb-20 lg:max-w-screen-lg md:max-w-screen-sm mx-8 md:mx-auto z-20 relative">
+          <section className="bg-gradient-to-br from-teal-100 to-indigo-200 rounded-xl p-8 grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 lg:gap-20 mx-auto items-center mb-20 lg:max-w-screen-lg md:max-w-screen-sm mx-8 md:mx-auto z-20 relative">
             <div className="flex flex-col gap-8">
               <h2 className="text-3xl font-bold w-full text-gray-800">
                 Your Content{" "}
