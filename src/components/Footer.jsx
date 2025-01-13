@@ -177,9 +177,9 @@ export default function Footer() {
             Email me at{" "}
             <Link
               className="text-white underline hover:text-teal-200 transition-all duration-500"
-              href="mailto:oliver@ukmarketingfreelancer.co.uk"
+              href="mailto:oliver@ojsweb.co.uk"
             >
-              oliver@ukmarketingfreelancer.co.uk
+              oliver@ojsweb.co.uk
             </Link>
           </p>
           <p>

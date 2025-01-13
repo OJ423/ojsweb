@@ -51,7 +51,7 @@ export default function Contact() {
               <p className="text-lg">
                 {`Fill out the form if you've got questions or would like to have a chat about your web or marketing needs.`}
               </p>
-              <p className="text-lg">Alternatively, email me at <Link className="text-indigo-500 hover:text-teal-500 transition-all duration-500" href="mailto:oliver@ukmarketingfreelancer.co.uk">oliver@ukmarketingfreelancer.co.uk</Link></p>
+              <p className="text-lg">Alternatively, email me at <Link className="text-indigo-500 hover:text-teal-500 transition-all duration-500" href="mailto:oliver@ojsweb.co.uk">oliver@ojsweb.co.uk</Link></p>
             </div>
           <ContactForm />
           </section>
