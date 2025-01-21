@@ -191,6 +191,15 @@ export default function WebApps() {
             <h3 className="text-2xl font-bold my-4">
               Community Social Media App
             </h3>
+            <div className="aspect-w-16 aspect-h-9 rounded-xl">
+                  <iframe
+                    src="https://www.youtube.com/embed/YE43ESLn-2M?si=wdT8k4M3Cdb7VXlK"
+                    width={"100%"}
+                    height={"100%"}
+                    allowFullScreen
+                    className="rounded-xl"
+                  />
+                </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 justify-center items-start">
               <Image
                 src="/portfolio/comm-you-nity-view.webp"
@@ -221,24 +230,24 @@ export default function WebApps() {
                 <p className="mb-8">{`The app features an SQL database, API server and Next.js front-end with user authentication.`}</p>
                 <div className="flex gap-4 items-center">
                   <Link
-                    href="https://slidersgame.com"
+                    href="https://github.com/OJ423/commyounity"
                     className="flex flex-col items-center hover:opacity-50 transition-all duration-500 gap-2"
                   >
                     <IoLogoGithub
                       size={32}
-                      title="slidersgame.com"
-                      aria-label="link to the sliders game"
+                      title="GitHub repo for Commyounity backend"
+                      aria-label="GitHub repo for Commyounity backend"
                     />
                     <p className="text-xs font-medium">Backend</p>
                   </Link>
                   <Link
-                    href="https://github.com/OJ423/sliders"
+                    href="https://github.com/OJ423/commyounity-frontend"
                     className="flex flex-col items-center hover:opacity-50 transition-all duration-500 gap-2"
                   >
                     <IoLogoGithub
                       size={32}
-                      title="Sliders Github repo"
-                      aria-label="link to the sliders Github repo"
+                      title="GitHub repo for Commyounity frontend"
+                      aria-label="GitHub repo for Commyounity frontend"
                     />
                     <p className="text-xs font-medium">Front-End</p>
                   </Link>
