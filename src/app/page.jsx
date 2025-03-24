@@ -1,3 +1,6 @@
+"use client";
+
+import ColumnsTwoFullH from "@/components/ColumnsTwoFullH";
 import DesktopNav from "@/components/DeskTopNav";
 import Footer from "@/components/Footer";
 import LinkStyled from "@/components/LinkStyled";
@@ -18,26 +21,21 @@ export default function Home() {
           className={`py-40 md:py-20 mx-auto w-full px-8 xl:px-0 bg-[url("/full-bloom.webp")]`}
         >
           <div className="max-w-screen-lg w-full flex sm:py-20 md:py-0 items-center justify-between mx-auto gap-8">
-            <div className="flex flex-col gap-8 m-auto item">
-              <h1 className="text-3xl xl:text-4xl font-bold text-gray-800">
+            <div className="flex flex-col gap-8 m-auto item text-gray-800 ">
+              <h1 className="text-3xl xl:text-4xl font-bold leading-[2.5rem]">
                 <span className="bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
-                  Web Design & Marketing Freelance Services
+                  I am a Marketing Consultant
                 </span>{" "}
-                in Cheshire, Manchester and Beyond
+                Available in Cheshire, Manchester and Beyond
               </h1>
-              <p className="text-lg font-medium">
-                Hi, I&apos;m Oliver and I am a web design and marketing
-                freelancer in Cheshire. I have over 20 years&apos; experience in
-                marketing, web design and development.
+              <p className="text-xl font-semibold">
+                Helping marketing teams and growing businesses build strategic,
+                data-driven marketing functions for measurable success.
               </p>
               <p className="text-lg font-medium">
-                I am honest, hardworking and diligent.
-              </p>
-              <p className="text-lg font-medium">
-                My focus is to help businesses get the foundations of their
-                digital channels and marketing right. I believe in using
-                high-quality content to build organic interest in my
-                client&apos;s businesses. I&apos;m here for your long-term.
+                Additionally, I provide project based freelance marketing and
+                web design services to businesses in Manchester, Cheshire and
+                beyond.
               </p>
               <LinkStyled src="/contact" linkText="Let's chat" />
             </div>
@@ -61,14 +59,50 @@ export default function Home() {
             className="w-full mx-auto h-auto rounded-xl my-8 sm:hidden"
           />
         </section>
+        <section className="relative w-full bg-gradient-to-br from-teal-100 to-indigo-200 rounded-xl p-8 py-40 text-gray-800">
+          <article className="max-w-screen-lg w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div className="flex flex-col gap-4">
+              <div>
+                <p className="uppercase text-xs font-semibold text-gray-500">Marketing Consultancy Services</p>
+                <h2 className="text-3xl font-bold w-full bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
+                  Empowering Marketing Teams & Growing Businesses
+                </h2>
 
+              </div>
+              <p className="text-lg font-medium leading-7">
+                As a marketing consultant, I specialise in helping small
+                marketing teams and growing businesses establish a structured
+                and effective marketing function. Whether you’re scaling up,
+                launching new initiatives, or refining your strategy, I provide
+                the expertise and direction needed to build a results-driven
+                marketing operation.
+              </p>
+              <LinkStyled src="/marketing-consultant" linkText="Marketing Consultant Services" />
+            </div>
+            <div className="flex flex-col gap-8">
+              <Image
+                src="/consultant/helping-business-growth.webp"
+                alt="Helping business growth"
+                width={600}
+                height={600}
+                className="w-full h-auto rounded-xl"
+                priority
+                quality={100}
+              />
+            </div>
+          </article>
+          </section>
         <section
           className={`py-40 lg:py-40 px-4 xl:px-0 flex flex-col gap-8 bg-gradient-to-br from-teal-500 to-indigo-600 w-full relative`}
         >
           <div className="flex flex-col gap-8 w-full mb-8 text-white max-w-screen-md mx-auto z-30">
-            <h2 className="font-bold text-2xl lg:text-4xl">
-              Based in Cheshire & Manchester, but servicing the world
-            </h2>
+            <div>
+              <p className="uppercase text-xs font-semibold text-white">Freelance Services</p>
+              <h2 className="font-bold text-2xl lg:text-4xl">
+                Based in Cheshire & Manchester, but servicing the world
+              </h2>
+
+            </div>
             <p className="text-lg font-medium">
               If you need me to be at your location, my freelance marketing and
               web design services are restricted to Manchester and Cheshire, but

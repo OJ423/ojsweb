@@ -13,6 +13,7 @@ import {
   FcFlashOn,
   FcPhoneAndroid,
   FcPositiveDynamic,
+  FcReadingEbook,
   FcSearch,
   FcSmartphoneTablet,
 } from "react-icons/fc";
@@ -39,6 +40,19 @@ export default function DesktopNav() {
             </Link>
             <nav>
               <ul className="flex items-center gap-8 font-bold">
+              <li className={`list-none py-2.5 text-sm cursor-pointer`}>
+                  <Link
+                    href="/marketing-consultant"
+                    className={`${
+                      pathname.includes("consultant")
+                        ? "text-teal-500"
+                        : "text-auto"
+                    } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
+                  >
+                    <FcReadingEbook size={24} title="Marketing Consultancy" />
+                    Consultant
+                  </Link>
+                </li>
                 <li className={`list-none py-2.5 text-sm cursor-pointer`}>
                   <button
                     onClick={handleVisible}
@@ -57,8 +71,8 @@ export default function DesktopNav() {
                         : "text-auto"
                     } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
                   >
-                    <FcSmartphoneTablet size={24} title="Services" />
-                    Services
+                    <FcSmartphoneTablet size={24} title="Freelance Services" />
+                    Freelance
                   </button>
                 </li>
                 <li className={`list-none py-2.5 text-sm cursor-pointer`}>

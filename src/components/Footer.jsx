@@ -10,6 +10,7 @@ import {
   FcFile,
   FcFlashOn,
   FcPhoneAndroid,
+  FcReadingEbook,
   FcSearch,
 } from "react-icons/fc";
 
@@ -21,10 +22,9 @@ export default function Footer() {
       <footer className="gap-8 py-20 text-white px-8 xl:px-0 grid sm:grid-cols-2 lg:grid-cols-4 justify-start max-w-screen-lg w-full mx-auto">
         <div className="flex flex-col gap-4 sm:col-span-2 lg:col-span-2 mx-auto">
           <h2 className="font-bold text-3xl">Hey, I&apos;m Oliver.</h2>
-          <p className="text-sm">
-            {" "}
-            I am a web design and marketing freelancer based in Cheshire. I
-            specialise in marketing and web design. So if you need help with{" "}
+          <p>
+            I am a Marketing Consultant who also provides project based web design and marketing freelancer services. I am based in Cheshire
+            and specialise in {" "}
             <Link href="/marketing-services/organic-seo">SEO</Link>,{" "}
             <Link href="/marketing-services/content-marketing">
               content marketing
@@ -35,10 +35,7 @@ export default function Footer() {
             </Link>
             , <Link href="/react-websites">React-based websites</Link>,{" "}
             <Link href="/wordpress-websites">wordpress development</Link> or{" "}
-            <Link href="/web-apps">web apps</Link>, then please do get in touch.
-            I am a web design and marketing freelancer in Cheshire meaning I can
-            work at your location in and around Cheshire and Manchester, but I
-            am comfortable working for anyone remotely.
+            <Link href="/web-apps">web apps</Link>.
           </p>
           <div className="flex flex-wrap items-center gap-4 mt-4">
             <Link
@@ -56,7 +53,21 @@ export default function Footer() {
           </div>
         </div>
         <div>
-          <p className="text-xs uppercase mb-4">Marketing Services</p>
+        <p className="text-xs uppercase mb-4">Consultancy</p>
+          <ul>
+            <li className={`list-none py-2.5 text-sm cursor-pointer`}>
+              <Link
+                href="/marketing-consultant"
+                className={`${
+                  pathname.includes("content") ? "font-bold" : "text-auto"
+                } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
+              >
+                <FcReadingEbook size={24} title="Content Marketing" />
+                Marketing Consultant
+              </Link>
+            </li>
+          </ul>
+          <p className="text-xs uppercase mb-4 mt-8">Marketing Services</p>
           <ul>
             <li className={`list-none py-2.5 text-sm cursor-pointer`}>
               <Link
@@ -91,23 +102,6 @@ export default function Footer() {
               >
                 <FcAddImage size={24} title="Design Services" />
                 Design Services
-              </Link>
-            </li>
-          </ul>
-          <p className="text-xs uppercase mb-4 mt-8">Advice & Opinion</p>
-          <ul>
-            <li className={`list-none py-2.5 text-sm cursor-pointer`}>
-              <Link
-                href="/blog"
-                className={`${
-                  pathname.includes("content") ? "font-bold" : "text-auto"
-                } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
-              >
-                <FaBlog
-                  size={24}
-                  title="Link to my marketing and web design blog"
-                />
-                Read my blog
               </Link>
             </li>
           </ul>
@@ -162,6 +156,23 @@ export default function Footer() {
               </Link>
             </li>
           </ul>
+          <p className="text-xs uppercase mb-4 mt-8">Advice & Opinion</p>
+          <ul>
+            <li className={`list-none py-2.5 text-sm cursor-pointer`}>
+              <Link
+                href="/blog"
+                className={`${
+                  pathname.includes("content") ? "font-bold" : "text-auto"
+                } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
+              >
+                <FaBlog
+                  size={24}
+                  title="Link to my marketing and web design blog"
+                />
+                Read my blog
+              </Link>
+            </li>
+          </ul>
         </div>
         <div className="sm:col-span-2 lg:col-span-4 flex flex-col gap-4 pt-8 border-t-2">
           <Link href="/">
@@ -183,9 +194,12 @@ export default function Footer() {
             </Link>
           </p>
           <p>
-            Freelance marketing services available on premise in <strong>Manchester, 
-            Knutsford, Wilmslow, Alderley Edge, Macclesfield, Northwich</strong> and
-            surrounding areas.
+            Marketing consultancy and freelance marketing services available on premise in{" "}
+            <strong>
+              Manchester, Knutsford, Wilmslow, Alderley Edge, Macclesfield,
+              Northwich
+            </strong>{" "}
+            and surrounding areas.
           </p>
           <p>
             I work remotely as a marketing contractor for UK, US, Irish and

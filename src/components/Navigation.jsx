@@ -10,6 +10,7 @@ import {
   FcAddImage,
   FcPositiveDynamic,
   FcBusinessman,
+  FcReadingEbook,
 } from "react-icons/fc";
 import { BsWordpress } from "react-icons/bs";
 import { TbBrandGithub, TbBrandLinkedin, TbMail } from "react-icons/tb";
@@ -117,8 +118,25 @@ export default function Navigation() {
         </div>
         <nav className="flex flex-col gap-0 items-start w-full">
           <p className="text-xs uppercase mt-4 mb-4 bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
+            Consultancy
+          </p>
+          <ul>
+            <li className={`list-none py-1.5 text-sm cursor-pointer`}>
+              <Link
+                href="/marketing-consultant"
+                className={`${
+                  pathname.includes("consultant") ? "text-teal-500" : "text-auto"
+                } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
+              >
+                <FcReadingEbook size={24} title="Marketing Services" />
+                Marketing Consultant
+              </Link>
+            </li>
+            </ul>
+          <p className="text-xs uppercase mt-4 mb-4 bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
             Marketing
           </p>
+          
           <ul>
             <li className={`list-none py-1.5 text-sm cursor-pointer`}>
               <Link
