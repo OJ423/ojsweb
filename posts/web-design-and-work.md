@@ -3,7 +3,7 @@ title: "Web Design & Optimised Copy"
 excerpt: "I recently undertook a project with an AI Consultancy called VectorLink. What they are doing in the AI space is really exiting."
 coverImage: "/portfolio/vectorlink-entity-resolution-services.jpg"
 date: "2024-10-19T05:35:07.322Z"
-category: "My work"
+category: "My Work"
 author:
   name: Oliver Smith
   picture: "/ojsweb-avatar.jpeg"
