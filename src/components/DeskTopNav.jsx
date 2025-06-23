@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { FaBlog, FaShopify } from "react-icons/fa";
+import { FaBlog, FaReact, FaShopify } from "react-icons/fa";
 import { TbBrandGithub, TbBrandLinkedin, TbMail } from "react-icons/tb";
 import { useState } from "react";
 import Image from "next/image";
@@ -11,13 +11,16 @@ import {
   FcBusinessman,
   FcFile,
   FcFlashOn,
+  FcFlowChart,
   FcPhoneAndroid,
+  FcPodiumWithAudience,
   FcPositiveDynamic,
   FcReadingEbook,
   FcSearch,
   FcSmartphoneTablet,
 } from "react-icons/fc";
 import { BsWordpress } from "react-icons/bs";
+import { linkBlue } from "./customStyles";
 
 export default function DesktopNav() {
   const [visible, setVisible] = useState(false);
@@ -26,7 +29,7 @@ export default function DesktopNav() {
 
   return (
     <>
-      <header className="hidden md:block w-full bg-white text-gray-600 z-40 relative">
+      <header id="top" className="hidden md:block w-full bg-white text-gray-600 z-40 relative">
         <div className="w-full flex flex-col items-center justify-center h-20 bg-slate-100 z-50 relative shadow-xl">
           <div className="w-full max-w-screen-lg mx-auto px-4 xl:px-0 flex justify-between items-center">
             <Link href="/">
@@ -40,19 +43,6 @@ export default function DesktopNav() {
             </Link>
             <nav>
               <ul className="flex items-center gap-8 font-bold">
-              <li className={`list-none py-2.5 text-sm cursor-pointer`}>
-                  <Link
-                    href="/marketing-consultant"
-                    className={`${
-                      pathname.includes("consultant")
-                        ? "text-teal-500"
-                        : "text-auto"
-                    } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
-                  >
-                    <FcReadingEbook size={24} title="Marketing Consultancy" />
-                    Consultant
-                  </Link>
-                </li>
                 <li className={`list-none py-2.5 text-sm cursor-pointer`}>
                   <button
                     onClick={handleVisible}
@@ -66,13 +56,15 @@ export default function DesktopNav() {
                         "content-marketing",
                         "organic-seo",
                         "design-services",
+                        "startup",
+                        "web-design"
                       ].some((route) => pathname.includes(route))
                         ? "text-teal-500"
                         : "text-auto"
                     } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
                   >
-                    <FcSmartphoneTablet size={24} title="Freelance Services" />
-                    Freelance
+                    <FcSmartphoneTablet size={24} title="Marketing & Web Design Services" />
+                    Services
                   </button>
                 </li>
                 <li className={`list-none py-2.5 text-sm cursor-pointer`}>
@@ -106,10 +98,9 @@ export default function DesktopNav() {
                       pathname.includes("/contact")
                         ? "text-teal-500"
                         : "text-auto"
-                    } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
+                    } ${linkBlue}`}
                   >
-                    <TbMail size={24} title="Contact" />
-                    Contact
+                    Hire Me
                   </Link>
                 </li>
               </ul>
@@ -167,9 +158,68 @@ export default function DesktopNav() {
           <div className="flex gap-20 mx-auto w-full max-w-screen-lg mx-auto px-4 xl:px-0 justify-center">
             <nav>
               <p className="text-xs uppercase mb-4 bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
+                Tech Startups
+              </p>
+              <ul>
+                <li className={`list-none py-2.5 text-sm cursor-pointer`}>
+                  <Link
+                    href="/startup/strategy"
+                    className={`${
+                      pathname.includes("startup/strategy")
+                        ? "text-teal-500"
+                        : "text-auto"
+                    } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
+                  >
+                    <FcFlowChart size={24} title="Startup Marketing Strategy" />
+                    Strategy & Leadership
+                  </Link>
+                </li>
+                <li className={`list-none py-2.5 text-sm cursor-pointer`}>
+                  <Link
+                    href="/startup/execution"
+                    className={`${
+                      pathname.includes("startup/execution")
+                        ? "text-teal-500"
+                        : "text-auto"
+                    } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
+                  >
+                    <FcFlashOn size={24} title="Execution & Delivery" />
+                    Execution & Delivery
+                  </Link>
+                </li>
+                <li className={`list-none py-2.5 text-sm cursor-pointer`}>
+                  <Link
+                    href="/startup/web-and-digital"
+                    className={`${
+                      pathname.includes("startup/web-and-digital")
+                        ? "text-teal-500"
+                        : "text-auto"
+                    } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
+                  >
+                    <FcSmartphoneTablet size={24} title="Web & Digital" />
+                    Web & Digital
+                  </Link>
+                </li>
+              </ul>
+            </nav>
+            <nav>
+              <p className="text-xs uppercase mb-4 bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
                 Marketing
               </p>
               <ul>
+                <li className={`list-none py-2.5 text-sm cursor-pointer`}>
+                  <Link
+                    href="/marketing-consultant"
+                    className={`${
+                      pathname.includes("marketing-consultant")
+                        ? "text-teal-500"
+                        : "text-auto"
+                    } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
+                  >
+                    <FcReadingEbook size={24} title="Marketing Consultant" />
+                    Marketing Consultant
+                  </Link>
+                </li>
                 <li className={`list-none py-2.5 text-sm cursor-pointer`}>
                   <Link
                     href="/marketing-services"
@@ -233,6 +283,19 @@ export default function DesktopNav() {
               <ul>
                 <li className={`list-none py-2.5 text-sm cursor-pointer`}>
                   <Link
+                    href="/web-design"
+                    className={`${
+                      pathname.includes("web-design")
+                        ? "text-teal-500"
+                        : "text-auto"
+                    } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
+                  >
+                    <FcSmartphoneTablet size={24} title="Web Design Services" />
+                    Web Design
+                  </Link>
+                </li>
+                <li className={`list-none py-2.5 text-sm cursor-pointer`}>
+                  <Link
                     href="/react-websites"
                     className={`${
                       pathname.includes("react-websites")
@@ -240,8 +303,8 @@ export default function DesktopNav() {
                         : "text-auto"
                     } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
                   >
-                    <FcFlashOn size={24} title="React framework websites" />
-                    Fast React Websites
+                    <FaReact size={24} title="React framework websites" />
+                    React Websites
                   </Link>
                 </li>
                 <li className={`list-none py-2.5 text-sm cursor-pointer`}>
@@ -268,19 +331,6 @@ export default function DesktopNav() {
                   >
                     <BsWordpress size={24} title="Wordpress Development" />
                     WordPress Development
-                  </Link>
-                </li>
-                <li className={`list-none py-2.5 text-sm cursor-pointer`}>
-                  <Link
-                    href="/shopify-sites"
-                    className={`${
-                      pathname.includes("shopify")
-                        ? "text-teal-500"
-                        : "text-auto"
-                    } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
-                  >
-                    <FaShopify size={24} title="Shopify Sites" />
-                    Shopify Sites
                   </Link>
                 </li>
               </ul>

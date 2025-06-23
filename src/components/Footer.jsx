@@ -4,25 +4,28 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { BsWordpress } from "react-icons/bs";
-import { FaBlog, FaShopify } from "react-icons/fa";
+import { FaBlog, FaReact, FaShopify } from "react-icons/fa";
 import {
   FcAddImage,
   FcFile,
   FcFlashOn,
+  FcFlowChart,
   FcPhoneAndroid,
   FcReadingEbook,
   FcSearch,
+  FcSmartphoneTablet,
 } from "react-icons/fc";
+import { HiChevronDoubleUp } from "react-icons/hi";
 
 export default function Footer() {
   const pathname = usePathname();
 
   return (
-    <div className="bg-gradient-to-br from-teal-500 to-indigo-600 w-full">
+    <div className="bg-gradient-to-br from-teal-500 to-indigo-600 w-full relative">
       <footer className="gap-8 py-20 text-white px-8 xl:px-0 grid sm:grid-cols-2 lg:grid-cols-4 justify-start max-w-screen-lg w-full mx-auto">
         <div className="flex flex-col gap-4 sm:col-span-2 lg:col-span-2 mx-auto">
           <h2 className="font-bold text-3xl">Hey, I&apos;m Oliver.</h2>
-          <p>
+          <p className="text-sm">
             I am a Marketing Consultant who also provides project based web design and marketing freelancer services. I am based in Cheshire
             and specialise in {" "}
             <Link href="/marketing-services/organic-seo">SEO</Link>,{" "}
@@ -53,9 +56,45 @@ export default function Footer() {
           </div>
         </div>
         <div>
-        <p className="text-xs uppercase mb-4">Consultancy</p>
+        <p className="text-xs uppercase mb-4">Startups</p>
           <ul>
+             <li className={`list-none py-2.5 text-sm cursor-pointer`}>
+              <Link
+                href="/startup/strategy"
+                className={`${
+                  pathname.includes("strategy") ? "font-bold" : "text-auto"
+                } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
+              >
+                <FcFlowChart size={24} title="Strategy & Leadership" />
+                Strategy & Leadership
+              </Link>
+            </li>
             <li className={`list-none py-2.5 text-sm cursor-pointer`}>
+              <Link
+                href="/startup/execution"
+                className={`${
+                  pathname.includes("execution") ? "font-bold" : "text-auto"
+                } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
+              >
+                <FcFlashOn size={24} title="Execution & Delivery" />
+                Execution & Delivery
+              </Link>
+            </li>
+            <li className={`list-none py-2.5 text-sm cursor-pointer`}>
+              <Link
+                href="/startup/web-and-digital"
+                className={`${
+                  pathname.includes("web-and-digital") ? "font-bold" : "text-auto"
+                } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
+              >
+                <FcSmartphoneTablet size={24} title="Web & Digital" />
+                Web & Digital
+              </Link>
+            </li>
+          </ul>
+          <p className="text-xs uppercase mb-4 mt-8">Marketing Services</p>
+          <ul>
+             <li className={`list-none py-2.5 text-sm cursor-pointer`}>
               <Link
                 href="/marketing-consultant"
                 className={`${
@@ -66,9 +105,6 @@ export default function Footer() {
                 Marketing Consultant
               </Link>
             </li>
-          </ul>
-          <p className="text-xs uppercase mb-4 mt-8">Marketing Services</p>
-          <ul>
             <li className={`list-none py-2.5 text-sm cursor-pointer`}>
               <Link
                 href="/marketing-services/content-marketing"
@@ -111,6 +147,19 @@ export default function Footer() {
           <ul>
             <li className={`list-none py-2.5 text-sm cursor-pointer`}>
               <Link
+                href="/web-design"
+                className={`${
+                  pathname.includes("web-design")
+                    ? "font-bold"
+                    : "text-auto"
+                } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
+              >
+                <FcSmartphoneTablet size={24} title="Web Design" />
+                Web Design
+              </Link>
+            </li>
+            <li className={`list-none py-2.5 text-sm cursor-pointer`}>
+              <Link
                 href="/react-websites"
                 className={`${
                   pathname.includes("react-websites")
@@ -118,8 +167,8 @@ export default function Footer() {
                     : "text-auto"
                 } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
               >
-                <FcFlashOn size={24} title="React framework websites" />
-                Fast React Websites
+                <FaReact size={24} title="React framework websites" />
+                React Websites
               </Link>
             </li>
             <li className={`list-none py-2.5 text-sm cursor-pointer`}>
@@ -141,18 +190,7 @@ export default function Footer() {
                 } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
               >
                 <BsWordpress size={24} title="Wordpress Development" />
-                WordPress Development
-              </Link>
-            </li>
-            <li className={`list-none py-2.5 text-sm cursor-pointer`}>
-              <Link
-                href="/shopify-sites"
-                className={`${
-                  pathname.includes("shopify") ? "font-bold" : "text-auto"
-                } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
-              >
-                <FaShopify size={24} title="Shopify Sites" />
-                Shopify Sites
+                WordPress
               </Link>
             </li>
           </ul>
@@ -193,7 +231,7 @@ export default function Footer() {
               oliver@ojsweb.co.uk
             </Link>
           </p>
-          <p>
+          <p className="text-sm">
             Marketing consultancy and freelance marketing services available on premise in{" "}
             <strong>
               Manchester, Knutsford, Wilmslow, Alderley Edge, Macclesfield,
@@ -201,11 +239,16 @@ export default function Footer() {
             </strong>{" "}
             and surrounding areas.
           </p>
-          <p>
+          <p className="text-sm">
             I work remotely as a marketing contractor for UK, US, Irish and
             Australian markets.
           </p>
         </div>
+        <Link href="#top">
+          <div className="absolute top-2 right-2 bg-white p2 rounded-lg cursor-pointer text-blue-600 hover:text-blue-400 hover:bg-blue-100 transition-all duration-500">
+            <HiChevronDoubleUp size={42}/>
+          </div>
+        </Link>
       </footer>
     </div>
   );

@@ -1,4 +1,5 @@
 import ContactForm from "@/components/ContactForm";
+import { h1, herContainerAlt, mainContainer, twoColGridLightBkg } from "@/components/customStyles";
 import DesktopNav from "@/components/DeskTopNav";
 import Footer from "@/components/Footer";
 import Navigation from "@/components/Navigation";
@@ -39,21 +40,20 @@ export default function Contact() {
     <>
         <DesktopNav />
         <Navigation />
-        <main className={`flex flex-col mx-auto w-full items-center justify-center px-8 bg-[url("/full-bloom.webp")]`}> 
-          <section className="flex flex-col md:flex-row gap-8 md:gap-20 mx-auto py-28 md:py-40 max-w-screen-lg">
-            <div className="flex flex-col gap-8">
-              <h1 className="text-3xl md:text-5xl font-bold text-gray-800">
-                <span className="bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
-                  Get in touch
-                </span>{" "}
-                to let me help you
-              </h1>
-              <p className="text-lg">
-                {`Fill out the form if you've got questions or would like to have a chat about your web or marketing needs.`}
-              </p>
-              <p className="text-lg">Alternatively, email me at <Link className="text-indigo-500 hover:text-teal-500 transition-all duration-500" href="mailto:oliver@ojsweb.co.uk">oliver@ojsweb.co.uk</Link></p>
-            </div>
-          <ContactForm />
+        <main className={mainContainer}> 
+          <section className={herContainerAlt}>
+            <article className="max-w-screen-lg w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+              <div className="flex flex-col gap-8">
+                <h1 className={h1}>
+                    Get in touch to let me help you
+                </h1>
+                <p>
+                  {`Fill out the form if you've got questions or would like to have a chat about your web or marketing needs.`}
+                </p>
+                <p>Alternatively, email me at <Link className="underline hover:text-teal-500 transition-all duration-500" href="mailto:oliver@ojsweb.co.uk">oliver@ojsweb.co.uk</Link></p>
+              </div>
+            <ContactForm />
+            </article>
           </section>
         </main>
         <Footer />

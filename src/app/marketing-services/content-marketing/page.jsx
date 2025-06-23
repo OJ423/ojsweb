@@ -11,6 +11,8 @@ import { GiNewspaper } from "react-icons/gi";
 import { FaIndustry } from "react-icons/fa";
 import Footer from "@/components/Footer";
 import DesktopNav from "@/components/DeskTopNav";
+import { h1, h2, herContainerAlt, heroP, linkBlue, mainContainer, twoColGridLightBkg } from "@/components/customStyles";
+import ContactCta from "@/components/ContactCta";
 
 export const metadata = {
   title: "Freelance Content Marketing Services",
@@ -81,27 +83,24 @@ export default function ContentMarketing() {
       <Navigation />
       <DesktopNav />
       <main
-        className={`flex flex-col w-full items-center justify-center`}
+        className={mainContainer}
       >
         <section
-          className={`flex flex-col mx-auto justify-center items-center bg-[url("/full-bloom.webp")] py-28 px-8 xl:px-0 w-full`}
+          className={herContainerAlt}
         >
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center items-center max-w-screen-lg py-8 lg:py-0 sm:w-4/5 md:w-full">
+          <div className={twoColGridLightBkg}>
             <div className="flex flex-col gap-8">
-              <h1 className="text-3xl xl:text-5xl font-bold w-full text-gray-800">
-                <span className="bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
-                  Content marketing services
-                </span>{" "}
-                to engage, educate and entice
+              <h1 className={h1}>
+                  Content marketing services to engage, educate and entice
               </h1>
-              <p className="text-lg font-medium">
+              <p className={heroP}>
                 I provide content marketing services to raise awareness of your
                 business and generate leads.
               </p>
-              <p className="text-lg font-medium">
+              <p className={heroP}>
                 As a content marketing freelancer, I can help build and manage your content strategy, or join your team as an extra pair of hands.
               </p>
-              <LinkStyled src="/contact" linkText="Discuss your needs" />
+              <Link href="/contact" className={linkBlue} >Discuss your needs</Link>
             </div>
             <Image
               src="/marketing/content-marketing-services.webp"
@@ -117,7 +116,7 @@ export default function ContentMarketing() {
         <div className="relative w-full">
           <ColumnsTwoFullH>
             <div className="flex flex-col gap-4">
-              <h2 className="text-3xl font-bold w-full text-gray-800">
+              <h2 className={h2}>
                 Being a Content Marketing Freelancer is{" "}
                 <span className="bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
                   the dream job
@@ -229,19 +228,19 @@ export default function ContentMarketing() {
           </ColumnsTwoFullH>
           <section className="bg-gradient-to-br from-teal-100 to-indigo-200 rounded-xl p-8 grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 lg:gap-20 mx-auto items-center mb-20 lg:max-w-screen-lg md:max-w-screen-sm mx-8 md:mx-auto z-20 relative">
             <div className="flex flex-col gap-8">
-              <h2 className="text-3xl font-bold w-full text-gray-800">
+              <h2 className={h2}>
                 Your Content{" "}
                 <span className="bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
                   Amplified
                 </span>
               </h2>
-              <p className="text-lg leading-7 font-medium">
+              <p>
                 Does content exist if it is never seen? Never mind the
                 philosophical musing, you benefit by having more eyes on your
                 content. Not just any eyes, people who are relevant to your
                 business.
               </p>
-              <p className="text-lg leading-7 font-medium">
+              <p>
                 My content marketing services involve keyword research and SEO optimised content, I will also find relevant groups and communities to amplify your business to potential customers.
               </p>
             </div>
@@ -264,13 +263,7 @@ export default function ContentMarketing() {
           cost="£750"
         />
         <Testimonials />
-        <section className="my-20 max-w-screen-md mx-auto px-8 lg:px-0">
-          <h2 className="text-2xl sm:text-4xl font-bold pb-6 mb-6 border-b-2 w-fit bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
-            Start using content to boost your business
-          </h2>
-          <p className="mb-16 text-lg">Send me a message to arrange a chat to discuss your needs and begin the journey to helping your audience with quality content.</p>
-          <LinkStyled src="/contact" linkText="Start today" />
-        </section>
+        <ContactCta />
       </main>
       <Footer />
     </>

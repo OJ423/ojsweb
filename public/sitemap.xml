@@ -7,97 +7,117 @@
 
   <url>
     <loc>https://ojsweb.co.uk</loc>
-    <lastmod>2025-03-24T09:28:59+00:00</lastmod>
+    <lastmod>2025-06-23T09:28:59+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://ojsweb.co.uk/marketing-consultant</loc>
+    <lastmod>2025-06-23T09:28:59+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://ojsweb.co.uk/startup/strategy</loc>
+    <lastmod>2025-06-23T09:28:59+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://ojsweb.co.uk/startup/execution</loc>
+    <lastmod>2025-06-23T09:28:59+00:00</lastmod>
     <priority>1.00</priority>
   </url>
     <url>
-    <loc>https://ojsweb.co.uk/marketing-consultant</loc>
-    <lastmod>2025-03-24T09:28:59+00:00</lastmod>
+    <loc>https://ojsweb.co.uk/startup/web-and-digital</loc>
+    <lastmod>2025-06-23T09:28:59+00:00</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
     <loc>https://ojsweb.co.uk/react-websites</loc>
-    <lastmod>2024-11-20T09:28:59+00:00</lastmod>
+    <lastmod>2025-06-23T09:28:59+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://ojsweb.co.uk/web-apps</loc>
-    <lastmod>2024-11-20T09:28:59+00:00</lastmod>
+    <lastmod>2025-06-23T09:28:59+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://ojsweb.co.uk/wordpress-websites</loc>
-    <lastmod>2024-11-20T09:28:59+00:00</lastmod>
+    <lastmod>2025-06-23T09:28:59+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://ojsweb.co.uk/shopify-sites</loc>
-    <lastmod>2024-11-20T09:28:59+00:00</lastmod>
+    <lastmod>2025-06-23T09:28:59+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://ojsweb.co.uk/marketing-services</loc>
-    <lastmod>2024-11-20T09:28:59+00:00</lastmod>
+    <lastmod>2025-06-23T09:28:59+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://ojsweb.co.uk/contact</loc>
-    <lastmod>2024-11-20T09:28:59+00:00</lastmod>
+    <lastmod>2025-06-23T09:28:59+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://ojsweb.co.uk/about</loc>
-    <lastmod>2024-11-20T09:28:59+00:00</lastmod>
+    <lastmod>2025-06-23T09:28:59+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://ojsweb.co.uk/marketing-services/content-marketing</loc>
-    <lastmod>2024-11-20T09:28:59+00:00</lastmod>
+    <lastmod>2025-06-23T09:28:59+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://ojsweb.co.uk/marketing-services/organic-seo</loc>
-    <lastmod>2024-11-20T09:28:59+00:00</lastmod>
+    <lastmod>2025-06-23T09:28:59+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://ojsweb.co.uk/marketing-services/design-services</loc>
-    <lastmod>2024-11-20T09:28:59+00:00</lastmod>
+    <lastmod>2025-06-23T09:28:59+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://ojsweb.co.uk/blog</loc>
-    <lastmod>2024-11-20T09:28:59+00:00</lastmod>
+    <lastmod>2025-06-23T09:28:59+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://ojsweb.co.uk/blog/seo-tips-for-small-businesses</loc>
-    <lastmod>2024-11-20T09:28:59+00:00</lastmod>
+    <lastmod>2025-06-23T09:28:59+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://ojsweb.co.uk/blog/web-design-and-work</loc>
-    <lastmod>2024-11-20T09:28:59+00:00</lastmod>
+    <lastmod>2025-06-23T09:28:59+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://ojsweb.co.uk/blog/how-i-achieved-seo-growth</loc>
-    <lastmod>2024-11-20T09:28:59+00:00</lastmod>
+    <lastmod>2025-06-23T09:28:59+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://ojsweb.co.uk/blog/understanding-chatgpt-for-marketing-content</loc>
-    <lastmod>2024-11-20T09:28:59+00:00</lastmod>
+    <lastmod>2025-06-23T09:28:59+00:00</lastmod>
     <priority>0.80</priority>
   </url>
-    <url>
+  <url>
     <loc>https://ojsweb.co.uk/blog/wordpress-for-beginners-guide</loc>
-    <lastmod>2024-11-28T09:28:59+00:00</lastmod>
+    <lastmod>2025-06-23T09:28:59+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://ojsweb.co.uk/blog/content-marketing-advice</loc>
-    <lastmod>2025-01-13T09:28:59+00:00</lastmod>
+    <lastmod>2025-06-23T09:28:59+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+    <url>
+    <loc>https://ojsweb.co.uk/blog/content-strategy-case-study</loc>
+    <lastmod>2025-06-23T09:28:59+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 </urlset>

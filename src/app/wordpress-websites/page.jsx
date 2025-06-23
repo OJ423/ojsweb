@@ -9,6 +9,8 @@ import LinkStyled from "@/components/LinkStyled";
 import Costs from "@/components/Costs";
 import Footer from "@/components/Footer";
 import DesktopNav from "@/components/DeskTopNav";
+import { h1, h2, herContainerAlt, heroP, linkBlue, mainContainer, textGradient, twoColGridLightBkg } from "@/components/customStyles";
+import Link from "next/link";
 
 export const metadata = {
   title: "Freelance WordPress Design Services",
@@ -70,19 +72,16 @@ export default function WordPressWebsites() {
       />
       <DesktopNav />
       <Navigation />
-      <main className="flex min-h-min flex-col w-full items-center justify-center">
+      <main className={mainContainer}>
         <section
-          className={`flex flex-col gap-20 px-8 xl:px-0 justify-center items-center bg-[url("/full-bloom.webp")] py-40 w-full`}
+          className={herContainerAlt}
         >
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center items-center max-w-screen-lg sm:w-4/5 md:w-full">
+          <div className={twoColGridLightBkg}>
             <div className="flex flex-col gap-8">
-              <h1 className="text-3xl xl:text-5xl font-bold w-full text-gray-800">
-                Master Your Web Presence with{" "}
-                <span className="bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
-                  Expert WordPress Design
-                </span>
+              <h1 className={h1}>
+                Master Your Web Presence with Expert WordPress Design
               </h1>
-              <p className="text-lg font-medium">
+              <p className={heroP}>
                 {`The world's most popular CMS, perfect for those who want to take charge of their web presence.`}
               </p>
               <LinkStyled src="/contact" linkText="Arrange a chat" />
@@ -101,23 +100,20 @@ export default function WordPressWebsites() {
         <PeterWilliams />
         <ColumnsTwoFullH>
           <div className="flex flex-col gap-4">
-            <h2 className="text-3xl font-bold w-full text-gray-800">
-              Tried and tested{" "}
-              <span className="bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
-                by millions
-              </span>
+            <h2 className={`${h2} ${textGradient}`}>
+              Tried and tested by millions
             </h2>
-            <p className="text-lg leading-7">
+            <p>
               WordPress is used by some of the biggest companies in the world,
               and countless SMEs. It offers a tried and tested platform for
               websites, e-commerce sites, blogs and more.
             </p>
-            <p className="text-lg leading-7 font-medium">
+            <p>
               I have extensive experience building quality and reliable
               WordPress sites. Whatever your needs, I can deliver a site that is
               fast, beautiful and perfectly functional.
             </p>
-            <LinkStyled src="/contact" linkText="Talk your needs" />
+            <Link href="/contact" className={linkBlue}>Let&apos;s chat</Link>
           </div>
           <div>
             <Image
@@ -132,7 +128,7 @@ export default function WordPressWebsites() {
           </div>
         </ColumnsTwoFullH>
         <section className="bg-gradient-to-br from-teal-100 to-indigo-200 flex flex-col gap-16 mx-auto w-full justify-center items-center py-20 px-4">
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-600">{`Here's some of my work...`}</h2>
+          <h2 className={`${h2} ${textGradient}`}>{`Here's some of my work...`}</h2>
           <Portfolio images={wordpressImgs} />
         </section>
         <Costs description={costDescription} cost="£250" />

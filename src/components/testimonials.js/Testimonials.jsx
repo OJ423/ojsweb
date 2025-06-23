@@ -52,7 +52,7 @@ export default function Testimonials() {
   return (
     <section className="w-full py-20 bg-gradient-to-br from-teal-500 to-indigo-600 static relative" {...handlers}>
       <div className="relative overflow-hidden">
-        <div className={`px-4 xl:px-0 max-w-screen-lg mx-auto min-h-96 flex flex-col justify-center ${fadeClass}`}>
+        <div className={`px-8 max-w-screen-lg mx-auto min-h-96 flex flex-col justify-center ${fadeClass}`}>
           <div key={currentSlide.name}>
             <p className="md:text-xl font-bold text-white">
               {currentSlide.quote}

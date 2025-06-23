@@ -4,6 +4,9 @@ import PeterWilliams from "@/components/testimonials.js/Testimonials";
 import LinkStyled from "@/components/LinkStyled";
 import Footer from "@/components/Footer";
 import DesktopNav from "@/components/DeskTopNav";
+import { h1, h2, herContainerAlt, heroP, linkBlue, mainContainer, twoColGridLightBkg } from "@/components/customStyles";
+import Link from "next/link";
+import ContactCta from "@/components/ContactCta";
 
 export const metadata = {
   title: "Graphic Design & Sales Collateral Freelance Service",
@@ -62,19 +65,16 @@ export default function DesignServices() {
       />
       <Navigation />
       <DesktopNav />
-      <main className="flex min-h-min flex-col w-full items-center justify-center">
+      <main className={mainContainer}>
         <section
-          className={`flex flex-col gap-20 mx-auto px-8 xl:px-0 justify-center items-center py-40 bg-[url("/full-bloom.webp")] w-full`}
+          className={herContainerAlt}
         >
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 justify-center items-center max-w-screen-lg sm:w-4/5 md:w-full">
+          <div className={twoColGridLightBkg}>
             <div className="flex flex-col gap-8">
-              <h1 className="text-3xl xl:text-5xl font-bold w-full text-gray-800">
-                <span className="bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
-                  Aesthetically Pleasing
-                </span>{" "}
-                Graphic Design Services
+              <h1 className={h1}>
+                  Aesthetically Pleasing Graphic Design Services
               </h1>
-              <p className="text-lg font-medium">
+              <p className={heroP}>
                 From pitch decks, brochures to website imagery, I am adept at
                 creating on-brand imagery and collateral to make your business
                 shine.
@@ -94,27 +94,27 @@ export default function DesignServices() {
         </section>
         <section className="my-20 w-11/12 md:w-5/6 lg:w-1/2">
           <div className="flex flex-col gap-4">
-            <h2 className="text-3xl font-bold w-full text-gray-800">
+            <h2 className={h2}>
               Make things look{" "}
               <span className="bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
                 pretty
               </span>
             </h2>
-            <p className="text-lg leading-7">
+            <p>
               Graphic design services do not need much explanation. You have an
               idea and you want it to be displayed nicely, portray the right
               message and help achieve its business objective.
             </p>
-            <p className="text-lg leading-7 font-medium">
+            <p>
               I charge £35 per hour for my graphic design services. All rights
               to images and collateral produced by me belong to you. Use me as a
               one off or book a retainer, discounts available.
             </p>
-            <p className="text-lg leading-7 font-medium">
+            <p>
               If you are interested, the best port-of-call is to arrange a chat
               to discuss your needs.
             </p>
-            <LinkStyled src="/contact" linkText="Arrange a chat" />
+            <Link href="/contact"  className={linkBlue}>Discuss your needs</Link>
           </div>
         </section>
         <section className="flex flex-col gap-8 p-4 md:p-8 lg:p-20">
@@ -231,13 +231,7 @@ export default function DesignServices() {
           </div>
         </section>
         <PeterWilliams />
-        <section className="my-20">
-          <h2 className="text-2xl sm:text-4xl font-bold pb-6 mb-6 border-b-2 w-fit bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
-            Get in touch to begin...
-          </h2>
-          <p className="mb-16">Send me a message to arrange a chat.</p>
-          <LinkStyled src="/contact" linkText="Arrange a chat" />
-        </section>
+        <ContactCta />
       </main>
       <Footer />
     </>

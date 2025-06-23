@@ -8,6 +8,8 @@ import Link from "next/link";
 import Footer from "@/components/Footer";
 import DesktopNav from "@/components/DeskTopNav";
 import Testimonials from "@/components/testimonials.js/Testimonials";
+import { h1, h2, heroContainer, heroP, linkBlue, mainContainer } from "@/components/customStyles";
+import ContactCta from "@/components/ContactCta";
 
 export const metadata = {
   title: "Freelance Marketing Services in Cheshire, Manchester & Worldwide",
@@ -65,33 +67,28 @@ export default function MarketingServices() {
       />
       <DesktopNav />
       <Navigation />
-      <main className="flex min-h-min flex-col w-full items-center justify-center">
-        <section
-          className={`flex flex-col gap-20 px-auto px-4 xl:px-0 justify-center items-center py-20 lg:py-40 bg-[url("/full-bloom.webp")] w-full`}
-        >
-          <div className="flex flex-col gap-8 md:flex-row gap-20 justify-center items-center max-w-screen-lg mt-20 md:mt-0 sm:w-2/3 md:w-full">
-            <div className="flex flex-col gap-8">
-              <h1 className="text-3xl xl:text-5xl font-bold w-full text-gray-800">
-                <span className="bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
-                  Freelance Marketing Services
-                </span>{" "}
-                Aligned to Your Goals
+      <main className={mainContainer}>
+        <section className={heroContainer}>
+          <article className="max-w-screen-lg w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 items-end justify-between mx-auto gap-8 text-white">
+            <div className="flex flex-col gap-8 m-auto item lg:col-span-2 pb-20">
+              <h1 className={h1}>
+                  Freelance Marketing Services Aligned to Your Goals
               </h1>
-              <p className="text-lg font-medium">
+              <p className={heroP}>
                 {`Seeking a boost in sales leads, increased visibility, or support for a forthcoming product launch? I’m Oliver, your expert in crafting tailor-made organic marketing solutions designed to propel your business towards its unique goals.`}
               </p>
-              <LinkStyled src="/contact" linkText="Arrange a chat" />
+              <Link href="/contact" className={linkBlue} >Arrange a chat</Link>
             </div>
             <Image
-              src="/marketing/freelance-marketing-services.svg"
-              alt="Freelance Marketing Services"
-              width={600}
-              height={600}
-              className="rounded-xl md:w-5/12"
-              priority
+              src="/fractional-cmo-services.png"
+              alt="Oliver Smith, Fractional CMO services"
               quality={100}
+              width={800}
+              height={800}
+              priority
+              className="w-full ms-auto h-auto lg:col-span-3 md:mt-40 lg:mt-0"
             />
-          </div>
+          </article>
         </section>
         <section className="flex flex-col gap-20 mx-4 max-w-screen-xl justify-center items-center p-8 mx-2 lg:p-20 my-20 rounded-xl bg-teal-100">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10 justify-center">
@@ -139,26 +136,26 @@ export default function MarketingServices() {
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-20 justify-center items-center">
             <div className="flex flex-col gap-4">
-              <h1 className="text-3xl font-bold w-full text-gray-800">
+              <h2 className={h2}>
                 Freelance Marketing Services that are{" "}
                 <span className="bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
                   effective and risk free
                 </span>
-              </h1>
-              <p className="text-lg leading-7">
+              </h2>
+              <p>
                 I have over 20 years experience in the world of marketing. I
                 have helped SMEs, multinational organisations and tech start-ups
                 generate leads, increase brand exposure and launch products. I
                 offer a range of marketing services to help your business.
               </p>
-              <p className="text-lg leading-7 font-medium">
+              <p>
                 Hiring a freelance marketer like me brings you a wealth of
                 experience that you can take advantage of as and when you need.
                 Less costly and time consuming than employing someone full time,
                 my freelance marketing services are always crafted with
                 precision and care.
               </p>
-              <LinkStyled src="/contact" linkText="Talk your needs" />
+              <Link href="/contact" className={linkBlue} >Let&apos;s chat</Link>
             </div>
             <div>
               <Image
@@ -173,13 +170,7 @@ export default function MarketingServices() {
         </section>
         <Testimonials />
 
-        <div className="my-20">
-          <h2 className="text-2xl sm:text-4xl font-bold pb-6 mb-6 border-b-2 w-fit bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
-            Get in touch to begin...
-          </h2>
-          <p className="mb-16">Send me a message to arrange a chat.</p>
-          <LinkStyled src="/contact" linkText="Arrange a chat" />
-        </div>
+        <ContactCta />
       </main>
       <Footer />
     </>

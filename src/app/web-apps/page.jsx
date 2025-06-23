@@ -13,6 +13,7 @@ import { IoLogoGithub } from "react-icons/io5";
 import Footer from "@/components/Footer";
 import DesktopNav from "@/components/DeskTopNav";
 import Testimonials from "@/components/testimonials.js/Testimonials";
+import { h1, h2, herContainerAlt, heroP, linkBlue, mainContainer, twoColGridLightBkg } from "@/components/customStyles";
 
 export const metadata = {
   title: "Full-stack contractor or hire.",
@@ -85,19 +86,14 @@ export default function WebApps() {
       />
       <Navigation />
       <DesktopNav />
-      <main className="flex min-h-min flex-col w-full items-center justify-center">
-        <section
-          className={`flex flex-col gap-20 mx-auto px-[8%] justify-center items-center py-40 bg-[url("/full-bloom.webp")] w-full`}
-        >
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center items-center max-w-screen-lg sm:w-4/5">
+      <main className={mainContainer}>
+        <section className={herContainerAlt}>
+          <div className={`${twoColGridLightBkg} mb-8`}>
             <div className="flex flex-col gap-8">
-              <h1 className="text-3xl xl:text-5xl font-bold w-full text-gray-800">
-                <span className="bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
-                  Curate and Display Data
-                </span>{" "}
-                To Business Stakeholders
+              <h1 className={h1}>
+                  Curate and Display Data To Business Stakeholders
               </h1>
-              <p className="text-lg font-medium">
+              <p className={heroP}>
                 Share, create, and use data and content with beautiful and
                 intuitive web and mobile apps.
               </p>
@@ -118,25 +114,25 @@ export default function WebApps() {
         <Testimonials />
         <ColumnsTwoFullH>
           <div className="flex flex-col gap-4">
-            <h1 className="text-3xl font-bold w-full text-gray-800">
+            <h2 className={h2}>
               Unlock Business Potential with{" "}
               <span className="bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
                 Data-Driven Web Apps
               </span>
-            </h1>
-            <p className="text-lg leading-7">
+            </h2>
+            <p>
               I specialise in using existing data or collecting new information
               to create impactful solutions. Picture a retail app that
               customises user recommendations based on purchase history, or a
               healthcare app that gathers patient data to offer personalised
               health tips.
             </p>
-            <p className="text-lg leading-7 font-medium">
+            <p>
               My full-stack expertise ensures your web application is both
               visually appealing and highly functional, transforming data into
               valuable insights for your business growth.
             </p>
-            <LinkStyled src="/contact" linkText="Talk your needs" />
+            <Link href="/contact" className={linkBlue}>Let&apos;s chat</Link>
           </div>
           <div>
             <SyntaxHighlighter
@@ -155,7 +151,7 @@ export default function WebApps() {
         <CallToAction />
         <section className="bg-gradient-to-br from-teal-100 to-indigo-200 flex flex-col gap-20 mx-auto w-full justify-center items-center py-20 px-8 pb-20">
           <div className="w-full max-w-screen-xl flex flex-col gap-8">
-            <h2 className="text-3xl md:text-4xl font-bold">{`Here's some of my work...`}</h2>
+            <h2 className={h2}>{`Here's some of my work...`}</h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 justify-center items-start">
               <Image
                 src="/portfolio/slidersgame-closeup.webp"

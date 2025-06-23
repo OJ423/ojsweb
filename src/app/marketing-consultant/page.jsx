@@ -14,6 +14,14 @@ import DesktopNav from "@/components/DeskTopNav";
 import { TbRulerMeasure } from "react-icons/tb";
 import { BsPersonWorkspace } from "react-icons/bs";
 import { IoBusiness } from "react-icons/io5";
+import {
+  h1,
+  herContainerAlt,
+  heroP,
+  mainContainer,
+  twoColGridLightBkg,
+} from "@/components/customStyles";
+import ContactCta from "@/components/ContactCta";
 
 export const metadata = {
   title: "Marketing Consultant | Manchester & Cheshire",
@@ -48,7 +56,6 @@ export const metadata = {
 };
 
 export default function MarketingConsultant() {
-
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -73,19 +80,12 @@ export default function MarketingConsultant() {
       />
       <Navigation />
       <DesktopNav />
-      <main className={`flex flex-col w-full items-center justify-center`}>
-        <section
-          className={`flex flex-col mx-auto justify-center items-center bg-[url("/full-bloom.webp")] py-28 px-8 xl:px-0 w-full`}
-        >
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center items-center max-w-screen-lg py-8 lg:py-0 sm:w-4/5 md:w-full">
+      <main className={mainContainer}>
+        <section className={herContainerAlt}>
+          <div className={twoColGridLightBkg}>
             <div className="flex flex-col gap-8">
-              <h1 className="text-3xl xl:text-5xl font-bold w-full text-gray-800">
-                Growth Focused{" "}
-                <span className="bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
-                  Marketing Consultant
-                </span>{" "}
-              </h1>
-              <p className="text-lg font-medium">
+              <h1 className={h1}>Growth Focused Marketing Consultant</h1>
+              <p className={heroP}>
                 I help marketing teams and growing businesses build strategic,
                 data-driven marketing functions for measurable success.
               </p>
@@ -235,17 +235,7 @@ export default function MarketingConsultant() {
         </section>
         <p></p>
         <Testimonials />
-        <section className="my-20 max-w-screen-md mx-auto px-8 lg:px-0">
-          <h2 className="text-2xl sm:text-4xl font-bold pb-6 mb-6 border-b-2 w-fit bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
-            Let&apos;s Get Started
-          </h2>
-          <p className="mb-16 text-lg">
-            If you&apos;re a marketing team looking for guidance or a business
-            ready to build a marketing function, let&apos;s chat to discuss how
-            I can support your marketing success.
-          </p>
-          <LinkStyled src="/contact" linkText="Start today" />
-        </section>
+        <ContactCta />
       </main>
       <Footer />
     </>

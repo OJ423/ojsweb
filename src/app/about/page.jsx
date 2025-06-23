@@ -1,3 +1,4 @@
+import { h1, herContainerAlt, mainContainer, twoColGridLightBkg } from "@/components/customStyles";
 import DesktopNav from "@/components/DeskTopNav";
 import Footer from "@/components/Footer";
 import Navigation from "@/components/Navigation";
@@ -41,11 +42,11 @@ export default function About() {
     <>
       <DesktopNav />
       <Navigation />
-      <main className="flex min-h-min flex-col mx-auto w-full text-white font-medium text-lg">
+      <main className={mainContainer}>
         <section
-          className={`flex flex-col gap-20 mx-auto justify-center items-center bg-[url("/full-bloom.webp")] py-40 px-8 xl:px-0 w-full`}
+          className={herContainerAlt}
         >
-          <div className="grid grid-cols-1 mx-auto gap-8 justify-center items-center max-w-screen-sm sm:w-4/5 md:w-full">
+          <div className={twoColGridLightBkg}>
             <Image
               src="/hey-oliver-marketing-consultant-in-cheshire.webp"
               alt="A graphic design saying hey - basically a placeholder so I can write marketing consultant in Cheshire. I added this image for SEO reasons rather than anything meaningful to the content."
@@ -53,37 +54,23 @@ export default function About() {
               height={300}
               className="mx-auto"
             />
-            <h1 className="text-3xl font-bold text-gray-800 text-center">
-              <span className="bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
-                About me:
-              </span>{" "}
-              Oliver, Freelance Marketing & Web Design Expert in Cheshire
-            </h1>
+            <div>
+              <h1 className={h1}>
+                Hello, I&apos;m Oliver, a Marketing & Web Design Consultant in Cheshire, UK
+              </h1>
+
+            </div>
           </div>
         </section>
-        <section className="bg-gradient-to-br from-teal-500 to-indigo-600 w-full px-8 py-40">
+        <section className="bg-gradient-to-br from-teal-500 to-indigo-600 w-full px-8 py-40 text-white">
           <div className="flex flex-col gap-4 max-w-screen-sm mx-auto leading-8">
-            <p className="text-lg">
-              Hi, I’m Oliver, a marketing freelancer based in Cheshire,
-              specialising in local marketing and web design for businesses in
-              Cheshire and Manchester, including Wilmslow and Knutsford. With
-              years of experience in{" "}
-              <Link href="/marketing-services/content-marketing">
-                content marketing
-              </Link>
-              , <Link href="/marketing-services/organic-seo">SEO</Link>,{" "}
-              <Link href="/marketing-services/design-services">
-                graphic design
-              </Link>
-              , and web development (using JavaScript, TypeScript,{" "}
-              <Link href="/wordpress-websites">WordPress</Link>, HTML & CSS), I
-              want to help businesses grow through effective and tailored
-              digital strategies.
+            <p>
+              Hi, I&apos;m Oliver, a marketing and web consultant based right here in Cheshire. I work with tech startups across the globe, helping them navigate the unique challenges of a fast-paced industry. Closer to home, I also partner with general businesses throughout Cheshire and Manchester, including areas like Wilmslow and Knutsford, providing the same high-caliber marketing and web expertise.
             </p>
-            <p className="text-lg">
-              {`As a freelance web designer in Cheshire, I work with small to medium-sized businesses, delivering user-friendly, visually appealing websites that not only look great but also perform well on search engines. Whether you're a new business or looking to refresh your online presence, I can help you achieve your goals.`}
+            <p>
+              With years of hands-on experience in areas like <Link className="underline" href={"/marketing-services/content-marketing"}>content marketing</Link>, <Link className="underline" href={"/marketing-services/organic-seo"}>SEO</Link>, <Link className="underline" href={"/marketing-services/design-services"}>graphic design</Link>, and web development (leveraging JavaScript, TypeScript, WordPress, HTML & CSS), my mission is simple: to help businesses like yours achieve significant growth through effective and tailored digital strategies.
             </p>
-            <p className="text-lg">
+            <p>
               {`I pride myself on my personal approach, working closely with clients in Knutsford, Wilmslow, and the surrounding areas to understand their unique needs and deliver results. If you're looking for a Manchester marketing freelancer who can provide creative and strategic services to boost your online presence, you're in the right place.`}
             </p>
           </div>
@@ -104,7 +91,7 @@ export default function About() {
             />
           </div>
           <div className="flex flex-col gap-4 max-w-screen-sm mx-auto leading-8">
-            <p className="text-lg">
+            <p>
               Aside from my work, I&apos;ve written two books - a zombie
               thriller titled From{" "}
               <Link
@@ -124,8 +111,8 @@ export default function About() {
               children and enjoy cooking, reading, and traveling when I’m not
               busy creating digital solutions for my clients.
             </p>
-            <p className="text-lg">
-              {`Let’s work together to elevate your business with impactful marketing and web design. If you’re based in Cheshire, Manchester or anywhere else (if you're happy for me to work remotely) and need a dedicated freelancer, please do get in touch.`}
+            <p>
+              {`Let’s work together to elevate your business with impactful marketing and web design. If you’re based in Cheshire, Manchester or anywhere else (if you're happy for me to work remotely) and need a dedicated contractor, please do get in touch.`}
             </p>
           </div>
         </section>

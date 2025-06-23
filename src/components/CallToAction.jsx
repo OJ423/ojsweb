@@ -4,14 +4,16 @@ import {
   FcDocument,
   FcCommandLine,
 } from "react-icons/fc";
-import LinkStyled from "./LinkStyled";
+import { h2, textGradient } from "./customStyles";
+import ContactCta from "./ContactCta";
 
 export default function CallToAction() {
   return (
-    <section className="md:min-h-screen flex flex-col gap-20 mx-auto w-full justify-center items-center py-20 px-8 lg:px-4 max-w-screen-lg">
+    <>
+    <section className="flex flex-col gap-20 mx-auto w-full justify-center items-center py-20 px-8 lg:px-4 max-w-screen-lg">
       <div className="mx-auto flex flex-col gap-20">
         <div>
-          <h2 className="text-2xl sm:text-4xl font-bold pb-6 mb-6 border-b-2 w-fit">
+          <h2 className={`${h2} ${textGradient}`}>
             My working process...
           </h2>
           <p className="text-lg font-medium">
@@ -53,14 +55,9 @@ export default function CallToAction() {
             <p className="">{`I'll get to work in a dev environment, testing as I build. After a demo, and with your approval, I will deploy your app.`}</p>
           </div>
         </div>
-        <div>
-          <h2 className="text-2xl sm:text-4xl font-bold pb-6 mb-6 border-b-2 w-fit bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
-            Get in touch to begin...
-          </h2>
-          <p className="mb-16">Send me a message to arrange a chat.</p>
-          <LinkStyled src="/contact" linkText="Arrange a chat" />
-        </div>
       </div>
     </section>
+    <ContactCta />
+    </>
   );
 }

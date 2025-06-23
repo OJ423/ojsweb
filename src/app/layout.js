@@ -12,13 +12,13 @@ const poppins = Poppins({
 export const metadata = {
   title: "Web Design and Marketing Services",
   description:
-    "I'm Oliver and I am a freelance web developer and marketing professional and available for hire.",
+    "I'm Oliver and I am a marketing and web contractor specialising in tech startups.",
   openGraph: {
     title: "Web Design and Marketing Services",
     description:
-      "I'm Oliver and I am a freelance web developer and marketing professional and available for hire.",
+      "I'm Oliver and I am a marketing and web contractor specialising in tech startups.",
     url: "https://ojsweb.co.uk/",
-    siteName: "OJSWEB | Marketing and Web Design Freelance Services",
+    siteName: "Marketing and Web Design Services",
     images: [
       {
         url: "https://ojsweb.co.uk/ojsweb-og-image.png", // Must be an absolute URL
@@ -29,7 +29,7 @@ export const metadata = {
         url: "https://ojsweb.co.uk/ojsweb-og-image-lg.png", // Must be an absolute URL
         width: 1800,
         height: 1600,
-        alt: "OJSWEB web design and marketing services",
+        alt: "Marketing and Web Design Services",
       },
     ],
     locale: "en_GB",
@@ -44,12 +44,12 @@ export const metadata = {
 export const jsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  name: "OJSWEB - Oliver Smith Freelance Marketing and Web Design",
+  name: "Web Design and Marketing Services",
   description:
-    "Freelance marketing and web design services in Cheshire and Manchester, specializing in local marketing, SEO, content creation, and web development.",
+    "I'm Oliver and I am a marketing and web contractor specialising in tech startups.",
   url: "https://ojsweb.co.uk",
   logo: "https://ojsweb.co.uk/_next/image?url=%2Fojsweb-avatar.jpeg&w=128&q=75",
-  areaServed: ["Cheshire", "Manchester", "UK"],
+  areaServed: ["Cheshire", "Manchester", "UK", "Worldwide", "Remote", "Online", "USA", "Europe"],
   address: {
     "@type": "PostalAddress",
     addressLocality: "Knutsford",

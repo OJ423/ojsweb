@@ -12,6 +12,8 @@ import { images } from "@/components/constants";
 import Footer from "@/components/Footer";
 import DesktopNav from "@/components/DeskTopNav";
 import Testimonials from "@/components/testimonials.js/Testimonials";
+import { gridFiveCol, h1, h2, herContainerAlt, heroP, linkBlue, mainContainer, twoSpanCol } from "@/components/customStyles";
+import Link from "next/link";
 
 export const metadata = {
   title: "Freelance React Developer",
@@ -87,32 +89,29 @@ export default function ReactWebsites() {
       />
       <Navigation />
       <DesktopNav />
-      <main className="flex min-h-min flex-col w-full items-center justify-center">
+      <main className={mainContainer}>
         <section
-          className={`flex flex-col gap-8 lg:gap-20 mx-auto justify-center items-center py-40 px-8 lg:px-4 xl:px-0 w-full bg-[url("/full-bloom.webp")]`}
+          className={herContainerAlt}
         >
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center items-center max-w-screen-lg sm:w-4/5 md:w-full">
-            <div className="flex flex-col gap-8">
-              <h1 className="text-3xl lg:text-5xl font-bold w-full text-gray-800">
-                <span className="bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
-                  Lightning Quick React Websites
-                </span>{" "}
-                To Showcase Your Business
+          <div className={`${gridFiveCol} mb-8`}>
+            <div className={twoSpanCol}>
+              <h1 className={h1}>
+                  Lightning Quick React Websites To Showcase Your Business
               </h1>
-              <p className="text-lg font-medium">
+              <p className={heroP}>
                 Beautiful and highly performant websites and blogs crafted to
                 your spec.
               </p>
               <LinkStyled src="/contact" linkText="Arrange a chat" />
             </div>
             <Image
-              src="/portfolio/animated-display-website.webp"
+              src="/tech-startup/scidonia-website.png"
               alt="Screenshot of an app I built"
               width={600}
-              height={300}
-              className="w-full h-auto rounded-xl"
+              height={400}
+              className="w-full h-auto rounded-xl md:col-span-3"
               priority
-              quality={100}
+              quality={80}
             />
           </div>
           <TechLogos />
@@ -120,23 +119,23 @@ export default function ReactWebsites() {
         <Testimonials />
         <ColumnsTwoFullH>
           <div className="flex flex-col gap-4">
-            <h2 className="text-3xl font-bold w-full text-gray-800">
+            <h2 className={h2}>
               A website for{" "}
               <span className="bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
                 the best of you
               </span>
             </h2>
-            <p className="text-lg leading-7">
+            <p>
               With a background spanning tech start-ups and multi-nationals, I
               understand the need to tailor your website around your specifics.
             </p>
-            <p className="text-lg leading-7 font-medium">
+            <p>
               React frameworks enable tailor-made functionality. Whether that is
               interactive tools or custom layouts that template sites cannot
               handle, I can craft a website to showcase exactly what your
               customers need to see.
             </p>
-            <LinkStyled src="/contact" linkText="Talk your needs" />
+            <Link href="/contact" className={linkBlue} >Let&apos;s chat about your project</Link>
           </div>
           <div>
             <SyntaxHighlighter
@@ -150,7 +149,7 @@ export default function ReactWebsites() {
           </div>
         </ColumnsTwoFullH>
         <section className="bg-gradient-to-br from-teal-100 to-indigo-200 md:min-h-screen flex flex-col gap-20 mx-auto w-full justify-center items-center py-20 px-4">
-          <h2 className="text-2xl md:text-3xl font-bold">{`Here's some of my work...`}</h2>
+          <h2 className={h2}>{`Here's some of my work...`}</h2>
           <Portfolio images={images} />
         </section>
         <Costs description={costDescription} cost="£1,000" />

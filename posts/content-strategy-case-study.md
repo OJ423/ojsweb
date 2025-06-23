@@ -1,5 +1,5 @@
 ---
-title: "Contract Strategy for Synergy Occupational Hygiene"
+title: "Content Strategy for Synergy Occupational Hygiene"
 slug: "content-strategy-case-study"
 excerpt: "I’ve been supporting Synergy Occupational Hygiene with their digital marketing strategy, helping to raise awareness of the crucial work they do."
 coverImage: "/blog/marketing-contractor-seo.webp"

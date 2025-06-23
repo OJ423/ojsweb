@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react";
+import { linkBlue } from "./customStyles";
 
 export default function ContactForm() {
   const [ submitMsg, setSubmitMsg ] = useState("")
@@ -38,21 +39,21 @@ return (
     ?
     <form onSubmit={handleSubmit}>
     <input 
-      className="border-2 border-teal-200 rounded my-2 p-2 w-full"
+      className="border-2 border-blue-200 rounded my-2 p-2 w-full"
       type="text"
       name="name"
       placeholder="Your name"
       required
     />
     <input
-      className="border-2 border-teal-200 rounded my-2 p-2 w-full"
+      className="border-2 border-blue-200 rounded my-2 p-2 w-full"
       type="email"
       name="email"
       placeholder="Your email address"
       required
     />
     <input
-      className="border-2 border-teal-200 rounded my-2 p-2 w-full"
+      className="border-2 border-blue-200 rounded my-2 p-2 w-full"
       type="text"
       name="phone"
       placeholder="Your phone *optional"
@@ -60,12 +61,12 @@ return (
     <textarea
       rows={5}
       name="message"
-      className="border-2 border-teal-200 rounded my-2 p-2 w-full"
+      className="border-2 border-blue-200 rounded my-2 p-2 w-full"
       placeholder="Provide some details">
     </textarea>
     <button
-      className="text-sm font-bold mt-8 p-4 bg-gray-200 hover:bg-teal-200 w-fit border-b-4 border-gray-500 hover:border-teal-500 transition-all duration-500 rounded-xl" 
-      type="submit">Submit Form</button>
+      className={linkBlue} 
+      type="submit">Get in touch</button>
   </form>
     :
       <p className="font-bold text-teal-500">{submitMsg}</p>

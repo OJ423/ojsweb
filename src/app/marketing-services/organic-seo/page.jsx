@@ -6,6 +6,8 @@ import Packages from "@/components/Packages";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import DesktopNav from "@/components/DeskTopNav";
+import { h1, h2, herContainerAlt, heroP, linkBlue, mainContainer, twoColGridLightBkg } from "@/components/customStyles";
+import ContactCta from "@/components/ContactCta";
 
 export const metadata = {
   title: "Freelance SEO Consultant Cheshire and Manchester",
@@ -78,26 +80,23 @@ export default function OrganicSEO() {
       />
         <Navigation />
         <DesktopNav />
-        <main className="flex min-h-min flex-col w-full items-center justify-center pattern-cross pattern-green-600 pattern-bg-white pattern-size-6 pattern-opacity-20">
+        <main className={mainContainer}>
           <section
-            className={`flex flex-col gap-8 mx-auto justify-center items-center py-28 md:py-40 bg-[url("/full-bloom.webp")] w-full`}
+            className={herContainerAlt}
           >
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center items-center max-w-screen-lg px-8 xl:px-0 sm:w-4/5 md:w-full">
+            <div className={twoColGridLightBkg}>
               <div className="flex flex-col gap-8">
-                <h1 className="text-3xl xl:text-5xl font-bold w-full text-gray-800">
-                  <span className="bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
-                    Freelance SEO Consultant
-                  </span>{" "}
-                  in Manchester and Cheshire
+                <h1 className={h1}>
+                    Freelance SEO Consultant in Manchester and Cheshire
                 </h1>
-                <p className="text-lg font-medium">
+                <p className={heroP}>
                   Do you need a freelance SEO consultant to boost your online presence? I am a freelance SEO consultant based in Manchester and Cheshire and specialise in helping businesses improve their search rankings.
                 </p>
-                <p className="text-lg font-medium">
+                <p className={heroP}>
                   My SEO services are proven to increase web traffic and
                   lead generation.
                 </p>
-                <LinkStyled src="/contact" linkText="Arrange a chat" />
+                <Link href="/contact" className={linkBlue} >Arrange a chat</Link>
               </div>
               <Image
                 src="/freelance-seo-consultant.svg"
@@ -112,7 +111,7 @@ export default function OrganicSEO() {
           </section>
           <section className="flex flex-col max-w-screen-lg w-full px-8 xl:px-0 gap-20 my-20">
             <section className="flex flex-col gap-8 p-8 bg-gradient-to-br from-teal-100 to-indigo-200 rounded-xl">
-              <h2 className="font-bold text-3xl text-gray-600">
+              <h2 className={h2}>
                 Freelance SEO results...
               </h2>
               <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-start md:items-center justify-center">
@@ -132,7 +131,7 @@ export default function OrganicSEO() {
               </div>
             </section>
             <div className="flex flex-col gap-4 max-w-screen-md mx-auto">
-              <h2 className="text-3xl font-bold w-full text-gray-800">
+              <h2 className={h2}>
                 How I can help you as a{" "}
                 <span className="bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
                   Freelance SEO Consultant
@@ -166,12 +165,12 @@ export default function OrganicSEO() {
                 If you are interested, the best port-of-call is to arrange a
                 chat to discuss your needs.
               </p>
-              <LinkStyled src="/contact" linkText="Arrange a chat" />
+              <Link href="/contact" className={linkBlue} >Arrange a chat</Link>
             </div>
           </section>
           <section className="bg-gradient-to-br from-teal-100 to-indigo-200 rounded-xl mx-8 p-8 grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 lg:gap-20 max-w-screen-xl mx-auto items-center mb-20">
             <div className="flex flex-col gap-4">
-              <h2 className="text-3xl font-bold w-full text-gray-800">
+              <h2 className={h2}>
                 The Key Is{" "}
                 <span className="bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
                   Consistency
@@ -209,7 +208,7 @@ export default function OrganicSEO() {
           />
           <section className="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center px-8 xl:px-0 mx-auto w-full max-w-screen-lg mb-20">
             <div className="flex flex-col gap-4">
-              <h2 className="text-3xl font-bold w-full text-gray-800">
+              <h2 className={h2}>
                 Want to manage{" "}
                 <span className="bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
                   SEO yourself?
@@ -227,10 +226,9 @@ export default function OrganicSEO() {
                 </Link>{" "}
                 for some free advice.
               </p>
-              <LinkStyled
-                src="/blog/seo-tips-for-small-businesses"
-                linkText="SEO Tips for Businesses"
-              />
+              <Link href="/blog/seo-tips-for-small-businesses" className={linkBlue}>
+                SEO Tips for Businesses
+              </Link>
             </div>
             <Link href="/blog/seo-tips-for-small-businesses">
               <Image
@@ -243,13 +241,7 @@ export default function OrganicSEO() {
             </Link>
           </section>
           <Testimonials />
-          <section className="my-20 px-8 max-w-screen-sm mx-auto">
-            <h2 className="text-2xl sm:text-4xl font-bold pb-6 mb-6 border-b-2 w-fit bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
-              Start boosting your search performance today
-            </h2>
-            <p className="mb-16">{`Let’s talk about how I can help you achieve your goals. Arrange a chat to explore your needs and take the first step toward SEO success.`}</p>
-            <LinkStyled src="/contact" linkText="Let's talk" />
-          </section>
+          <ContactCta />
         </main>
         <Footer />
     </>
