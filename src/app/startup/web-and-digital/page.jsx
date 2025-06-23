@@ -6,6 +6,7 @@ import {
   h1,
   h2,
   herContainerAlt,
+  heroP,
   lightContainer,
   mainContainer,
   textGradient,
@@ -94,7 +95,7 @@ export default function WebAndDigitalPage() {
               <h1 className={h1}>
                 Strategic Web & Digital Consulting for Tech Startups
               </h1>
-              <p>
+              <p className={heroP}>
                 Your tech startup deserves a digital presence that&apos;s goes
                 beyond a simple template site. My web and digital services aim
                 to engage your audience and drive measurable growth. Let me help
