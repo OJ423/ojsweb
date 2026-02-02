@@ -146,14 +146,38 @@ export default function ContentMarketing() {
               <h2 className="font-bold text-xl">Some of my work...</h2>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 <Link
-                  href="https://vectorlink.ai"
+                  href="https://bookwyrm.ai/blog/pdf-to-json"
+                  target="_blank"
+                  className="transition-all duration-500 hover:opacity-50"
+                >
+                  <div className="flex flex-col gap-4 items-center">
+                    <PiGraphDuotone size={96} className="text-teal-500" />
+                    <p className="font-bold uppercase text-xs">
+                      Technical Tutorial
+                    </p>
+                  </div>
+                </Link>
+                <Link
+                  href="https://namm.org.uk/hse-inspectors-focusing-on-memorial-masons/"
+                  target="_blank"
+                  className="transition-all duration-500 hover:opacity-50"
+                >
+                  <div className="flex flex-col gap-4 items-center">
+                    <FaIndustry size={96} className="text-teal-500" />
+                    <p className="font-bold uppercase text-xs">
+                      Industry Channels
+                    </p>
+                  </div>
+                </Link>
+                <Link
+                  href="https://paperbreak.ai/open-letter/"
                   target="_blank"
                   className="transition-all duration-500 hover:opacity-50"
                 >
                   <div className="flex flex-col gap-4 items-center">
                     <FiLayout size={96} className="text-teal-500" />
                     <p className="font-bold uppercase text-xs">
-                      Optimized Web Copy
+                      Advertorial Copy
                     </p>
                   </div>
                 </Link>

@@ -1,4 +1,5 @@
 import ContactCta from "@/components/ContactCta";
+import Portfolio from "@/components/Portfolio";
 import {
   darkContainer,
   gridFiveCol,
@@ -18,18 +19,20 @@ import DesktopNav from "@/components/DeskTopNav";
 import Footer from "@/components/Footer";
 import LinkStyled from "@/components/LinkStyled";
 import Navigation from "@/components/Navigation";
+import { images } from "@/components/constants";
 import Image from "next/image";
 import Link from "next/link";
+import { FaClipboardList, FaGraduationCap, FaRegComments, FaTools } from "react-icons/fa";
 
 export const metadata = {
-  title: "WordPress, React, & Vanilla Web Design Services.",
+  title: "Cheshire Web Design | WordPress, React, & Vanilla Web Design.",
   description:
-    "Web design & development for tech startups and businesses. Specializing in WordPress, Vanilla HTML/CSS, and React Frameworks for bespoke, results-driven websites.",
+    "Cheshire Web Design focused on results-driven websites for tech startups and established businesses. WordPress, Vanilla HTML/CSS, and React Frameworks tailored to your goals.",
   openGraph: {
-    title: "WordPress, React, & Vanilla Web Design Services.",
+    title: "Cheshire Web Design | WordPress, React, & Vanilla Web Design.",
     description:
-      "Web design & development for tech startups and businesses. Specializing in WordPress, Vanilla HTML/CSS, and React Frameworks for bespoke, results-driven websites.",
-    url: "https://ojsweb.co.uk/shopify-sites",
+      "Cheshire Web Design for tech startups and established businesses. WordPress, Vanilla HTML/CSS, and React Frameworks tailored to your goals.",
+    url: "https://ojsweb.co.uk/web-design",
     siteName: "Tech Startup Marketing & Web Design | OJSWEB",
     images: [
       {
@@ -41,7 +44,7 @@ export const metadata = {
         url: "https://ojsweb.co.uk/ojsweb-og-image-lg.png", // Must be an absolute URL
         width: 1800,
         height: 1600,
-        alt: "WordPress, React, & Vanilla Web Design Services.",
+        alt: "Cheshire Web Design services.",
       },
     ],
     locale: "en_GB",
@@ -57,16 +60,16 @@ export default function WebDesignPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: "WordPress, React, & Vanilla Web Design Services.",
+    name: "Cheshire Web Design Services.",
     description:
-      "Web design & development for tech startups and businesses. Specializing in WordPress, Vanilla HTML/CSS, and React Frameworks for bespoke, results-driven websites.",
+      "Cheshire Web Design for tech startups and established businesses. WordPress, Vanilla HTML/CSS, and React Frameworks tailored to your goals.",
     provider: {
       "@type": "ProfessionalService",
       name: "OJSWEB - Oliver Smith Freelance Marketing and Web Design",
       url: "https://ojsweb.co.uk",
     },
     areaServed: ["Cheshire", "Manchester", "UK"],
-    serviceType: "WordPress, React, & Vanilla Web Design Services.",
+    serviceType: "Cheshire Web Design, WordPress, React, & Vanilla Web Design Services.",
     url: "https://ojsweb.co.uk/web-design",
   };
   return (
@@ -81,17 +84,9 @@ export default function WebDesignPage() {
         <section className={herContainerAlt}>
           <article className={gridFiveCol}>
             <div className={twoSpanCol}>
-              <h1 className={h1}>Web Design & Development</h1>
+              <h1 className={h1}>Cheshire Web Design & Development</h1>
               <p className={heroP}>
-                Whether you&apos;re a burgeoning tech startup or an established
-                local business in Cheshire and Manchester, I can create robust,
-                user-friendly, and visually stunning websites that stand out and
-                perform.
-              </p>
-              <p className={heroP}>
-                I&apos;m proficient across HTML, CSS, JS, TS, WordPress and
-                React Frameworks and will work with you to create a a website
-                bespoke to your needs.
+                I&apos;m a Web Designer based in Cheshire. I have experience working with tech startups and established businesses. My goal is to provide websites that are easy to use, fast to load, and visually stunning.
               </p>
               <LinkStyled src="/contact" linkText="Let's talk" />
             </div>
@@ -106,14 +101,64 @@ export default function WebDesignPage() {
             />
           </article>
         </section>
-        <section className={lightContainer} id="cms">
+        <section className={lightContainer} id="portfolio">
+          <article className="flex flex-col gap-6 max-w-screen-xl mx-auto mb-8 text-center">
+            <h2 className={`${h2} ${textGradient}`}>Web Design Portfolio</h2>
+            <p>
+              A snapshot of recent projects.
+            </p>
+          </article>
+          <Portfolio images={images} />
+        </section>
+        <section className={lightContainer} id="process">
+          <article className="flex flex-col gap-6 max-w-screen-lg mx-auto">
+            <h2 className={`${h2} ${textGradient}`}>How I Work With Clients</h2>
+            <p>
+              A step-by-step process that keeps you in control and delivers the
+              best solution for your goals.
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              <div className="flex flex-col gap-3 rounded-xl bg-white p-6">
+                <FaRegComments size={28} className="text-teal-600" />
+                <h3 className="text-lg font-semibold">Talk</h3>
+                <p className="text-sm">Understand your needs, your audience, and goals.</p>
+              </div>
+              <div className="flex flex-col gap-3 rounded-xl bg-white p-6">
+                <FaClipboardList size={28} className="text-teal-600" />
+                <h3 className="text-lg font-semibold">Plan</h3>
+                <p className="text-sm">Functional spec, transition plan, and wireframes.</p>
+              </div>
+              <div className="flex flex-col gap-3 rounded-xl bg-white p-6">
+                <FaTools size={28} className="text-teal-600" />
+                <h3 className="text-lg font-semibold">Build</h3>
+                <p className="text-sm">Safe staging area to develop independent of live site.</p>
+              </div>
+              <div className="flex flex-col gap-3 rounded-xl bg-white p-6">
+                <FaGraduationCap size={28} className="text-teal-600" />
+                <h3 className="text-lg font-semibold">Handover</h3>
+                <p className="text-sm">Training and go live.</p>
+              </div>
+            </div>
+            <p>
+              I also provide ongoing maintenance and management, keeping your
+              website secure, performant, and evolving as your business grows.
+            </p>
+          </article>
+        </section>
+        <section className={`${lightContainer} flex flex-col gap-16 py-48`} id="expertise">
+          <article className="flex flex-col gap-6 max-w-screen-md mx-auto mb-8">
+            <h2 className={`${h2} ${textGradient}`}>The right tech stack for you</h2>
+            <p>
+              I am well versed in a range of technologies and can help you choose the right one for your project. It is about finding the right solution for you and your team. My core strengths span CMS platforms and custom-coded builds and will advise on the best approach for your project.
+            </p>
+            <Link href="/contact" className={linkBlue}>Let&apos;s talk</Link>
+          </article>
           <article className={`${twoColGridLightBkg} mb-8`}>
             <div className="flex flex-col gap-8">
-              <h2 className={`${h2} ${textGradient}`}>Flexible Foundations: Content Management Systems</h2>
+              <h3 className={h2}>CMS Platforms: WordPress & Beyond</h3>
               <p>
-                For many businesses, a Content Management System (CMS) is the backbone of their digital presence, offering ease of use and powerful scalability. I specialise in leveraging these platforms to give you control over your content without sacrificing design or functionality.
+                Content Management Systems provide you with a solid foundation for your website. I am experienced in using a range of CMS platforms to build websites that are easy to use, manage and scale.
               </p>
-              <Link href="/contact" className={linkBlue}>Let&apos;s talk</Link>
             </div>
             <Image
               src="/portfolio/terminusdb-wordpress-website.webp"
@@ -125,53 +170,55 @@ export default function WebDesignPage() {
             />
           </article>
           <article className={twoColGridLightBkg}>
-            <Image 
-              src="/wordpress-265132_640.jpg"
-              alt="Example WordPress interface"
+            <Image
+              src="/portfolio/sciodonia-next-js-site.png"
+              alt="Screenshot of a website I built using Next.js"
               width={600}
               height={400}
-              className="w-full h-auto rounded-xl order-2 md:order-1"
               quality={80}
+              className="w-full h-auto rounded-xl order-2 md:order-1"
             />
             <div className="flex flex-col gap-8 order-1 md:order-2">
-              <h2 className={`${h2} ${textGradient}`}>WordPress: Powering Millions of Websites</h2>
-              <p>WordPress is a versatile and incredibly powerful CMS that&apos;s perfect for a wide range of businesses. From dynamic blogs and informative corporate sites to intricate e-commerce platforms, WordPress offers unparalleled flexibility, a vast ecosystem of plugins, and an intuitive interface that empowers you to manage your content effortlessly.</p>
-              <Link href="/wordpress-websites" className={linkBlue}>Explore WordPress Services</Link>
+              <h3 className={h2}>Vanilla HTML/CSS & React Frameworks</h3>
+              <p>
+                For lean, fast-loading sites I hand-code Vanilla HTML/CSS with
+                careful performance optimisation. For more dynamic products, I
+                build React Frameworks that deliver rich interactivity, scalable
+                UI, and clean architecture.
+              </p>
+              <Link href="/react-websites" className={linkBlue}>React Websites</Link>
             </div>
           </article>
-        </section>
-        <section className={darkContainer} id="bespoke">
-          <article className="flex flex-col gap-8 mb-8 max-w-screen-md mx-auto">
-              <h2 className={h2}>Bespoke Builds, Crafting with Code</h2>
-              <p>When your project demands ultimate flexibility, lightning-fast performance, or a truly unique user experience, a custom-coded approach might be the perfect fit.</p>
+          <article className={`${twoColGridLightBkg} mt-8`}>
+            <div className="flex flex-col gap-8">
+              <h3 className={h2}>Ecommerce & Online Selling</h3>
+              <p>
+                From WooCommerce stores to Shopify builds and modern website
+                builders, I design e-commerce experiences that are easy to manage,
+                fast to navigate, and built to convert. I advise on platform
+                choice, integrate payments, and streamline product management.
+              </p>
+            </div>
+              <Image
+                src="/shopify-developer.webp"
+                alt="Screenshot of an ecommerce style website"
+                width={600}
+                height={400}
+                quality={80}
+                className="object-cover aspect-3/2 rounded-xl"
+              />
           </article>
-            <article className="max-w-screen-lg w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
-              <div className="flex flex-col gap-8">
-                <h3 className={h2}>Vanilla HTML & CSS</h3>
-                <Image 
-                  src="/portfolio/animated-display-website.webp"
-                  alt="Screenshot of a website I built using HTML and CSS"
-                  width={600}
-                  height={400}
-                  quality={80}
-                  className="w-full h-auto rounded-xl"
-                />
-                <p>For projects requiring lean, highly optimised, and incredibly fast loading times, building with Vanilla HTML and CSS offers unmatched control. This approach is ideal for static sites, landing pages, or when absolute precision over every pixel and responsive behaviour is paramount. I hand-code elegant and efficient front-ends, ensuring your website is not only beautiful but also incredibly performant and accessible across all devices.</p>
-              </div>
-              <div className="flex flex-col gap-8">
-                <h3 className={h2}>React Frameworks</h3>
-                <Image 
-                  src="/portfolio/sciodonia-next-js-site.png"
-                  alt="Screenshot of a website I built using Next.js"
-                  width={600}
-                  height={400}
-                  quality={80}
-                  className="w-full h-auto rounded-xl"
-                />
-                <p>For modern web applications that demand rich interactivity, real-time data handling, and a seamless user experience, React Frameworks are our go-to. Technologies like React.js allow us to build complex, single-page applications (SPAs) and dynamic user interfaces that feel incredibly fluid and responsive. If you&apos;re looking for a web application with sophisticated features, intricate user flows, or a highly interactive dashboard, React provides the robust and scalable foundation needed to bring your most ambitious digital visions to life.</p>
-                <Link href="/react-websites" className={linkWhite}>React Websites</Link>
-              </div>
-            </article>
+        </section>
+        <section className={darkContainer} id="location">
+          <article className="flex flex-col gap-6 max-w-screen-md mx-auto text-center">
+            <h2 className={h2}>Where I Work</h2>
+            <p>
+              I can work on premise across Cheshire and Manchester, and I also
+              work remotely with clients across the UK and beyond. Whether you
+              need onsite collaboration or a fully remote delivery, I adapt to
+              your preferred way of working.
+            </p>
+          </article>
         </section>
         <ContactCta />
       </main>

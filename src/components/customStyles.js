@@ -5,7 +5,7 @@ export const heroContainer =
   "pt-32 md:pt-20 mx-auto w-full px-8 xl:px-0 bg-white bg-gradient-to-br from-teal-500 to-indigo-600 text-white"; 
 export const herContainerAlt = "py-32 md:py-20 mx-auto w-full px-8 xl:px-0 bg-white bg-gradient-to-br from-teal-500 to-indigo-600 text-white"
 export const gridFiveCol =
-  "max-w-screen-lg w-full grid grid-cols-1 md:grid-cols-5 items-center justify-between mx-auto gap-8";
+  "max-w-screen-lg w-full grid grid-cols-1 md:grid-cols-5 items-center justify-between mx-auto gap-8 md:gap-16";
 export const twoSpanCol = "flex flex-col gap-8 m-auto item md:col-span-2";
 export const lightContainer =
   "relative w-full bg-gradient-to-br from-white via-white to-blue-100 rounded-xl p-8 py-20";

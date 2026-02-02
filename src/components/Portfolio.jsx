@@ -46,12 +46,12 @@ export default function Portfolio( {images} ) {
   });
 
   useEffect(() => {
-    const interval = setInterval(handleForwardSlide, 5000); 
+    const interval = setInterval(handleForwardSlide, 8000); 
     return () => clearInterval(interval); 
   }, [slideIndex]);
 
   return (
-    <section className="sm:w-11/12 max-w-screen-md mx-auto rounded-xl bg-gray-100 relative" {...handlers}>
+    <section className="sm:w-11/12 max-w-[800px] mx-auto rounded-xl bg-gray-100 relative shadow-lg" {...handlers}>
       <div className="overflow-hidden">
         <div
           className="flex transition-transform duration-500 ease-in-out"
@@ -63,10 +63,10 @@ export default function Portfolio( {images} ) {
               <Image
                 alt={image.alt_text}
                 src={image.src}
-                width={785}
-                height={442}
+                width={800}
+                height={450}
                 quality={100}
-                className="rounded-t-xl w-full h-auto z-0"
+                className="rounded-xl w-full h-auto z-0"
               />
             </div>
           ))}
@@ -81,13 +81,13 @@ export default function Portfolio( {images} ) {
               className="cursor-pointer hover:opacity-50 transition-all duration-500"
             />
           </div>
-          <div className="flex gap-2 items-center justify-center p-4 bg-white rounded-xl">
+          <div className="flex gap-2 items-center justify-center p-4 bg-white/60 rounded-xl">
             {images.map((_, index) => (
               <FaRegDotCircle
                 key={index}
                 onClick={() => handleChooseSlide(index)}
                 className={`${
-                  slideIndex === index ? "text-teal-500" : "text-gray-400"
+                  slideIndex === index ? "text-teal-500" : "text-gray-600"
                 } cursor-pointer transition-colors duration-300`}
               />
             ))}
@@ -103,22 +103,11 @@ export default function Portfolio( {images} ) {
           </div>
         </div>
       </div>
-      <div className={`flex flex-col gap-4 px-8 pt-8 pb-20 ${fadeClass}`}>
-        <h2 className="text-xl font-semibold">{currentSlide.title}</h2>
-        <p>{currentSlide.desc}</p>
-        <div className="flex gap-4 items-center">
-          {currentSlide.repo && (
-            <Link href={currentSlide.repo}>
-              <IoLogoGithub size={32} />
-            </Link>
-          )}
-          {currentSlide.example && (
-            <Link href={currentSlide.example}>
+      {currentSlide.example && (
+            <Link href={currentSlide.example} className="absolute top-4 right-4 bg-white rounded-full">
               <HiExternalLink size={32} />
             </Link>
-          )}
-        </div>
-      </div>
+      )}
     </section>
   );
 }

@@ -1,42 +1,117 @@
 export const images = [
   {
     id: 1,
-    src: "/portfolio/vectorlink-entity-resolution-services.jpg",
-    alt_text: "Website Development for AI Consultancy VectorLink.",
-    title: "Website Copy & Design for AI Consultancy VectorLink",
-    desc: "WordPress launch with copy, images and SEO optimisation.",
+    src: "/portfolio/bookwyrm-home.webp",
+    alt_text: "Next.js website for Bookwyrm.ai",
+    title: "Website copy and design for Bookwyrm.ai",
+    desc: "BookWyrm.ai website built with Next.js and Tailwind CSS.",
     repo: "",
-    example: "https://vectorlink.ai/entity-resolution/"
+    example: "https://bookwyrm.ai/"
   },
   {
     id: 2,
-    src: "/portfolio/vectorlink-blog.jpg",
-    alt_text: "Blog with Markdown support.",
-    title: "Blog with Markdown support",
-    desc: "A beautiful blog with Markdown support to let the AI consultants work with a language they are comfortable with.",
+    src: "/portfolio/paper-break-landing.webp",
+    alt_text: "Vanilla HTML and CSS landing page for PaperBreak.ai",
+    title: "Quick and easy landing page for PaperBreak.ai",
+    desc: "Vanilla HTML and CSS landing page for PaperBreak.ai.",
     repo: "",
-    example: "https://vectorlink.ai/blog/"
+    example: "https://paperbreak.ai/lifes-too-short/"
+  },
+  {
+    id: 6,
+    src: "/portfolio/climateresilient.world.webp",
+    alt_text: "CAMS project wordpress site screenshot.",
+    title: "Helping Island Nations Become Climate Resilient",
+    desc: "Working for ARISE-US, a support arm of the UN, I built a website for the critical asset management solution to help island nations become more climate resilient.",
+    repo: "",
+    example: "https://climateresilient.world"
+  },
+  {
+    id: 7,
+    src: "/portfolio/terminusdb-wordpress-website.webp",
+    alt_text: "Screen shot of TerminusDB's website built with WordPress.",
+    title: "Tech Start-Up Web Presence and Blog",
+    desc: "Creating a vibrant website using WordPress for a technology start-up.",
+    repo: "",
+    example: "https://terminusdb.com"
+  },
+  {
+    id: 8,
+    src: "/portfolio/climateresilient.world-user-guide.webp",
+    alt_text: "Screenshot of multilingual user guide.",
+    title: "Multilingual User Guide",
+    desc: "A multilingual user guide built with WordPress.",
+    repo: "",
+    example: "https://climateresilient.world/docs/"
+  },
+  {
+    id: 9,
+    src: "/portfolio/avimedia.co.uk_design-studio.webp",
+    alt_text: "Screenshot of design studio.",
+    title: "Design Studio to Create Images",
+    desc: "A web tool for foodservice businesses to create their own marketing material.",
+    repo: "",
+    example: "https://avimedia.co.uk"
+  },
+  {
+    id: 10,
+    src: "/portfolio/fim-home.webp",
+    alt_text: "Website for FIM",
+    title: "WordPress website for FIM Limited",
+    desc: "WordPress website for FIM Limited built with WordPress and Avada theme.",
+    repo: "",
+    example: "https://fimlimited.co.uk/"
+  },
+  {
+    id: 11,
+    src: "/portfolio/fim-people.webp",
+    alt_text: "Key People Section of the FIM Limited website",
+    title: "Elegant and stylish key people section",
+    desc: "A stylish and elegant key people section for the FIM Limited website.",
+    repo: "",
+    example: "https://fimlimited.co.uk/about-us/our-people/"
+  },
+  {
+    id: 12,
+    src: "/portfolio/iea-home.webp",
+    alt_text: "Sustainable Combustion Technology Collaboration Partnership Website",
+    title: "Modernisation of Sustainable Combustion TCP website",
+    desc: "Modernisation of the Sustainable Combustion TCP website with custom document repository.",
+    repo: "",
+    example: "https://ieacombustion.com/"
+  },
+  {
+    id: 13,
+    src: "/portfolio/animated-display-website.webp",
+    alt_text: "Screenshot of a laptop with a beautiful website showing the tiniest of trolls.",
+    title: "Animated Display Website",
+    desc: "Animated effects to bring the subject to life",
+    repo: "",
+    example: "https://the-tiniest-of-trolls.onrender.com/"
+  }
+];
+
+export const widgets = [
+  {
+    id: 1,
+    src: "/portfolio/daily-noise-calculator.webp",
+    alt_text: "Daily Noise Calculator for Occupational Health and Safety",
+    title: "Daily Noise Calculator",
+    desc: "JS widget to calculate the daily noise exposure for occupational health and safety.",
+    repo: "",
+    example: "https://noise-exposure-calculator.onrender.com"
+  },
+  {
+    id: 2,
+    src: "/portfolio/8-hour-twa-calculator.webp",
+    alt_text: "Time Weighted Average Calculator for Occupational Health and Safety",
+    title: "Time Weighted Average Calculator",
+    desc: "JS widget to calculate the time weighted average for occupational health and safety.",
+    repo: "",
+    example: "https://twa-calculator.onrender.com"
   },
   {
     id: 3,
-    src: "/portfolio/vectorlink-entity-call-to-action.jpg",
-    alt_text: "VectorLink call to action.",
-    title: "Elegant & Clean Design",
-    desc: "An example of the call to action which is eye catching and easy on the eye.",
-    repo: "",
-    example: "https://vectorlink.ai/"
-  },
-  {
-    id: 4,
-    src: "/portfolio/portfolio-website.webp",
-    alt_text: "Portfolio website example.",
-    title: "Create stunning websites",
-    desc: "Build with vanilla HTML, SCSS and JavaScript.",
-    repo: "",
-    example: "https://static-html-js-site.onrender.com/"
-  },
-  {
-    id: 5,
     src: "/portfolio/react-page-nextjs.webp",
     alt_text: "Screen shot of the API JSON response of the example project.",
     title: "Interactive Pages",
@@ -45,16 +120,7 @@ export const images = [
     example: ""
   },
   {
-    id: 6,
-    src: "/portfolio/react-blog-example.webp",
-    alt_text: "A front end news website screenshot build with React.",
-    title: "News/Blog Web App",
-    desc: "API server and React front end.",
-    repo: "https://github.com/OJ423/os-news",
-    example: "https://os-news.netlify.app"
-  },
-  {
-    id: 7,
+    id: 4,
     src: "/portfolio/react-game.webp",
     alt_text: "A screenshot of a mobile phone showing the game sliders.",
     title: "Sliders Game",
@@ -63,7 +129,25 @@ export const images = [
     example: "http://slidersgame.com/"
   },
   {
-    id: 8,
+    id: 5,
+    src: "/portfolio/hangman.webp",
+    alt_text: "Child friendly version of hangman",
+    title: "Hangman Game for Kids",
+    desc: "Interactive hangman game for kids.",
+    repo: "",
+    example: ""
+  },
+  {
+    id: 6,
+    src: "/portfolio/noughts-and-crosses.webp",
+    alt_text: "A game of noughts and crosses.",
+    title: "Noughts and Crosses Game for Kids",
+    desc: "Noughts and crosses with local storage for scores.",
+    repo: "",
+    example: ""
+  },
+  {
+    id: 7,
     src: "/portfolio/data-presentation-with-react_optimized.png",
     alt_text: "a laptop with a screenshot of my meteorite web app.",
     title: "Nasa Meteorite App",
@@ -72,7 +156,7 @@ export const images = [
     example: "https://nasa-meteorite-app.onrender.com/"
   },
   {
-    id: 9,
+    id: 8,
     src: "/portfolio/interactive-developer-website.webp",
     alt_text: "A screenshot of CSS Cheater a website with copyable web templtes.",
     title: "Unique functionality",
@@ -80,25 +164,7 @@ export const images = [
     repo: "https://github.com/OJ423/css-cheater",
     example: "https://css-cheater.onrender.com"
   },
-  {
-    id: 10,
-    src: "/portfolio/animated-display-website.webp",
-    alt_text: "Screenshot of a laptop with a beautiful website showing the tiniest of trolls.",
-    title: "Animated Display Website",
-    desc: "Animated effects to bring the subject to life",
-    repo: "",
-    example: "https://the-tiniest-of-trolls.onrender.com/"
-  },
-  {
-    id: 11,
-    src: "/portfolio/next-js-app.webp",
-    alt_text: "Example Next.js app.",
-    title: "Next.js Website",
-    desc: "Responsive light and dark mode website",
-    repo: "https://github.com/OJ423/ojcodes",
-    example: "https://ojcodes.vercel.app/"
-  },
-];
+]
 
 export const wordpressImgs = [
   {
