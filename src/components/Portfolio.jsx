@@ -81,7 +81,7 @@ export default function Portfolio( {images} ) {
               className="cursor-pointer hover:opacity-50 transition-all duration-500"
             />
           </div>
-          <div className="flex gap-2 items-center justify-center p-4 bg-white/60 rounded-xl">
+          <div className="gap-2 items-center justify-center p-4 bg-white/60 rounded-xl hidden md:flex">
             {images.map((_, index) => (
               <FaRegDotCircle
                 key={index}
