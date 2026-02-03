@@ -1,5 +1,6 @@
 "use client";
 
+import ContactCta from "@/components/ContactCta";
 import ContactForm from "@/components/ContactForm";
 import {
   darkContainer,
@@ -7,6 +8,7 @@ import {
   h1,
   h2,
   herContainerAlt,
+  heroContainer,
   ilIconList,
   lightContainer,
   linkBtnStyle,
@@ -24,40 +26,26 @@ import Testimonials from "@/components/testimonials.js/Testimonials";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { FaCheck, FaTelegramPlane } from "react-icons/fa";
-import { MdWeb } from "react-icons/md";
+import { FaCalculator, FaCheck, FaRocket, FaTelegramPlane } from "react-icons/fa";
+import { GiArcheryTarget } from "react-icons/gi";
+import { MdOutlineScreenshot, MdWeb } from "react-icons/md";
 import { PiStrategyBold } from "react-icons/pi";
 
 export default function Home() {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    // Set a small timeout to ensure the component is mounted
-    // before triggering the animation. This can sometimes help
-    // with initial render glitches.
-    const timer = setTimeout(() => {
-      setIsVisible(true);
-    }, 100); // You can adjust this delay
-
-    return () => clearTimeout(timer);
-  }, []);
 
   return (
     <>
       <DesktopNav />
       <Navigation />
       <main className={mainContainer}>
-        <section
-          className={herContainerAlt}
-        >
-          <div className={gridFiveCol}>
-            <div className="flex flex-col gap-8 m-auto item md:col-span-2">
-              <h1 className={h1}>
-                Marketing for Tech Startups That Need to Move Fast
+      <section className={heroContainer}>
+          <article className="max-w-screen-lg w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 items-end justify-between mx-auto gap-8 text-white">
+            <div className="flex flex-col gap-8 m-auto item lg:col-span-2 pb-20">
+            <h1 className={h1}>
+                Cheshire Based Web Designer and Marketing Consultant
               </h1>
               <p className="text-xl font-semibold">
-                Fractional CMO support and hands-on execution to help you go to
-                market, get traction, and grow with purpose.
+              Strategy built for execution. I&apos;m a full-stack marketing consultant who speaks developer. From brand positioning to web builds, I handle the entire pipeline to turn your ideas into clear, converting results.
               </p>
               <div className="flex items-center gap-8 flex-wrap">
                 <LinkStyled src="/contact" linkText="Let's chat" />
@@ -70,47 +58,30 @@ export default function Home() {
               </div>
             </div>
             <Image
-              src="/startup-marketing-strategy.png"
-              alt="Marketing for Tech Startups Strategy Diagram"
+              src="/fractional-cmo-services.png"
+              alt="Oliver Smith, Fractional CMO services"
               quality={100}
               width={800}
-              height={500}
+              height={800}
               priority
-              className={`
-                    w-full ms-auto h-auto md:col-span-3
-                    transition-all duration-1000 ease-out // Transition for the entrance effect
-                    ${
-                      isVisible
-                        ? "opacity-100 scale-100 rotate-0"
-                        : "opacity-0 scale-50 rotate-[-10deg]"
-                    }
-                  `}
+              className="w-full ms-auto h-auto lg:col-span-3 md:mt-40 lg:mt-0"
             />
-          </div>
+          </article>
         </section>
+
         <section className={lightContainer}>
           <article className={twoColGridLightBkg}>
             <div className="flex flex-col gap-4">
               <div>
                 <p className="uppercase text-xs font-semibold">
-                  Flexible Help for Startups
+                  Full-Stack Marketing Consultant
                 </p>
                 <h2 className={`${h2} ${textGradient}`}>
-                  Marketing Strategy Meets Startup Speed
+                Strategic Marketing & Technical Execution
                 </h2>
               </div>
               <p>
-                You&apos;re building something brilliant, but marketing
-                shouldn&apos;t slow you down.
-              </p>
-              <p>
-                I help early-stage tech startups develop smart, scalable
-                marketing strategies that match their goals and budgets.
-              </p>
-              <p>
-                Whether you need a fractional CMO to shape your go-to-market
-                plan or a hands-on partner to execute it, I bring commercial
-                thinking, creative ideas, and digital know-how to help you grow.
+                I bridge the gap between high-level marketing and custom web development. From SEO-driven content and brand design to building interactive tools, calculators, and high-performance websites, I provide the end-to-end expertise needed to grow your digital presence. Whether you’re an established business or a tech startup, I turn complex goals into clear, converting campaigns.
               </p>
             </div>
             <div className="flex flex-col gap-8 relative group">
@@ -128,116 +99,147 @@ export default function Home() {
             </div>
           </article>
         </section>
-        <section id="services" className={darkContainer}>
-          <article className="flex flex-col gap-8 w-full mb-8 text-white max-w-screen-lg mx-auto z-30">
+        <section id="services" className={lightContainer}>
+          <article className="flex flex-col gap-8 w-full mb-8 max-w-[800px] mx-auto z-30">
             <div className="max-w-screen-md me-auto flex flex-col gap-8">
               <h2 className={h2}>
-                Fractional CMO for Startups + Full-Stack Marketing Support
+                My Services
               </h2>
               <p className="text-lg font-medium">
-                Get the clarity of a seasoned marketing leader, without the cost
-                of a full-time hire. I work with startups across SaaS, AI,
-                fintech, and more to define positioning, build brand awareness,
-                and generate leads through smart, sustainable strategies.
+                Whether you&apos;re a startup looking to launch your first product or an established business looking to grow your online presence, I can help you achieve your goals.
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10 justify-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10 justify-center">
               <div className={listColLight}>
                 <div className="flex items-center justify-between gap-4 border-b-2 pb-4 mb-4">
-                  <PiStrategyBold size={42} className="text-teal-400" />
-                  <h4 className="font-bold upper">Strategy & Leadership</h4>
+                  <MdOutlineScreenshot size={42} className="text-teal-400" />
+                  <h4 className="font-bold upper">Web Design</h4>
                 </div>
                 <div className={ulIconList}>
                   <div className={ilIconList}>
                     <FaCheck />
-                    <p>Fractional CMO support</p>
+                    <p>CMS Platforms</p>
                   </div>
                   <div className={ilIconList}>
                     <FaCheck />
-                    <p>Go-to-market strategy</p>
+                    <p>HTML/CSS/JS Builds</p>
                   </div>
                   <div className={ilIconList}>
                     <FaCheck />
-                    <p>Messaging & positioning</p>
+                    <p>React Frameworks</p>
                   </div>
                   <div className={ilIconList}>
                     <FaCheck />
-                    <p>Competitor analysis</p>
+                    <p>E-Commerce</p>
                   </div>
                   <div className={ilIconList}>
                     <FaCheck />
-                    <p>Audience development</p>
+                    <p>Performance Optimisation</p>
                   </div>
-                  <Link href="/startup/strategy" className={`${linkBtnStyle}`}>
-                    Strategy & Leadership
+                  <Link href="/web-design" className={`${linkBtnStyle} mx-auto`}>
+                    Web Design Services
                   </Link>
                 </div>
               </div>
               <div className={listColLight}>
                 <div className="flex items-center justify-between gap-4 border-b-2 pb-4 mb-4">
-                  <FaTelegramPlane size={42} className="text-teal-400" />
-                  <h4 className="font-bold upper">Execution & Delivery</h4>
+                  <FaCalculator size={42} className="text-teal-400" />
+                  <h4 className="font-bold upper">Web Widgets & Apps</h4>
                 </div>
                 <div className={ulIconList}>
                   <div className={ilIconList}>
                     <FaCheck />
-                    <p>Campaign planning</p>
+                    <p>Interactive Tools</p>
                   </div>
                   <div className={ilIconList}>
                     <FaCheck />
-                    <p>Content marketing</p>
+                    <p>ROI / Price Calculators</p>
                   </div>
                   <div className={ilIconList}>
                     <FaCheck />
-                    <p>Email & automation</p>
+                    <p>Games</p>
                   </div>
                   <div className={ilIconList}>
                     <FaCheck />
-                    <p>Social & paid media</p>
+                    <p>Quizzes</p>
                   </div>
                   <div className={ilIconList}>
                     <FaCheck />
-                    <p>Brand + visual rollout</p>
+                    <p>Increased Engagement</p>
                   </div>
                   <Link
-                    href="/startup/execution"
+                    href="/web-widgets"
                     className={`${linkBtnStyle}`}
                   >
-                    Execution & Delivery
+                    Web Widgets & Apps
                   </Link>
                 </div>
               </div>
               <div className={listColLight}>
                 <div className="flex items-center justify-between gap-4 border-b-2 pb-4 mb-4">
-                  <MdWeb size={42} className="text-teal-400" />
-                  <h4 className="font-bold upper">Web & Digital</h4>
+                  <GiArcheryTarget size={42} className="text-teal-400" />
+                  <h4 className="font-bold upper">Marketing Services</h4>
                 </div>
                 <div className={ulIconList}>
                   <div className={ilIconList}>
                     <FaCheck />
-                    <p>Website design</p>
+                    <p>Content Marketing</p>
                   </div>
                   <div className={ilIconList}>
                     <FaCheck />
-                    <p>UX + conversion UX</p>
+                    <p>Search Engine Optimisation</p>
                   </div>
                   <div className={ilIconList}>
                     <FaCheck />
-                    <p>SEO fundamentals</p>
+                    <p>Graphic Design</p>
                   </div>
                   <div className={ilIconList}>
                     <FaCheck />
-                    <p>Landing page builds</p>
+                    <p>Video Production</p>
                   </div>
                   <div className={ilIconList}>
                     <FaCheck />
-                    <p>Analytics setup</p>
+                    <p>Marketing Analytics</p>
                   </div>
                   <Link
-                    href="/startup/web-and-digital"
-                    className={`${linkBtnStyle}`}
+                    href="/marketing-services"
+                    className={`${linkBtnStyle} mx-auto`}
                   >
-                    Web & Digital
+                    Marketing Services
+                  </Link>
+                </div>
+              </div>
+              <div className={listColLight}>
+                <div className="flex items-center justify-between gap-4 border-b-2 pb-4 mb-4">
+                  <FaRocket size={42} className="text-teal-400" />
+                  <h4 className="font-bold upper">Tech Startup Support</h4>
+                </div>
+                <div className={ulIconList}>
+                  <div className={ilIconList}>
+                    <FaCheck />
+                    <p>Strategy & Leadership</p>
+                  </div>
+                  <div className={ilIconList}>
+                    <FaCheck />
+                    <p>Search Engine Optimisation</p>
+                  </div>
+                  <div className={ilIconList}>
+                    <FaCheck />
+                    <p>Web & Digital Marketing</p>
+                  </div>
+                  <div className={ilIconList}>
+                    <FaCheck />
+                    <p>ROI Measurement</p>
+                  </div>
+                  <div className={ilIconList}>
+                    <FaCheck />
+                    <p>Execution & Delivery</p>
+                  </div>
+                  <Link
+                    href="/startup"
+                    className={`${linkBtnStyle} mx-auto`}
+                  >
+                    Startup Support
                   </Link>
                 </div>
               </div>
@@ -245,35 +247,7 @@ export default function Home() {
           </article>
         </section>
         <Testimonials />
-        <section className={`${lightContainer} overflow-hidden`}>
-            <Image
-              src="/fractional-cmo-services.png"
-              alt="Oliver Smith, Fractional CMO services"
-              quality={100}
-              width={800}
-              height={800}
-              priority
-              className="h-auto absolute bottom-0 right-0 z-0"
-            />
-          <article className="max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 items-start justify-between px-8 xl:px-0 py-20 relative overflow-hidden">
-            <div className="flex flex-col gap-4 z-10">
-              <h2 className={`${h2} ${textGradient}`}>
-                Scale Smartly With Me As Your Assistant
-              </h2>
-              <p className="text-lg">
-                Whether you&apos;re launching a product, seeking funding, or
-                scaling your team, you need a marketing strategy built for
-                traction, not theory.
-              </p>
-              <p className="text-lg">
-                Let&apos;s talk about how I can support you as a trusted marketing
-                partner.
-              </p>
-            </div>
-            <ContactForm />
-          </article>
-
-        </section>
+        <ContactCta />
       </main>
       <Footer />
     </>

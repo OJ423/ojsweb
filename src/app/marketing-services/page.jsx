@@ -1,15 +1,33 @@
 import Navigation from "@/components/Navigation";
 import Image from "next/image";
-import LinkStyled from "@/components/LinkStyled";
 import { TfiWrite } from "react-icons/tfi";
-import { FaGoogle } from "react-icons/fa";
+import { FaGoogle, FaIndustry, FaInstagram } from "react-icons/fa";
 import { MdDraw } from "react-icons/md";
+import { FiBox, FiLayout, FiYoutube } from "react-icons/fi";
+import { GiNewspaper } from "react-icons/gi";
+import { PiGraphDuotone } from "react-icons/pi";
 import Link from "next/link";
 import Footer from "@/components/Footer";
 import DesktopNav from "@/components/DeskTopNav";
 import Testimonials from "@/components/testimonials.js/Testimonials";
-import { h1, h2, heroContainer, heroP, linkBlue, mainContainer } from "@/components/customStyles";
+import {
+  h1,
+  h2,
+  heroContainer,
+  heroContainerAlt,
+  heroP,
+  linkBlue,
+  mainContainer,
+  textGradient,
+  twoColGridLightBkg,
+  lightContainer,
+  darkContainer,
+  gridFiveCol,
+  twoSpanCol,
+  herContainerAlt,
+} from "@/components/customStyles";
 import ContactCta from "@/components/ContactCta";
+import ColumnsTwoFullH from "@/components/ColumnsTwoFullH";
 
 export const metadata = {
   title: "Freelance Marketing Services in Cheshire, Manchester & Worldwide",
@@ -44,6 +62,7 @@ export const metadata = {
 };
 
 export default function MarketingServices() {
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -68,9 +87,9 @@ export default function MarketingServices() {
       <DesktopNav />
       <Navigation />
       <main className={mainContainer}>
-        <section className={heroContainer}>
-          <article className="max-w-screen-lg w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 items-end justify-between mx-auto gap-8 text-white">
-            <div className="flex flex-col gap-8 m-auto item lg:col-span-2 pb-20">
+      <section className={herContainerAlt}>
+          <article className={gridFiveCol}>
+            <div className={twoSpanCol}>
               <h1 className={h1}>
                   Freelance Marketing Services Aligned to Your Goals
               </h1>
@@ -78,94 +97,263 @@ export default function MarketingServices() {
                 {`Seeking a boost in sales leads, increased visibility, or support for a forthcoming product launch? I’m Oliver, your expert in crafting tailor-made organic marketing solutions designed to propel your business towards its unique goals.`}
               </p>
               <Link href="/contact" className={linkBlue} >Arrange a chat</Link>
-            </div>
+          </div>
             <Image
-              src="/fractional-cmo-services.png"
-              alt="Oliver Smith, Fractional CMO services"
+              src="/startup-marketing-strategy.png"
+              alt="Marketing for Tech Startups Strategy Diagram"
               quality={100}
               width={800}
-              height={800}
+              height={500}
               priority
-              className="w-full ms-auto h-auto lg:col-span-3 md:mt-40 lg:mt-0"
+              className={`
+                w-full ms-auto h-auto md:col-span-3 `}
+                />
+          </article>
+        </section>
+        <section className={lightContainer} id="content-marketing">
+          <article className={twoColGridLightBkg}>
+            <div className="flex flex-col gap-6">
+              <div className="flex items-center gap-3">
+                <TfiWrite size={32} className="text-teal-500" />
+                <h2 className={`${h2} ${textGradient}`}>Content Marketing</h2>
+              </div>
+              <p>
+                Thoughtful content that builds trust, explains complex ideas,
+                and brings the right people to your brand. I help you create and
+                distribute content that supports growth without fluff.
+              </p>
+              <Link href="/marketing-services/content-marketing" className={linkBlue}>
+                Explore content marketing
+              </Link>
+            </div>
+            <Image
+              src="/marketing/content-marketing-services.webp"
+              alt="Content marketing example"
+              width={600}
+              height={400}
+              className="rounded-xl w-full h-auto"
+              quality={80}
             />
           </article>
         </section>
-        <section className="flex flex-col gap-20 mx-4 max-w-screen-xl justify-center items-center p-8 mx-2 lg:p-20 my-20 rounded-xl bg-teal-100">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10 justify-center">
+
+        <section className={lightContainer} id="content-examples">
+          <article className="flex flex-col gap-6 max-w-screen-md mx-auto mb-8 text-left">
+            <h2 className={`${h2} ${textGradient}`}>Content Marketing Examples</h2>
+            <p>
+              A selection of content formats and channels I&apos;ve produced for
+              clients.
+            </p>
+          </article>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-screen-lg mx-auto">
             <Link
-              href="/marketing-services/content-marketing"
+              href="https://bookwyrm.ai/blog/pdf-to-json"
+              target="_blank"
               className="transition-all duration-500 hover:opacity-50"
             >
-              <div className="flex flex-col gap-4 p-4 border-2 border-teal-200 rounded-xl h-full">
-                <TfiWrite size={42} className="text-teal-500" />
-                <h3 className="font-bold text-xl">Content Marketing</h3>
-                <p>
-                  Unlock the power of content marketing - Engaging, informative,
-                  and audience-centric content strategies.
-                </p>
+              <div className="flex flex-col gap-3 items-center text-center p-4 rounded-xl bg-white">
+                <PiGraphDuotone size={72} className="text-teal-500" />
+                <p className="font-bold uppercase text-xs">Technical Tutorial</p>
               </div>
             </Link>
             <Link
-              href="/marketing-services/organic-seo"
+              href="https://namm.org.uk/hse-inspectors-focusing-on-memorial-masons/"
+              target="_blank"
               className="transition-all duration-500 hover:opacity-50"
             >
-              <div className="flex flex-col gap-4 p-4 border-2 border-teal-200 rounded-xl h-full">
-                <FaGoogle size={42} className="text-teal-500" />
-                <h3 className="font-bold text-xl">Organic SEO</h3>
-                <p>
-                  Elevate your online presence with customised strategies that
-                  enhance visibility, attract targeted traffic, and drive
-                  sustainable growth for your business.
-                </p>
+              <div className="flex flex-col gap-3 items-center text-center p-4 rounded-xl bg-white">
+                <FaIndustry size={72} className="text-teal-500" />
+                <p className="font-bold uppercase text-xs">Industry Channels</p>
               </div>
             </Link>
             <Link
-              href="/marketing-services/design-services"
+              href="https://paperbreak.ai/open-letter/"
+              target="_blank"
               className="transition-all duration-500 hover:opacity-50"
             >
-              <div className="flex flex-col gap-4 p-4 border-2 border-teal-200 rounded-xl h-full">
-                <MdDraw size={42} className="text-teal-500" />
-                <h3 className="font-bold text-xl">Design Services</h3>
-                <p>
-                  Whether its sales brochures, imagery, product videos or any
-                  other type of graphic design, I can create on-brand, beautiful
-                  and effective marketing collateral.
-                </p>
+              <div className="flex flex-col gap-3 items-center text-center p-4 rounded-xl bg-white">
+                <FiLayout size={72} className="text-teal-500" />
+                <p className="font-bold uppercase text-xs">Advertorial Copy</p>
+              </div>
+            </Link>
+            <Link
+              href="https://youtu.be/KtPClqwOtoM?si=1MATI0ePJraVhHT2"
+              target="_blank"
+              className="transition-all duration-500 hover:opacity-50"
+            >
+              <div className="flex flex-col gap-3 items-center text-center p-4 rounded-xl bg-white">
+                <FiYoutube size={72} className="text-teal-500" />
+                <p className="font-bold uppercase text-xs">Product Video</p>
+              </div>
+            </Link>
+            <Link
+              href="https://occupational-hygiene.co.uk/preventing-occupational-lung-disease/"
+              target="_blank"
+              className="transition-all duration-500 hover:opacity-50"
+            >
+              <div className="flex flex-col gap-3 items-center text-center p-4 rounded-xl bg-white">
+                <PiGraphDuotone size={72} className="text-teal-500" />
+                <p className="font-bold uppercase text-xs">Technical Article</p>
+              </div>
+            </Link>
+            <Link
+              href="https://www.instagram.com/p/DTxqOj_DJ_7/"
+              target="_blank"
+              className="transition-all duration-500 hover:opacity-50"
+            >
+              <div className="flex flex-col gap-3 items-center text-center p-4 rounded-xl bg-white">
+                <FaInstagram size={72} className="text-teal-500" />
+                <p className="font-bold uppercase text-xs">Social Video</p>
+              </div>
+            </Link>
+            <Link
+              href="https://www.thestaffcanteen.com/post/aviko-launches-street-food-inspired-appetisers-range-1582537013#/"
+              target="_blank"
+              className="transition-all duration-500 hover:opacity-50"
+            >
+              <div className="flex flex-col gap-3 items-center text-center p-4 rounded-xl bg-white">
+                <FiBox size={72} className="text-teal-500" />
+                <p className="font-bold uppercase text-xs">Product PR & Imagery</p>
+              </div>
+            </Link>
+            <Link
+              href="https://issuu.com/modernlawmagazine/docs/mcm_23_email/24"
+              target="_blank"
+              className="transition-all duration-500 hover:opacity-50"
+            >
+              <div className="flex flex-col gap-3 items-center text-center p-4 rounded-xl bg-white">
+                <GiNewspaper size={72} className="text-teal-500" />
+                <p className="font-bold uppercase text-xs">Work In Print</p>
+              </div>
+            </Link>
+            <Link
+              href="https://youtu.be/_1CKtT6QQuQ?si=vZX8Dg8AtTJMEcpj"
+              target="_blank"
+              className="transition-all duration-500 hover:opacity-50"
+            >
+              <div className="flex flex-col gap-3 items-center text-center p-4 rounded-xl bg-white">
+                <FiYoutube size={72} className="text-teal-500" />
+                <p className="font-bold uppercase text-xs">Product Video</p>
+              </div>
+            </Link>
+            <Link
+              href="https://www.cmswire.com/the-wire/terminusdb-launches-terminuscms/"
+              target="_blank"
+              className="transition-all duration-500 hover:opacity-50"
+            >
+              <div className="flex flex-col gap-3 items-center text-center p-4 rounded-xl bg-white">
+                <FaIndustry size={72} className="text-teal-500" />
+                <p className="font-bold uppercase text-xs">Industry Channels</p>
+              </div>
+            </Link>
+            <Link
+              href="https://www.instagram.com/p/DTh3pCtilid/"
+              target="_blank"
+              className="transition-all duration-500 hover:opacity-50"
+            >
+              <div className="flex flex-col gap-3 items-center text-center p-4 rounded-xl bg-white">
+                <FaInstagram size={72} className="text-teal-500" />
+                <p className="font-bold uppercase text-xs">Social Video</p>
               </div>
             </Link>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-20 justify-center items-center">
-            <div className="flex flex-col gap-4">
-              <h2 className={h2}>
-                Freelance Marketing Services that are{" "}
-                <span className="bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
-                  effective and risk free
-                </span>
-              </h2>
+        </section>
+
+        <section className={darkContainer} id="organic-seo">
+          <article className={twoColGridLightBkg}>
+            <div className="flex flex-col gap-6">
+              <div className="flex items-center gap-3">
+                <FaGoogle size={32} className="text-teal-500" />
+                <h2 className={h2}>Organic SEO</h2>
+              </div>
               <p>
-                I have over 20 years experience in the world of marketing. I
-                have helped SMEs, multinational organisations and tech start-ups
-                generate leads, increase brand exposure and launch products. I
-                offer a range of marketing services to help your business.
+                Sustainable organic growth through research, technical fixes,
+                and content that earns visibility. I focus on long-term gains,
+                not quick wins.
               </p>
+              <Link href="/marketing-services/organic-seo" className={linkBlue}>
+                Explore organic SEO
+              </Link>
+            </div>
+            <Image
+              src="/freelance-seo-consultant.svg"
+              alt="Organic SEO services"
+              width={600}
+              height={400}
+              className="rounded-xl w-full h-auto"
+              quality={80}
+            />
+          </article>
+        </section>
+
+        <section className={lightContainer} id="design-services">
+          <article className={twoColGridLightBkg}>
+            <div className="flex flex-col gap-6">
+              <div className="flex items-center gap-3">
+                <MdDraw size={32} className="text-teal-500" />
+                <h2 className={`${h2} ${textGradient}`}>Design Services</h2>
+              </div>
               <p>
-                Hiring a freelance marketer like me brings you a wealth of
-                experience that you can take advantage of as and when you need.
-                Less costly and time consuming than employing someone full time,
-                my freelance marketing services are always crafted with
-                precision and care.
+                Visual assets that support marketing campaigns and product
+                storytelling, from collateral to on-brand graphics.
               </p>
-              <Link href="/contact" className={linkBlue} >Let&apos;s chat</Link>
+              <Link href="/marketing-services/design-services" className={linkBlue}>
+                View design portfolio
+              </Link>
             </div>
-            <div>
-              <Image
-                src="/marketing/terminusdb-popup-banner-design.webp"
-                alt="Pop-up banner designed for TerminusDB"
-                width={600}
-                height={600}
-                className="rounded-xl w-full h-auto"
-              />
-            </div>
+            <Image
+              src="/marketing/terminusdb-popup-banner-design.webp"
+              alt="Design portfolio example"
+              width={600}
+              height={400}
+              className="rounded-xl w-full h-auto"
+              quality={80}
+            />
+          </article>
+        </section>
+        <section className={darkContainer} id="web-services">
+          <article className="max-w-screen-lg w-full mx-auto flex flex-col gap-6 text-center">
+            <h2 className={h2}>Explore Web Services</h2>
+            <p>
+              Pair your marketing strategy with high-performing web design or
+              interactive widgets that drive engagement.
+            </p>
+          </article>
+          <div className="max-w-screen-lg w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+            <Link
+              href="/web-design"
+              className="rounded-xl bg-white text-gray-900 hover:scale-105 duration-500 p-6 transition-all duration-500"
+            >
+              <div className="flex flex-col gap-4">
+                <h3 className={`text-xl font-semibold mb-4 ${textGradient}`}>Web Design</h3>
+                <Image
+                  src="/portfolio/bookwyrm-home.webp"
+                  alt="Bookwyrm.ai website screenshot"
+                  width={600}
+                  height={400}
+                  className="w-full h-auto rounded-xl shadow-xl"
+                  quality={80}
+                />
+                <p>Websites built for clarity, performance, and growth.</p>
+              </div>
+            </Link>
+            <Link
+              href="/web-widgets"
+              className="rounded-xl bg-white text-gray-900 hover:scale-105 duration-500 p-6 transition-all duration-500"
+            >
+              <div className="flex flex-col gap-4">
+                <h3 className={`text-xl font-semibold mb-4 ${textGradient}`}>Web Widgets, Apps & Tools</h3>
+                <Image
+                  src="/portfolio/react-game.webp"
+                  alt="React game screenshot"
+                  width={600}
+                  height={400}
+                  className="w-full h-auto rounded-xl shadow-xl"
+                  quality={80}
+                />
+                <p>Interactive tools that attract traffic and convert users.</p>
+              </div>
+            </Link>
           </div>
         </section>
         <Testimonials />

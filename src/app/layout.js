@@ -12,11 +12,11 @@ const poppins = Poppins({
 export const metadata = {
   title: "Web Design and Marketing Services",
   description:
-    "I'm Oliver and I am a marketing and web contractor specialising in tech startups.",
+    "I'm Oliver and I am a marketing and web contractor based in Cheshire specialising in tech startups.",
   openGraph: {
-    title: "Web Design and Marketing Services",
+    title: "Cheshire Web Design and Marketing Services",
     description:
-      "I'm Oliver and I am a marketing and web contractor specialising in tech startups.",
+      "I'm Oliver and I am a marketing and web contractor based in Cheshire specialising in tech startups.",
     url: "https://ojsweb.co.uk/",
     siteName: "Marketing and Web Design Services",
     images: [
@@ -44,9 +44,9 @@ export const metadata = {
 export const jsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  name: "Web Design and Marketing Services",
+  name: "Cheshire Web Design and Marketing Services",
   description:
-    "I'm Oliver and I am a marketing and web contractor specialising in tech startups.",
+    "I'm Oliver and I am a marketing and web contractor based in Cheshire specialising in tech startups.",
   url: "https://ojsweb.co.uk",
   logo: "https://ojsweb.co.uk/_next/image?url=%2Fojsweb-avatar.jpeg&w=128&q=75",
   areaServed: ["Cheshire", "Manchester", "UK", "Worldwide", "Remote", "Online", "USA", "Europe"],

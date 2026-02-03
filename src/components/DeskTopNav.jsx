@@ -57,7 +57,8 @@ export default function DesktopNav() {
                         "organic-seo",
                         "design-services",
                         "startup",
-                        "web-design"
+                        "web-design",
+                        "web-widgets"
                       ].some((route) => pathname.includes(route))
                         ? "text-teal-500"
                         : "text-auto"
@@ -78,17 +79,6 @@ export default function DesktopNav() {
                   >
                     <FcBusinessman size={24} title="About me" />
                     About
-                  </Link>
-                </li>
-                <li className={`list-none py-2.5 text-sm cursor-pointer`}>
-                  <Link
-                    href="/blog"
-                    className={`${
-                      pathname.includes("/blog") ? "text-teal-500" : "text-auto"
-                    } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
-                  >
-                    <FaBlog size={24} title="Blog" />
-                    Blog
                   </Link>
                 </li>
                 <li className={`list-none py-2.5 text-sm cursor-pointer`}>
@@ -155,131 +145,12 @@ export default function DesktopNav() {
             !visible ? "translate-y-[-150%]" : "translate-y-[0%]"
           } transition-all duration-500 absolute top-20 z-20 w-full bg-slate-100 shadow-xl z-49 py-16 font-bold`}
         >
-          <div className="flex gap-20 mx-auto w-full max-w-screen-lg mx-auto px-4 xl:px-0 justify-center">
-            <nav>
+          <div className="grid grid-cols-3 gap-20 mx-auto w-full max-w-screen-lg mx-auto px-4 xl:px-0 justify-center">
+          <nav>
               <p className="text-xs uppercase mb-4 bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
-                Tech Startups
+                Web Design & Development
               </p>
-              <ul>
-                <li className={`list-none py-2.5 text-sm cursor-pointer`}>
-                  <Link
-                    href="/startup/strategy"
-                    className={`${
-                      pathname.includes("startup/strategy")
-                        ? "text-teal-500"
-                        : "text-auto"
-                    } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
-                  >
-                    <FcFlowChart size={24} title="Startup Marketing Strategy" />
-                    Strategy & Leadership
-                  </Link>
-                </li>
-                <li className={`list-none py-2.5 text-sm cursor-pointer`}>
-                  <Link
-                    href="/startup/execution"
-                    className={`${
-                      pathname.includes("startup/execution")
-                        ? "text-teal-500"
-                        : "text-auto"
-                    } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
-                  >
-                    <FcFlashOn size={24} title="Execution & Delivery" />
-                    Execution & Delivery
-                  </Link>
-                </li>
-                <li className={`list-none py-2.5 text-sm cursor-pointer`}>
-                  <Link
-                    href="/startup/web-and-digital"
-                    className={`${
-                      pathname.includes("startup/web-and-digital")
-                        ? "text-teal-500"
-                        : "text-auto"
-                    } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
-                  >
-                    <FcSmartphoneTablet size={24} title="Web & Digital" />
-                    Web & Digital
-                  </Link>
-                </li>
-              </ul>
-            </nav>
-            <nav>
-              <p className="text-xs uppercase mb-4 bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
-                Marketing
-              </p>
-              <ul>
-                <li className={`list-none py-2.5 text-sm cursor-pointer`}>
-                  <Link
-                    href="/marketing-consultant"
-                    className={`${
-                      pathname.includes("marketing-consultant")
-                        ? "text-teal-500"
-                        : "text-auto"
-                    } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
-                  >
-                    <FcReadingEbook size={24} title="Marketing Consultant" />
-                    Marketing Consultant
-                  </Link>
-                </li>
-                <li className={`list-none py-2.5 text-sm cursor-pointer`}>
-                  <Link
-                    href="/marketing-services"
-                    className={`${
-                      pathname.includes("marketing")
-                        ? "text-teal-500"
-                        : "text-auto"
-                    } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
-                  >
-                    <FcPositiveDynamic size={24} title="Marketing Services" />
-                    Marketing Services
-                  </Link>
-                </li>
-                <>
-                  <li className={`list-none py-2.5 text-sm cursor-pointer`}>
-                    <Link
-                      href="/marketing-services/content-marketing"
-                      className={`${
-                        pathname.includes("content")
-                          ? "text-teal-500"
-                          : "text-auto"
-                      } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50 ps-8`}
-                    >
-                      <FcFile size={24} title="Content Marketing" />
-                      Content Marketing
-                    </Link>
-                  </li>
-                  <li className={`list-none py-2.5 text-sm cursor-pointer`}>
-                    <Link
-                      href="/marketing-services/organic-seo"
-                      className={`${
-                        pathname.includes("organic-seo")
-                          ? "text-teal-500"
-                          : "text-auto"
-                      } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50 ps-8`}
-                    >
-                      <FcSearch size={24} title="Organic SEO" />
-                      Organic SEO
-                    </Link>
-                  </li>
-                  <li className={`list-none py-2.5 text-sm cursor-pointer`}>
-                    <Link
-                      href="/marketing-services/design-services"
-                      className={`${
-                        pathname.includes("design-services")
-                          ? "text-teal-500"
-                          : "text-auto"
-                      } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50 ps-8`}
-                    >
-                      <FcAddImage size={24} title="Design Services" />
-                      Design Services
-                    </Link>
-                  </li>
-                </>
-              </ul>
-            </nav>
-            <nav>
-              <p className="text-xs uppercase mb-4 bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
-                Web Development
-              </p>
+              <p className="text-xs font-light mb-8">CMS Platforms, HTML/CSS/JS Builds, React Frameworks, E-Commerce, Web Widgets, Tools & Apps</p>
               <ul>
                 <li className={`list-none py-2.5 text-sm cursor-pointer`}>
                   <Link
@@ -296,45 +167,64 @@ export default function DesktopNav() {
                 </li>
                 <li className={`list-none py-2.5 text-sm cursor-pointer`}>
                   <Link
-                    href="/react-websites"
+                    href="/web-widgets"
                     className={`${
-                      pathname.includes("react-websites")
+                      pathname.includes("web-widgets")
                         ? "text-teal-500"
                         : "text-auto"
                     } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
                   >
                     <FaReact size={24} title="React framework websites" />
-                    React Websites
-                  </Link>
-                </li>
-                <li className={`list-none py-2.5 text-sm cursor-pointer`}>
-                  <Link
-                    href="/web-apps"
-                    className={`${
-                      pathname.includes("web-apps")
-                        ? "text-teal-500"
-                        : "text-auto"
-                    } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
-                  >
-                    <FcPhoneAndroid size={24} title="Web Apps" />
-                    Web Apps
-                  </Link>
-                </li>
-                <li className={`list-none py-2.5 text-sm cursor-pointer`}>
-                  <Link
-                    href="/wordpress-websites"
-                    className={`${
-                      pathname.includes("wordpress")
-                        ? "text-teal-500"
-                        : "text-auto"
-                    } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
-                  >
-                    <BsWordpress size={24} title="Wordpress Development" />
-                    WordPress Development
+                    Web Widgets, Tools & Apps
                   </Link>
                 </li>
               </ul>
             </nav>
+            
+            <nav>
+              <p className="text-xs uppercase mb-4 bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
+                Marketing Services
+              </p>
+              <p className="text-xs font-light mb-8">Content Marketing, SEO, Graphic Design, Video Production, Marketing Analytics</p>
+              <ul>
+                <li className={`list-none py-2.5 text-sm cursor-pointer`}>
+                  <Link
+                    href="/marketing-services"
+                    className={`${
+                      pathname.includes("marketing")
+                        ? "text-teal-500"
+                        : "text-auto"
+                    } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
+                  >
+                    <FcPositiveDynamic size={24} title="Marketing Services" />
+                    Marketing Services
+                  </Link>
+                </li>
+              </ul>
+            </nav>
+
+            <nav>
+              <p className="text-xs uppercase mb-4 bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
+                Tech Startup Support Services
+              </p>
+              <p className="text-xs font-light mb-8">Strategy & Leadership, Web & Digital Marketing, ROI Measurement, Execution & Delivery</p>
+              <ul>
+                <li className={`list-none py-2.5 text-sm cursor-pointer`}>
+                  <Link
+                    href="/startup"
+                    className={`${
+                      pathname.includes("startup")
+                        ? "text-teal-500"
+                        : "text-auto"
+                    } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
+                  >
+                    <FcFlowChart size={24} title="Startup Marketing Strategy" />
+                    Startup Marketing Support
+                  </Link>
+                </li>
+              </ul>
+            </nav>
+            
           </div>
         </div>
       </header>

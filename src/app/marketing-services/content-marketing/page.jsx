@@ -8,7 +8,7 @@ import Link from "next/link";
 import { FiYoutube, FiBox, FiLayout } from "react-icons/fi";
 import { PiGraphDuotone } from "react-icons/pi";
 import { GiNewspaper } from "react-icons/gi";
-import { FaIndustry } from "react-icons/fa";
+import { FaIndustry, FaInstagram } from "react-icons/fa";
 import Footer from "@/components/Footer";
 import DesktopNav from "@/components/DeskTopNav";
 import { h1, h2, herContainerAlt, heroP, linkBlue, mainContainer, twoColGridLightBkg } from "@/components/customStyles";
@@ -192,7 +192,7 @@ export default function ContentMarketing() {
                   </div>
                 </Link>
                 <Link
-                  href="https://terminusdb.com/blog/knowledge-graph-management/"
+                  href="https://occupational-hygiene.co.uk/preventing-occupational-lung-disease/"
                   target="_blank"
                   className="transition-all duration-500 hover:opacity-50"
                 >
@@ -201,6 +201,16 @@ export default function ContentMarketing() {
                     <p className="font-bold uppercase text-xs">
                       Technical Article
                     </p>
+                  </div>
+                </Link>
+                <Link
+                  href="https://www.instagram.com/p/DTxqOj_DJ_7/"
+                  target="_blank"
+                  className="transition-all duration-500 hover:opacity-50"
+                >
+                  <div className="flex flex-col gap-4 items-center">
+                    <FaInstagram size={96} className="text-teal-500" />
+                    <p className="font-bold uppercase text-xs">Social Video</p>
                   </div>
                 </Link>
                 <Link
@@ -245,6 +255,16 @@ export default function ContentMarketing() {
                     <p className="font-bold uppercase text-xs">
                       Industry Channels
                     </p>
+                  </div>
+                </Link>
+                <Link
+                  href="https://www.instagram.com/p/DTh3pCtilid/"
+                  target="_blank"
+                  className="transition-all duration-500 hover:opacity-50"
+                >
+                  <div className="flex flex-col gap-4 items-center">
+                    <FaInstagram size={96} className="text-teal-500" />
+                    <p className="font-bold uppercase text-xs">Social Video</p>
                   </div>
                 </Link>
               </div>

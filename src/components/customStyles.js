@@ -34,6 +34,8 @@ export const linkBlue =
   "text-lg font-bold mt-4 px-4 py-2 bg-blue-600 border-blue-600 text-white w-fit border-4 hover:bg-white hover:text-blue-600 transition-all duration-500 rounded-full";
 export const linkWhite =
   "text-lg font-bold mt-4 px-4 py-2 bg-white border-white text-blue-600 w-fit border-4 hover:bg-transparent hover:text-white transition-all duration-500 rounded-full";  
+export const internalLink = "border-b-2 border-blue-600 hover:border-teal-600 transition-all duration-500"
+export const internalLinkLight = "border-b-2 border-white hover:border-teal-300 transition-all duration-500"
 
 // Icon List
 export const ulIconList = "flex flex-col py-4 w-max mx-auto";

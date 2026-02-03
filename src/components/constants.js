@@ -88,7 +88,25 @@ export const images = [
     desc: "Animated effects to bring the subject to life",
     repo: "",
     example: "https://the-tiniest-of-trolls.onrender.com/"
-  }
+  },
+  {
+    id: 14,
+    src: "/portfolio/scidonia-website.webp",
+    alt_text: "Next.js website for Scidonia.",
+    title: "Next.js website for Scidonia.",
+    desc: "Next.js website for Scidonia.",
+    repo: "",
+    example: "https://scidonia.ai/"
+  },
+  {
+    id: 14,
+    src: "/portfolio/vectorlink-entity-resolution-services.webp",
+    alt_text: "VectorLink Website.",
+    title: "VectorLink Website.",
+    desc: "VectorLink Website.",
+    repo: "",
+    example: ""
+  },
 ];
 
 export const widgets = [
@@ -112,21 +130,21 @@ export const widgets = [
   },
   {
     id: 3,
-    src: "/portfolio/react-page-nextjs.webp",
-    alt_text: "Screen shot of the API JSON response of the example project.",
-    title: "Interactive Pages",
-    desc: "User pages with authentication to provide customers with bespoke content and data.",
-    repo: "https://github.com/OJ423/commyounity",
-    example: ""
-  },
-  {
-    id: 4,
     src: "/portfolio/react-game.webp",
     alt_text: "A screenshot of a mobile phone showing the game sliders.",
     title: "Sliders Game",
     desc: "Sliders is a daily challenge game.",
     repo: "https://github.com/OJ423/sliders",
     example: "http://slidersgame.com/"
+  },
+  {
+    id: 4,
+    src: "/portfolio/react-page-nextjs.webp",
+    alt_text: "Screen shot of the API JSON response of the example project.",
+    title: "Interactive Pages",
+    desc: "User pages with authentication to provide customers with bespoke content and data.",
+    repo: "https://github.com/OJ423/commyounity",
+    example: ""
   },
   {
     id: 5,
@@ -153,7 +171,7 @@ export const widgets = [
     title: "Nasa Meteorite App",
     desc: "React site presenting external data.",
     repo: "https://github.com/OJ423/Meteor-React-App",
-    example: "https://nasa-meteorite-app.onrender.com/"
+    example: ""
   },
   {
     id: 8,

@@ -22,8 +22,8 @@ export default function Footer() {
 
   return (
     <div className="bg-gradient-to-br from-teal-500 to-indigo-600 w-full relative">
-      <footer className="gap-8 py-20 text-white px-8 xl:px-0 grid sm:grid-cols-2 lg:grid-cols-4 justify-start max-w-screen-lg w-full mx-auto">
-        <div className="flex flex-col gap-4 sm:col-span-2 lg:col-span-2 mx-auto">
+      <footer className="gap-16 py-20 text-white px-8 xl:px-0 grid sm:grid-cols-2 justify-start max-w-screen-lg w-full mx-auto">
+        <div className="flex flex-col gap-4 mx-auto">
           <h2 className="font-bold text-3xl">Hey, I&apos;m Oliver.</h2>
           <p className="text-sm">
             I am a Marketing Consultant who also provides project based web design and marketing freelancer services. I am based in Cheshire
@@ -56,94 +56,7 @@ export default function Footer() {
           </div>
         </div>
         <div>
-        <p className="text-xs uppercase mb-4">Startups</p>
-          <ul>
-             <li className={`list-none py-2.5 text-sm cursor-pointer`}>
-              <Link
-                href="/startup/strategy"
-                className={`${
-                  pathname.includes("strategy") ? "font-bold" : "text-auto"
-                } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
-              >
-                <FcFlowChart size={24} title="Strategy & Leadership" />
-                Strategy & Leadership
-              </Link>
-            </li>
-            <li className={`list-none py-2.5 text-sm cursor-pointer`}>
-              <Link
-                href="/startup/execution"
-                className={`${
-                  pathname.includes("execution") ? "font-bold" : "text-auto"
-                } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
-              >
-                <FcFlashOn size={24} title="Execution & Delivery" />
-                Execution & Delivery
-              </Link>
-            </li>
-            <li className={`list-none py-2.5 text-sm cursor-pointer`}>
-              <Link
-                href="/startup/web-and-digital"
-                className={`${
-                  pathname.includes("web-and-digital") ? "font-bold" : "text-auto"
-                } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
-              >
-                <FcSmartphoneTablet size={24} title="Web & Digital" />
-                Web & Digital
-              </Link>
-            </li>
-          </ul>
-          <p className="text-xs uppercase mb-4 mt-8">Marketing Services</p>
-          <ul>
-             <li className={`list-none py-2.5 text-sm cursor-pointer`}>
-              <Link
-                href="/marketing-consultant"
-                className={`${
-                  pathname.includes("content") ? "font-bold" : "text-auto"
-                } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
-              >
-                <FcReadingEbook size={24} title="Content Marketing" />
-                Marketing Consultant
-              </Link>
-            </li>
-            <li className={`list-none py-2.5 text-sm cursor-pointer`}>
-              <Link
-                href="/marketing-services/content-marketing"
-                className={`${
-                  pathname.includes("content") ? "font-bold" : "text-auto"
-                } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
-              >
-                <FcFile size={24} title="Content Marketing" />
-                Content Marketing
-              </Link>
-            </li>
-            <li className={`list-none py-2.5 text-sm cursor-pointer`}>
-              <Link
-                href="/marketing-services/organic-seo"
-                className={`${
-                  pathname.includes("organic-seo") ? "font-bold" : "text-auto"
-                } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
-              >
-                <FcSearch size={24} title="Organic SEO" />
-                Organic SEO
-              </Link>
-            </li>
-            <li className={`list-none py-2.5 text-sm cursor-pointer`}>
-              <Link
-                href="/marketing-services/design-services"
-                className={`${
-                  pathname.includes("design-services")
-                    ? "font-bold"
-                    : "text-auto"
-                } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
-              >
-                <FcAddImage size={24} title="Design Services" />
-                Design Services
-              </Link>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <p className="text-xs uppercase mb-4">Web Development</p>
+        <p className="text-xs uppercase mb-4">Web Design &Development</p>
           <ul>
             <li className={`list-none py-2.5 text-sm cursor-pointer`}>
               <Link
@@ -160,54 +73,43 @@ export default function Footer() {
             </li>
             <li className={`list-none py-2.5 text-sm cursor-pointer`}>
               <Link
-                href="/react-websites"
+                href="/web-widgets"
                 className={`${
-                  pathname.includes("react-websites")
+                  pathname.includes("web-widgets")
                     ? "font-bold"
                     : "text-auto"
                 } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
               >
-                <FaReact size={24} title="React framework websites" />
-                React Websites
-              </Link>
-            </li>
-            <li className={`list-none py-2.5 text-sm cursor-pointer`}>
-              <Link
-                href="/web-apps"
-                className={`${
-                  pathname.includes("web-apps") ? "font-bold" : "text-auto"
-                } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
-              >
-                <FcPhoneAndroid size={24} title="Web Apps" />
-                Web Apps
-              </Link>
-            </li>
-            <li className={`list-none py-2.5 text-sm cursor-pointer`}>
-              <Link
-                href="/wordpress-websites"
-                className={`${
-                  pathname.includes("wordpress") ? "font-bold" : "text-auto"
-                } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
-              >
-                <BsWordpress size={24} title="Wordpress Development" />
-                WordPress
+                <FaReact size={24} title="Web Widgets, Tools & Apps" />
+                Web Widgets, Tools & Apps
               </Link>
             </li>
           </ul>
-          <p className="text-xs uppercase mb-4 mt-8">Advice & Opinion</p>
+          <p className="text-xs uppercase mb-4 mt-8">Marketing Services</p>
           <ul>
-            <li className={`list-none py-2.5 text-sm cursor-pointer`}>
+             <li className={`list-none py-2.5 text-sm cursor-pointer`}>
               <Link
-                href="/blog"
+                href="/marketing-services"
                 className={`${
-                  pathname.includes("content") ? "font-bold" : "text-auto"
+                  pathname.includes("marketing-services") ? "font-bold" : "text-auto"
                 } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
               >
-                <FaBlog
-                  size={24}
-                  title="Link to my marketing and web design blog"
-                />
-                Read my blog
+                <FcReadingEbook size={24} title="Marketing Services" />
+                Marketing Services
+              </Link>
+            </li>
+          </ul>
+          <p className="text-xs uppercase mb-4 mt-8">Startups</p>
+          <ul>
+             <li className={`list-none py-2.5 text-sm cursor-pointer`}>
+              <Link
+                href="/startup"
+                className={`${
+                  pathname.includes("startup") ? "font-bold" : "text-auto"
+                } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
+              >
+                <FcFlowChart size={24} title="Startup Marketing Support" />
+                Startup Marketing Support
               </Link>
             </li>
           </ul>

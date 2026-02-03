@@ -16,7 +16,7 @@ import {
 } from "react-icons/fc";
 import { BsWordpress } from "react-icons/bs";
 import { TbBrandGithub, TbBrandLinkedin, TbMail } from "react-icons/tb";
-import { FaBlog, FaShopify } from "react-icons/fa";
+import { FaBlog, FaReact, FaShopify } from "react-icons/fa";
 import { FiAlignRight } from "react-icons/fi";
 import { usePathname } from "next/navigation";
 import { IoClose } from "react-icons/io5";
@@ -124,51 +124,12 @@ export default function Navigation() {
             </Link>
           </div>
         </div>
-        <nav className="flex flex-col gap-0 items-start w-full">
-          <p className="text-xs uppercase mt-4 mb-4 bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
-            Tech Startups
+        <nav className="flex flex-col gap-0 items-start w-full h-auto justify-between">
+          <p className="text-xs uppercase my-4  bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
+            Web Design & Development
           </p>
           <ul>
-            <li className={`list-none py-1.5 text-sm cursor-pointer`}>
-              <Link
-                href="/startup/strategy"
-                className={`${
-                  pathname.includes("strategy") ? "text-teal-500" : "text-auto"
-                } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
-              >
-                <FcFlowChart size={24} title="Strategy & Leadership" />
-                Strategy & Leadership
-              </Link>
-            </li>
-            <li className={`list-none py-1.5 text-sm cursor-pointer`}>
-              <Link
-                href="/startup/execution"
-                className={`${
-                  pathname.includes("execution") ? "text-teal-500" : "text-auto"
-                } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
-              >
-                <FcFlashOn size={24} title="Execution & Delivery" />
-                Execution & Delivery
-              </Link>
-            </li>
-            <li className={`list-none py-1.5 text-sm cursor-pointer`}>
-              <Link
-                href="/startup/web-and-digital"
-                className={`${
-                  pathname.includes("web-and-digital") ? "text-teal-500" : "text-auto"
-                } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
-              >
-                <FcSmartphoneTablet size={24} title="Web & Digital" />
-                Web & Digital
-              </Link>
-            </li>
-          </ul>
-          <p className="text-xs uppercase mt-4 mb-4 bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
-            Web & Marketing Services
-          </p>
-          
-          <ul>
-            <li className={`list-none py-1.5 text-sm cursor-pointer`}>
+            <li className={`list-none py-2.5 text-sm cursor-pointer`}>
               <Link
                 href="/web-design"
                 className={`${
@@ -181,6 +142,22 @@ export default function Navigation() {
             </li>
             <li className={`list-none py-1.5 text-sm cursor-pointer`}>
               <Link
+                href="/web-widgets"
+                className={`${
+                  pathname.includes("web-widgets") ? "text-teal-500" : "text-auto"
+                } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
+              >
+                <FaReact size={24} title="Web Widgets, Tools & Apps" />
+                Web Widgets, Tools & Apps
+              </Link>
+            </li>
+          </ul>
+          <p className="text-xs uppercase my-4 bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
+            Marketing Services
+          </p>
+          <ul>
+          <li className={`list-none py-1.5 text-sm cursor-pointer`}>
+              <Link
                 href="/marketing-services"
                 className={`${
                   pathname.includes("marketing") ? "text-teal-500" : "text-auto"
@@ -190,45 +167,24 @@ export default function Navigation() {
                 Marketing Services
               </Link>
             </li>
+          </ul>
+          <p className="text-xs uppercase my-4  bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
+            Tech Startup Support Services
+          </p>
+          <ul>
             <li className={`list-none py-1.5 text-sm cursor-pointer`}>
               <Link
-                href="/marketing-services/content-marketing"
+                href="/startup"
                 className={`${
-                  pathname.includes("content") ? "text-teal-500" : "text-auto"
-                } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50 ps-8`}
+                  pathname.includes("startup") ? "text-teal-500" : "text-auto"
+                } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
               >
-                <FcFile size={24} title="Content Marketing" />
-                Content Marketing
-              </Link>
-            </li>
-            <li className={`list-none py-1.5 text-sm cursor-pointer`}>
-              <Link
-                href="/marketing-services/organic-seo"
-                className={`${
-                  pathname.includes("organic-seo")
-                    ? "text-teal-500"
-                    : "text-auto"
-                } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50 ps-8`}
-              >
-                <FcSearch size={24} title="Organic SEO" />
-                Organic SEO
-              </Link>
-            </li>
-            <li className={`list-none py-1.5 text-sm cursor-pointer`}>
-              <Link
-                href="/marketing-services/design-services"
-                className={`${
-                  pathname.includes("design-services")
-                    ? "text-teal-500"
-                    : "text-auto"
-                } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50 ps-8`}
-              >
-                <FcAddImage size={24} title="Design Services" />
-                Design Services
+                <FcFlowChart size={24} title="Strategy & Leadership" />
+                Startup Marketing Support
               </Link>
             </li>
           </ul>
-          <p className="text-xs uppercase mt-4 mb-4 bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
+          <p className="text-xs uppercase mt-4  bg-gradient-to-br from-teal-500 to-indigo-600 text-transparent bg-clip-text">
             More
           </p>
           <ul>
@@ -258,20 +214,6 @@ export default function Navigation() {
                   title="Contact Oliver Smith Web and Marketing Freelancer"
                 />
                 Contact me
-              </Link>
-            </li>
-            <li className={`list-none py-1.5 text-sm cursor-pointer`}>
-              <Link
-                href="/blog"
-                className={`${
-                  pathname.includes("/blog") ? "text-teal-500" : "text-auto"
-                } flex flex-row text-center md:text-left text-xs md:text-base items-center gap-2 transition-all duration-500 hover:opacity-50`}
-              >
-                <FaBlog
-                  size={24}
-                  title="Free web design and marketing advice blog"
-                />
-                Blog
               </Link>
             </li>
           </ul>

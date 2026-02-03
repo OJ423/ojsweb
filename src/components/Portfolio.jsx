@@ -104,7 +104,7 @@ export default function Portfolio( {images} ) {
         </div>
       </div>
       {currentSlide.example && (
-            <Link href={currentSlide.example} className="absolute top-4 right-4 bg-white rounded-full">
+            <Link href={currentSlide.example} target="_blank" className="absolute top-4 right-4 bg-white rounded-full">
               <HiExternalLink size={32} />
             </Link>
       )}

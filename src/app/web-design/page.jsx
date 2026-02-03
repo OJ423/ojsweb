@@ -7,6 +7,7 @@ import {
   h2,
   herContainerAlt,
   heroP,
+  internalLink,
   lightContainer,
   linkBlue,
   linkWhite,
@@ -186,12 +187,11 @@ export default function WebDesignPage() {
                 build React Frameworks that deliver rich interactivity, scalable
                 UI, and clean architecture.
               </p>
-              <Link href="/react-websites" className={linkBlue}>React Websites</Link>
             </div>
           </article>
           <article className={`${twoColGridLightBkg} mt-8`}>
             <div className="flex flex-col gap-8">
-              <h3 className={h2}>Ecommerce & Online Selling</h3>
+              <h3 className={h2}>E-Commerce & Online Selling</h3>
               <p>
                 From WooCommerce stores to Shopify builds and modern website
                 builders, I design e-commerce experiences that are easy to manage,
@@ -208,13 +208,48 @@ export default function WebDesignPage() {
                 className="object-cover aspect-3/2 rounded-xl"
               />
           </article>
+          <article className="max-w-screen-lg w-full mx-auto flex flex-col gap-8 pt-16">
+            <h2 className={h2}>Offering you the whole package</h2>
+            <p>
+              Aside from the technical aspects of your website, I am an experienced <Link href="/marketing-services" className={internalLink}>marketing professional</Link>, adept with SEO focused content and graphic design, so if you need more that just a website, I can help.
+            </p>
+            <p>
+              It is also worth noting, that my first priority is to protect what you already have, and build upon it to help you achieve your goals. For website migrations and rebuilds this will always come with a staging area and a plan to avoid a negative impact on your existing traffic.
+            </p>
+          </article>
         </section>
-        <section className={darkContainer} id="location">
+        <section className={darkContainer} id="web-widgets">
+          <article className={twoColGridLightBkg}>
+            <div className="flex flex-col gap-6">
+              <h2 className={`${h2}`}>Need innovative ways to get web traffic?</h2>
+              <p>
+                SEO has become complicated with the rise of AI, meaning fewer
+                visits from potential customers.
+              </p>
+              <p>
+                Web widgets, think calculators, tools, and games, are a great way
+                to add value to users and attract them to your site.
+              </p>
+              <Link href="/web-widgets" className={linkWhite}>
+                Find out about my web widget services
+              </Link>
+            </div>
+            <Image
+              src="/portfolio/slidersgame-closeup.webp"
+              alt="Screenshot of a web widget example"
+              width={600}
+              height={400}
+              quality={80}
+              className="object-cover aspect-3/2 rounded-xl"
+            />
+          </article>
+        </section>
+        <section className={lightContainer} id="location">
           <article className="flex flex-col gap-6 max-w-screen-md mx-auto text-center">
-            <h2 className={h2}>Where I Work</h2>
+            <h2 className={`${h2} ${textGradient}`}>Remote of Onsite</h2>
             <p>
               I can work on premise across Cheshire and Manchester, and I also
-              work remotely with clients across the UK and beyond. Whether you
+              work remotely with clients in Austria, Ireland, and the US. Whether you
               need onsite collaboration or a fully remote delivery, I adapt to
               your preferred way of working.
             </p>
