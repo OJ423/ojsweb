@@ -24,7 +24,7 @@ export const images = [
     title: "Helping Island Nations Become Climate Resilient",
     desc: "Working for ARISE-US, a support arm of the UN, I built a website for the critical asset management solution to help island nations become more climate resilient.",
     repo: "",
-    example: "https://climateresilient.world"
+    example: ""
   },
   {
     id: 7,
@@ -33,7 +33,7 @@ export const images = [
     title: "Tech Start-Up Web Presence and Blog",
     desc: "Creating a vibrant website using WordPress for a technology start-up.",
     repo: "",
-    example: "https://terminusdb.com"
+    example: ""
   },
   {
     id: 8,
@@ -42,7 +42,7 @@ export const images = [
     title: "Multilingual User Guide",
     desc: "A multilingual user guide built with WordPress.",
     repo: "",
-    example: "https://climateresilient.world/docs/"
+    example: ""
   },
   {
     id: 9,
